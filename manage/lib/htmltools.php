@@ -92,6 +92,7 @@ function html_imagename($name,$imgfolder = "img/",$mx = 800,$my = 600) {
  @param $hash 表示するデータ
  @param $value 選択しておくデータ(値)→設定されていない場合は一番上 */
 function html_ophash($hash,$value = null) {
+    $ret = "";
     $tline = '<option value="{value}" {sel}>{key}&nbsp;&nbsp;</option>';
 
     //対象となる値を選択
@@ -241,6 +242,7 @@ function html_br($value) {
 
 /** $hashのキーをタグの名前、値をタグの値にした一覧を作成する */
 function html_hidden($hash,$prefix = null){
+    $ret = "";
     $line = '<input type="hidden" name="{vkey}" value="{vval}" />';
     $preval = $prefix ? $prefix . '_' : '';
     foreach($hash as $vkey => $vval) {

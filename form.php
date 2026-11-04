@@ -8,8 +8,10 @@
 # History: 2009/04/21 メールの半角化
 #          2009/11/20 英数文字の半角化
 #==================================
-//ini_set('display_errors', 'On');
-//ini_set("error_reporting", E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
+// PHP8: 警告(Undefined array key 等)を画面に出さずログのみ記録
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+ini_set("error_reporting", E_ALL & ~E_STRICT & ~E_DEPRECATED);
 
 //設定ファイル
 $system = "manage/system/init.php";
@@ -61,12 +63,13 @@ $errinfo = errinfo($info['err_info']);
 
 
 //メール部分の変換
-$_POST[$info['mail']] = mb_convert_kana($_POST[$info['mail']], 'a', $systemenc);
+$_POST[$info['mail']] = mb_convert_kana($_POST[$info['mail']] ?? "", 'a', $systemenc);
 
 //初期値設定
 $err = errvarhash($errinfo, $info['value'], $formno); //エラー初期値
 $_POST = whash(lhash($info['value']), $_POST);   //フォーム値の設定・check radio対策
 
+$check = false; $exit = false; $def = false;
 $hidden = array('typex' => "", 'pid' => $formno, 'param' => "", 'cmd' => "");
 $var = copyhash($_POST);
 $epost = html_file2post();

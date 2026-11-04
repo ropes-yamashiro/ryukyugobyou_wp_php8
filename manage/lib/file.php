@@ -142,7 +142,7 @@ class cssConfig {
 
     /** セレクターを取得します */
     function getSelector($name) {
-        return $this->selector[$name];
+        return $this->selector[$name] ?? null;
     }
 
     /** ファイルを読込む */
@@ -201,14 +201,14 @@ class cssConfig {
 
 
             if (strlen($part) > 0) {
-                list($key, $vcode) = cword($part, "{");
+                list($key, $vcode) = array_pad(cword($part, "{"), 2, "");
                 $key = $this->parseSelectorName($key);
                 $vone = new cssSelector($key, $this->property_double);
                 $codes = cword($vcode, ";");
                 //dp($codes);
                 foreach ($codes as $code) {
                     if (!trim($code)) {continue;                    }
-                    list($name, $code) = cword($code, ":");
+                    list($name, $code) = array_pad(cword($code, ":"), 2, "");
                     $values = tlist(cword($code, ","));
                     $values = twlist($values);
                     $vone->addValue(trim($name), $values);

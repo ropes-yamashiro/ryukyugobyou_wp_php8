@@ -169,7 +169,7 @@ function sysroot() {
  * POSTを優先してデータを取ってくる
  */
 function webparam($name,$default = null) {
-    $ret = $_POST[$name] !== null ? $_POST[$name] : $_GET[$name];
+    $ret = $_POST[$name] ?? ($_GET[$name] ?? null);
     return $ret !== null ? $ret : $default;
 }
 

@@ -24,7 +24,7 @@ function form_setcookie($info) {
 function form_default($info) {
     $ret = lhash($info['value']);
     foreach (clist("select,check,radio,group_check") as $type) {
-        foreach ($info['value_info'][$type] as $dat) {
+        foreach ($info['value_info'][$type] ?? array() as $dat) {
             $ret[$dat['name']] = $dat['default'];
         }
     }
@@ -422,7 +422,7 @@ function form_infoloader($path, $formno) {
                 $var = array("value" => $value, 'default' => $default, 'name' => $vone);
                 break;
             default:
-                continue;
+                continue 2;
         }
         array_push($ret['value_info'][$vtype], $var);
     }
