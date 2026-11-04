@@ -1,0 +1,184 @@
+@begin err_access
+<font color="red">不正アクセスエラー：権限がありません</font>
+@end
+
+@begin err_cmd
+<font color="red">不正アクセスエラー：{cmd}は定義されていません</font>
+@end
+
+@begin err_listview
+<p style='color:red'>{value}</p><br>
+@end
+
+
+@begin paging
+&nbsp;<a href="?" onClick="return ch_page({no});">{view}</a>
+@end
+
+@begin file_exist
+<input type=hidden name="{name}" value="{fname}" />
+&nbsp;&nbsp;{fname}&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" onClick="delpic('{fid}','{fname}'); return false;">削除</a>
+&nbsp;&nbsp;<a href="../{savepath}/{fname}" target="_blank" >表示</a>
+@end
+
+@begin file_nonexist
+<input type=file name='{name}' onFocus="this.className='on';" onBlur="this.className='off';" size="35"  />
+@end
+
+@begin noval
+<tr class="color1"><td colspan="5"><center>データがありません</center></td></tr>
+@end
+
+@begin line
+		<tr class="color{color}" id="bg_id{id}" onmouseover="chBG('bg_id{id}', 1);" onmouseout="chBG('bg_id{id}', 0);">
+		<td><label>&nbsp;&nbsp;<input type=checkbox name="print[]" value="{id}" {print} /></lable></td>
+		<td><label>&nbsp;&nbsp;<input type=checkbox name="id{id}" {visible} value="1" onClick="return ch_bool({id});" /></lable></td>
+		<td>{year}年 {month}月 {day}日</td>
+		<td><a href="?typex={typex}" onClick="return detail({id});" >{title}</a></td>
+		<td>{type}</td>
+		<td><a href="?typex={typex}" onClick="return del_line('{id}','{title}');">削除</a>
+			<a href="?typex={typex}" onClick="return up_line('{sort}');">上へ</a><br>
+			<a href="../movie.php?pid={pid}&param={id}" target="_blank">表示</a>
+			<a href="?typex={typex}" onClick="return down_line('{sort}');">下へ</a>
+		</td>
+		</tr>
+@end
+
+
+@begin page
+<SCRIPT TYPE="text/javascript">
+<!--
+//ページを変更する
+function ch_page(no){
+    movie.formx.action = "admin.php";
+    movie.formx.target = "";	
+	movie.formx.pageno.value=no;
+	movie.formx.submit();
+	return false;
+}
+
+//表示の数を変える
+function ch_count(){
+    movie.formx.action = "admin.php";
+    movie.formx.target = "";		
+    movie.formx.submit();
+    return false;
+}
+
+
+//項目を削除する
+function del_line(cd,title){
+    if(window.confirm(title + 'を削除しますか？')){
+        movie.formx.action = "admin.php";	
+        movie.formx.target = "";	
+        movie.formx.cmd.value = "del_line";
+        movie.formx.param.value = cd;
+        movie.formx.submit();
+    }
+    return false;
+}
+
+
+//新着情報を作成する
+function newitem(){
+    movie.formx.action = "admin.php";	
+    movie.formx.target = "";	
+    movie.formx.cmd.value = "newitem";
+    movie.formx.submit();
+    return false;
+}
+
+//上に移動する
+function up_line(cd){
+    movie.formx.action = "admin.php";	
+    movie.formx.target = "";	
+    movie.formx.cmd.value = "up_line";
+    movie.formx.param.value = cd;
+    movie.formx.submit();
+    return false;
+}
+
+//下に移動する
+function down_line(cd){
+    movie.formx.action = "admin.php";	
+    movie.formx.target = "";	
+    movie.formx.cmd.value = "down_line";
+    movie.formx.param.value = cd;
+    movie.formx.submit();
+    return false;
+}
+
+//表示を切り替える
+function ch_bool(cd){
+    movie.formx.action = "admin.php";	
+    movie.formx.target = "";	
+    movie.formx.cmd.value = "ch_bool";
+    movie.formx.param.value = cd;
+    movie.formx.submit();
+    return false;
+}
+
+//詳細を表示する
+function detail(cd){
+    movie.formx.action = "admin.php";	
+    movie.formx.target = "";	
+    movie.formx.cmd.value = "detail";
+    movie.formx.param.value = cd;
+    movie.formx.submit();
+    return false;
+}
+
+function print(){
+    movie.formx.action = "../movie.php";	
+    movie.formx.target = "_blank";	
+    movie.formx.cmd.value = "print";
+    movie.formx.submit();
+    return false;
+}
+//詳細を表示する
+function selall(){
+    movie.formx.action = "admin.php";	
+    movie.formx.target = "";	
+    movie.formx.cmd.value = "selall";
+    movie.formx.submit();
+    return false;
+}
+//詳細を表示する
+function seloff(){
+    movie.formx.action = "admin.php";	
+    movie.formx.target = "";	
+    movie.formx.cmd.value = "seloff";
+    movie.formx.submit();
+    return false;
+}
+// -->
+</SCRIPT> 
+<form method="POST" name=formx action="?typex={typex}">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td class="nrline">&nbsp;&nbsp;{name}&nbsp;&nbsp;{title}:&nbsp;&nbsp;&nbsp;&nbsp;
+		{hidden}
+		<input type=hidden name="cmd" value="listview" />
+		<input type=hidden name="param" />
+		<input type=submit id=btm value="新規" onclick="return newitem();" />
+
+		&nbsp;&nbsp;&nbsp;&nbsp;表示件数:
+		<select name="count" id="select1" onchange="return ch_count();">
+		    {count}
+		</select><br>
+		&nbsp;&nbsp;印刷：
+		<input type=submit id=btm value="プレビュー" onclick="return print();" />
+		<input type=submit id=btm value="全選択" onclick="return selall();" />
+		<input type=submit id=btm value="選択解除" onclick="return seloff();" />
+		</td>
+		<td class="nnline">{tcount}&nbsp;{paging}
+		</td></tr>
+	</table>
+	<br>
+	{err}
+	
+	<table width="590px" cellpadding="0" cellspacing="0" class="tlist">
+		<tr><th width="30px">印刷</th><th width="30px">表示</th><th width="100px">掲載日</th><th width="180px">タイトル</th><th width="80px">タイプ</th><th width="60px">操作</th></tr>
+		{table}
+	</table>
+</form>
+@end

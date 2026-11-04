@@ -1,0 +1,23 @@
+@begin newfile
+<section>
+<p class="days">{year}/{month}/{day}</p>
+<span class="thumb">{thumbnail}</span><h3>{title}<a href="{link}" {blank}><img src="img/img-index/ico_download.gif"/></a></h3>
+<div class="text">{summary}</div>
+</section>
+@end
+
+@begin pdf
+<section>
+<p class="days">{year}/{month}/{day}</p>
+<span class="thumb">{thumbnail}</span><h3>{title}<a href="{link}" {blank}><img src="img/img-index/ico_01.png"/></a></h3>
+<div class="text">{summary}</div>
+</section>
+@end
+
+@begin img
+<section>
+<p class="days">{year}/{month}/{day}</p>
+<span class="thumb">{thumbnail}</span><h3>{title}<a href="{link}" {blank}><img src="img/img-index/ico_download.gif"/></a></h3>
+<div class="text">{summary}</div>
+</section>
+@end

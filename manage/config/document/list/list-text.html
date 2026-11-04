@@ -1,0 +1,41 @@
+@begin main
+<li>
+	<a href="{self}" target="_top" class="clearfix">
+	{contents}
+    
+    <div class="blog1">
+	<p class="txt">
+		<span class="title">{title}</span>
+		<span class="summary">{summary}</span>
+		<span class="day"><img src="img/img-index/day_icon.png" /> {view_year}/{view_month}/{view_day}</span>
+    </p>
+    </div>
+
+    <div class="blog2">
+	<p class="txt">
+		<span class="category">{category}</span>
+		<span class="day">{view_year}/{view_month}/{view_day}</span>
+	</p>
+	<p class="txt2">
+		<span class="title">{title}</span>
+    </p>
+    </div>
+    
+	</a>
+</li>
+@end
+
+@begin image
+<img src="{img}" width="{max-x}" height="{max-y}" class="disp_pc" />
+<img src="{img}" width="{max-x_sp}" height="{max-y_sp}" class="disp_sp" />
+@end
+
+@begin item
+<p class="{image-pos} thum left">
+{image-left}{image-right}</p>
+@end
+
+
+
+
+

@@ -1,0 +1,52 @@
+<SCRIPT TYPE="text/javascript">
+<!--
+
+//ユーザーを変更する
+function chuser(){
+    document.formx.cmd.value = "chuser";
+    document.formx.submit();
+    return false;
+}
+
+function chauth(authkey){
+    document.formx.cmd.value = "chauth";
+    document.formx.param.value = authkey;
+    document.formx.submit();
+    return false;
+}
+
+// -->
+</SCRIPT> 
+<form method=POST action="?typex=account" name="formx" class="detail_common account">
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" />
+	<div class="account">
+	<div id="contents" class="clearfix">
+		<article>
+			<div class="ttl_area">
+			<h2 class="l_cmn_ttl">アカウント権限設定</h2>
+			</div>
+
+			<section class="page_contents">
+				<div class="container">
+
+					<div class="block ">
+						<p class="ttl pat03">ユーザー名</p>
+						<div class="in_selectOuter in_selectOuter-sbs">
+							<div class="in_select in_select-sbs in_select-sm js_select">
+							 <select name="userid" id="userid" onchange="return chuser();">{userid}</select>
+							</div>	
+							{errcode}
+						</div>
+						<p class="cou sp_mt20"><img src="img/img-common/icon_check.png" alt="アイコン" style="width:5%; margin: 1.5% 2% 0 0;" />を入れると、該当項目の編集が可能になります。<br>設定変更はログイン時に有効になります。</p>
+					</div>
+
+
+					{auth_line}
+
+				</div>
+			</section>
+		</article>
+	</div>
+	</div>
+</form>

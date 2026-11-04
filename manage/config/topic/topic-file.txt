@@ -1,0 +1,44 @@
+@begin newfile
+<div class="in clearfix">
+<div class="left">
+{thumbnail}
+</div>
+<div class="right">
+<p class="time">{year}/{month}/{day}</p>
+<dl>
+<dt>{title}</dt>
+<dd>{summary}<a href="{link}" alt="{filename}" target="_blank"><img src="img/img-topic/ico_download.gif" width="25" height="29" alt="dw" /></a></dd>
+</dl>
+</div>
+</div>
+@end
+
+@begin pdf
+<div class="in clearfix">
+<div class="left">
+{thumbnail}
+</div>
+<div class="right">
+<p class="time">{year}/{month}/{day}</p>
+<dl>
+<dt>{title}</dt>
+<dd>{summary}<a href="{link}" alt="{filename}" target="_blank"><img src="img/img-topic/ico_pdf.gif" width="55" height="18" alt="pdf" /></a></dd>
+</dl>
+</div>
+</div>
+@end
+
+@begin img
+<div class="in clearfix">
+<div class="left">
+{thumbnail}
+</div>
+<div class="right">
+<p class="time">{year}/{month}/{day}</p>
+<dl>
+<dt>{title}</dt>
+<dd>{summary}<a href="{link}" alt="{filename}" target="_blank"><img src="img/img-topic/ico_pic.gif" width="25" height="18" alt="pht" /></a></dd>
+</dl>
+</div>
+</div>
+@end

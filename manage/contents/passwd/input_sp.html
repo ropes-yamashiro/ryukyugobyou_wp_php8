@@ -1,0 +1,79 @@
+<SCRIPT TYPE="text/javascript">
+<!--
+
+//更新データを保存する
+function usersave(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "{cmd}";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//項目を削除する
+function back(){
+    if(window.confirm('一覧に戻りますか？')){
+        document.formx.cmd.value = "list";
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+// -->
+</SCRIPT> 
+<form method=POST action="?typex=passwd" name="formx" enctype="multipart/form-data" class="detail_common">
+	<input type=hidden name="pageno" value="{pageno}" />
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" value="{id}" />
+  <div id="contents" class="clearfix">
+    <article>
+      <div class="ttl_area">
+      <h2 class="l_cmn_ttl">「ユーザー情報」登録・編集</h2>
+      </div>
+      
+      <section class="page_contents">
+      <div class="container">
+      
+		{err}
+      <div class="block">
+      	<p class="ttl pat01">アカウント名<span class="redreq">必須</span></p>
+      	<div class="in_txtOuter">
+			 <label class="in_txt">
+			  <input class="in_txtItem" type="text" placeholder="（例）root" name="userid" value="{userid}">
+			 </label>
+		</div>
+      </div>
+      
+      <div class="block">
+      	<p class="ttl pat01">パスワード（半角英数）<span class="redreq">必須</span></p>
+      	<div class="in_txtOuter">
+			 <label class="in_txt">
+			  <input class="in_txtItem" type="text" placeholder="（例）pass" name="passwd" value="{passwd}">
+			 </label>
+		</div>
+      </div>
+      
+      <div class="block">
+      	<p class="ttl pat01">ユーザー情報<span class="redreq">必須</span></p>
+      	<div class="in_txtOuter">
+			 <label class="in_txt">
+			  <input class="in_txtItem" type="text" placeholder="（例）システム管理者用" name="username" value="{username}">
+			 </label>
+		</div>
+      </div>
+
+      	
+      </div>
+      </section>
+      
+      <ul class="btn_save">
+      <li><a href="javascript:void(0);" onclick="return usersave()">保存</a></li>
+      <li><a href="javascript:void(0);" onclick="return back();">一覧へ</a></li>
+      </ul>
+      	
+
+      
+    </article>
+  </div>
+</form>

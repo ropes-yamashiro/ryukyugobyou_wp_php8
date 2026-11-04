@@ -1,0 +1,58 @@
+<html><head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新着情報｜○○○○○株式会社</title>
+<meta name="description" content="○○○○○○○○○○○○○○○○○○" />
+<meta name="Keywords" content="○○○○○○○○○○○○○○○○○" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+
+<script>
+$(function(){
+// setViewport
+spView = 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0';
+tbView = 'width=1024px,maximum-scale=2.0,user-scalable=1';
+if(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('iPod') > 0 || (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0)){
+$('head').prepend('<meta name="viewport" content="' + spView + '" id="viewport">');
+} else if(navigator.userAgent.indexOf('iPad') > 0 || (navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') == -1) || navigator.userAgent.indexOf('A1_07') > 0 || navigator.userAgent.indexOf('SC-01C') > 0){
+$('head').prepend('<meta name="viewport" content="' + tbView + '" id="viewport">');
+} 
+});
+</script>
+
+<link href="css/default.css" rel="stylesheet" type="text/css" media='screen and (min-width:737px)' />
+<link href="css/default_sp.css" rel="stylesheet" type="text/css" media='screen and (max-width:736px)' />	
+<link href="css/topic_pc.css" rel="stylesheet" type="text/css" media='screen and (min-width:737px)' />
+<link href="css/topic_sp.css" rel="stylesheet" type="text/css" media='screen and (max-width:736px)' />
+<script type="text/javascript" src="js/window.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("dd:empty").addClass("empty");
+});
+</script>
+<script type="text/javascript" src="js/pc_to_mobile.js"></script>
+</head>
+
+<body class="topic-pop">
+<div id="wrapper">
+<!--コンテンツここから -->
+<div id="contents">
+<h1>{title}</h1>
+<p class="ymd">{year}/{month}/{day}</p>
+<div class="center">
+<p>{contents}</p>
+</div>
+<div id="footer">
+<ul>
+<li class="mthod01"><a href="javascript:window.close();"><img src="img/img-common/hb_btn02.png" alt="close" /></a></li>
+</ul>
+</div>
+</div>
+<!--コンテンツココまで -->
+
+<!--フッタココから -->
+<!--フッタココまで -->
+</div></body>
+</html>

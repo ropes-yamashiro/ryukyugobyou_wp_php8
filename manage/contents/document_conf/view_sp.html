@@ -1,0 +1,141 @@
+<SCRIPT TYPE="text/javascript">
+
+//更新データを保存する
+function ch_container(){
+
+	if(document.formx.container_temp_id_old.value != document.formx.container_temp_id.value
+		|| document.formx.paging_temp_id_old.value != document.formx.paging_temp_id.value
+		|| document.formx.paging_count_old.value != document.formx.paging_count.value){
+
+		if(window.confirm('データが変更されていますが、ブログを切り替えますか？\n変更したデータは無効になります')){
+        	document.formx.cmd.value = "ch_container";
+	        document.formx.submit();
+    	}
+    	else{
+    		document.formx.id.value = document.formx.id_old.value;
+    	}
+	}else{
+    	document.formx.cmd.value = "ch_container";
+    	document.formx.submit();
+    }
+    return false;
+}
+
+//更新データを保存する
+function usersave(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "save";
+        document.formx.submit();
+    }
+    return false;
+}
+
+</SCRIPT>
+<form method=POST action="?typex=document_conf" name="formx" enctype="multipart/form-data" class="detail_common blogtemplate">
+	{old_data}
+	<input type=hidden name="cmd" />
+  <div id="contents" class="clearfix">
+    <article>
+      <div class="ttl_area">
+      <h2 class="l_cmn_ttl">「ブログテンプレート設定」</h2>
+      <!--<p class="btn_create"><a href="categorydetail.html"><img src="img/img-common/btn_save.png" alt="保存" class="img_max100" /></a></p>-->
+      </div>
+      
+      <div class="cont_select">
+      <div class="block container">
+      	<p class="ttl pat02">ブログ</p>
+      	<div class="in_selectOuter in_selectOuter-sbs">
+			<div class="in_select in_select-sbs in_select-sm js_select">
+             <select name="id" id="id" onchange="return ch_container();">
+				 {id}
+             </select>
+             </select>
+            </div>
+        </div>
+      </div>
+      </div>
+      
+       <section class="page_contents">
+		  <div class="container">
+
+		<div class="block">
+      	<p class="ttl pat01">外枠 テンプレート</p>
+        <div class="in_selectOuter in_selectOuter-sbs blogtemplate">
+			<div class="in_select in_select-sbs in_select-sm js_select sp_mb10">
+             <select name="container_temp_id" id="container_temp_id">
+             {container_temp_id}
+             </select>
+            </div>
+        </div>     
+      </div> 
+      
+      <div class="block">
+      	<p class="ttl pat01">ページング タイプ</p>
+        <div class="in_selectOuter in_selectOuter-sbs blogpaging">
+			<div class="in_select in_select-sbs in_select-sm js_select sp_mb10">
+             <select name="paging_temp_id" id="paging_temp_id">
+             {paging_temp_id}
+             </select>
+            </div>
+        </div>     
+      </div> 
+      
+      
+      <div class="block">
+      	<p class="ttl pat01">１ページに表示するコンテンツ数(PC)</p>
+        <div class="in_selectOuter in_selectOuter-sbs paging_count">
+			<div class="in_select in_select-sbs in_select-sm js_select sp_mb10">
+             <select name="paging_count" id="paging_count">
+             {paging_count}
+             </select>
+            </div>
+        </div>     
+      </div> 
+
+     <div class="block">
+      	<p class="ttl pat01">一覧に表示するコンテンツ数(PC)</p>
+        <div class="in_selectOuter in_selectOuter-sbs list_count">
+			<div class="in_select in_select-sbs in_select-sm js_select sp_mb10">
+             <select name="list_count" id="list_count">
+             {list_count}
+             </select>
+            </div>
+        </div>     
+      </div>
+      
+     <div class="block">
+      	<p class="ttl pat01">一覧に表示するコンテンツ数(SP)</p>
+        <div class="in_selectOuter in_selectOuter-sbs paging_count_sp">
+			<div class="in_select in_select-sbs in_select-sm js_select sp_mb10">
+             <select name="paging_count_sp" id="paging_count_sp">
+             {paging_count_sp}
+             </select>
+            </div>
+        </div>     
+      </div> 
+      
+      <div class="block">
+      	<p class="ttl pat01">１ページに表示するコンテンツ数(SP)</p>
+        <div class="in_selectOuter in_selectOuter-sbs list_count_sp">
+			<div class="in_select in_select-sbs in_select-sm js_select sp_mb10">
+             <select name="list_count_sp" id="list_count_sp">
+             {list_count_sp}
+             </select>
+            </div>
+        </div>     
+      </div> 
+
+			</div>
+      	</section>
+      	
+      
+      <ul class="btn_save">
+      <li><a href="javascript:void(0);" onclick="return usersave()">保存</a></li>
+      <!--<li><a href="categorylist.html">保存して一覧へ</a></li>
+      <li><a href="categorylist.html">一覧へ</a></li>-->
+      </ul>
+      
+      
+    </article>
+  </div>
+</form>

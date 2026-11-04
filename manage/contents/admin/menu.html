@@ -1,0 +1,21 @@
+//======================================================
+//  管理画面のメニュー
+
+
+//管理レベルのカテゴリ
+@begin admin
+<li class="list_admin">{title}</li>
+@end
+
+
+//ユーザーレベルのカテゴリ
+@begin user
+<li class="list_title">{title}</li>
+@end
+
+
+//アクセス用の行
+@begin line 
+<li><a href="admin.php?typex={typex}">{title}</a></li>
+@end
+

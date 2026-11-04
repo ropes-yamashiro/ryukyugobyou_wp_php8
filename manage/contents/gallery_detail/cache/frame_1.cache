@@ -1,0 +1,134 @@
+a:5:{s:4:"line";s:29:"
+<ul>
+
+
+
+
+
+
+{list}
+
+
+
+
+</ul>
+";s:8:"list_top";s:306:"
+<li>
+<dl>
+<dt><a href="javascript:void(0);" target="_top" onclick="return popup('{popup_id}','{view_id}','{popup_width}','{popup_height}','{gfix}')" >
+<img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" /></a></dt>
+<dd class="tittle">{img_comment1}</dd>
+<dd>{img_comment2}</dd>
+</dl>
+</li>
+";s:11:"list_normal";s:1769:"
+<li>
+<dl>
+<dt><a href="javascript:void(0);" target="_top" onclick="return popup('{popup_id}','{view_id}','{popup_width}','{popup_height}','{gfix}')" >
+<img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" /></a></dt>
+<dd class="tittle">{img_comment1}</dd>
+<dd>{img_comment2}<br />
+{line_class} = 行ごとに設定するクラス method01,method02,... と追加される
+<br />
+列データ<br />
+{thumb_width} = サムネイルの最大横幅<br />
+{thumb_height} = サムネイルの最大縦幅<br />
+
+ギャラリーのデータ<br />
+{img_mini_path} = サムネイルのイメージのパス<br />
+{img_big_path} = イメージのパス<br />
+{img_width} = イメージの横幅<br />
+{img_height} =　イメージの縦幅<br />
+{img_title} =　イメージのタイトル<br />
+{img_comment1} = イメージのコメント1<br />
+{img_comment2} = イメージのコメント2<br />
+{img_link} = リンク先URL<br />
+<br />
+その他のデータ<br />
+{today_year} =　今日の年<br />
+{today_mon} =　今日の月<br />
+{today_mday} = 今日の日<br />
+{today_week} = 曜日<br />
+<br />
+{final_year} =　最終更新日の年<br />
+{final_mon} =　最終更新日の月<br />
+{final_mday} = 最終更新日の日<br />
+{final_week} = 最終更新日の曜日<br />
+<br />
+{view_id} = 表示ID<br />
+{view_title} = 表示位置のタイトル<br />
+{view_comment} = 表示位置のコメント<br />
+<br />
+
+{popup_width} = ポップアップウインドウの横幅<br />
+{popup_height} = ポップアップウインドウの縦幅<br />
+{popup_url} = ポップアップのURL<br />
+{popup_id} =　表示する内容のID<br />
+
+{group_comment} = グループのコメント<br />
+{group_title} = グループのタイトル
+</dd>
+</dl>
+</li>
+";s:8:"list_end";s:306:"
+<li>
+<dl>
+<dt><a href="javascript:void(0);" target="_top" onclick="return popup('{popup_id}','{view_id}','{popup_width}','{popup_height}','{gfix}')" >
+<img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" /></a></dt>
+<dd class="tittle">{img_comment1}</dd>
+<dd>{img_comment2}</dd>
+</dl>
+</li>
+";s:4:"page";s:1323:"
+<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title></title>
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="copyright" content="" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/analytics.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="manage/jscript/user/gallery.js"></script>
+</head>
+<body class="fuukei">
+<!-- ラッパー -->
+
+<div id="wrapper" class="clearfix">
+
+
+<div id="container">
+
+  <!-- コンテンツ -->
+<div id="contents">
+
+<h2><img src="img/img-gallery/ttl_01.gif" alt="ギャラリーＣＭＳ" width="692" height="50" /></h2>
+<div class="block01">
+
+
+
+
+
+
+{line}
+
+
+
+</div>
+</div>
+<!-- （終）コンテンツ -->
+
+</div>
+</div>
+<!-- （終）ラッパー -->
+
+
+</body>
+</html>";}

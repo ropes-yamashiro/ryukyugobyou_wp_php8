@@ -1,0 +1,149 @@
+/*==================================
+ * Hudom CMS
+ * File version: 1.0.0
+ * Author: Terutaka.Takezaki
+ * Release: 2009/03/05
+ * History:
+ *================================*/
+
+@charset "shift_jis";
+/*ポップアップページ適用CSS -------------------------------------------------------------- */
+
+* {
+	/* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif; */
+	font-family: "ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo,  sans-serif; 
+	font-size:100%;
+	list-style-type:none;
+}
+body {
+	font-weight:normal;
+	font-style: normal;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-size: 75%;
+	line-height:1.5;
+	color:#333333
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, dl, dt, dd {
+	margin:0px;
+	padding:0px;
+}
+
+p {
+	margin-bottom: 15px;
+	font-size: 118%;
+}
+
+img {
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+a:link, a:visited {
+	text-decoration:underline;
+	color: #0000CC;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+
+
+/*コンテンツ大枠 -------------------------------------------------------------- */
+
+#wrapper {
+	text-align: left;
+	margin: 0px auto 0px;
+	text-align: left;
+	width: 630px;
+}
+
+#contents {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*コンテンツ -------------------------------------------------------------- */
+
+h1 {
+	font-size: 150%;
+	margin: 0px;
+	padding: 10px 0px 5px 10px;
+	background: url(../image/img-popup/bg_hed.gif) no-repeat left bottom;
+	color: #3E5E7D;
+}
+
+h2 {
+	font-size: 150%;
+	margin: 0px;
+	padding: 5px 0px 10px 10px;
+}
+
+.left {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 170px;
+}
+.right {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 460px;
+}
+.left p {
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+
+
+/*フッター　 -------------------------------------------------------------- */
+
+#footer {
+	margin: 0px;
+	padding: 15px 0px 0px;
+	clear: both;
+	text-align: center;
+}
+
+#footer ul {
+	margin: 0px;
+	text-align: center;
+	padding: 10px 0px 10px 285px;
+}
+
+#footer ul li {
+	list-style:none;
+	margin: 0px;
+	display: block;
+	height: 25px;
+	width: 95px;
+	padding: 0px;
+	float: left;
+	border-right-style: none;
+	text-align: center;
+}
+
+#footer ul li a{
+	text-indent:-10000px;
+	display:block;
+	line-height: 0;
+	margin: 0px;
+	padding: 0px;
+	height: 25px;
+	width: 95px;
+	}
+	
+#footer ul li.mthod01 a{
+	background:url(../image/img-popup/btn_01.gif) no-repeat left top;
+}	
+	
+#footer ul li a:hover{
+	background-position:right top;
+}	

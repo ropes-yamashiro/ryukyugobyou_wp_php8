@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="css/design.css" rel="stylesheet" type="text/css" />
+        <link href="css/locate.css" rel="stylesheet" type="text/css" />
+        <script language="javascript" src="jscript/jquery.js"></script>
+        <script TYPE="text/javascript">
+            <!--
+
+            //■初期化関数
+            $(function(){
+                $("input[name='selgroup[]']").click(edititem);
+                if($("#id").val() == '') $("#clearbtn").hide();
+            });
+
+            function btn_check(){
+                var target = $("input[name='selgroup[]']:checked");
+                if(target.size() == 1){
+                    $("#editbtn").attr("disabled", false);
+                }
+                else{
+                    $("#editbtn").attr("disabled", true);
+                }
+            }
+
+            function edititem(){
+                var target = $("input[name='selgroup[]']:checked");
+                var id = target.val();
+                var title = $("#seltitle_" + id).val();
+                $("#title").val(title);
+                $("#id").val(id);
+                $("#clearbtn").show();
+                $("#removebtn").show();
+                $("#savebtn").val("保存");
+            }
+
+
+
+            //データを保存する
+            function save(){
+                if(window.confirm('保存しますか？')){
+                    document.formx.cmd.value = "save";
+                    document.formx.submit();
+                }
+                return false;
+            }
+
+
+            function clearname(){
+                $("#title").val('');
+                $("#id").val('');
+                $("#clearbtn").hide();
+                $("#removebtn").hide();
+                $("input[name='selgroup[]']:checked").attr("checked",false);
+                $("#savebtn").val('新規登録');
+            }
+
+            function closeact(){
+                window.close();
+            }
+
+            function removeitem(){
+                var target = $("input[name='selgroup[]']:checked");
+                if(target.size()){
+                    if(window.confirm('ギャラリーを削除しますか？\n'
+                        + '指定したギャラリーに設定がしてある場合、\n'
+                        + '削除されます')){
+                        document.formx.cmd.value = "remove";
+                        document.formx.submit();
+                    }
+                }
+            }
+
+            // -->
+        </script>
+        <style type="text/css">
+            html{
+                overflow:auto;
+            }
+            body{
+                background: none;
+                background-color: #FFF;
+                padding: 0px;
+            }
+            .thcommand{
+                margin:0 0 15px 0;
+            }
+            .theader{
+                width:100%;
+                border: none;
+            }
+
+            .theader .tlefts{
+                padding-left: 10px;
+            }
+
+            .tinput2{
+                width:100%;
+                margin:0;
+            }
+
+            .tinput2 {
+                border-collapse: separate;
+                border-spacing: 0px;
+                font-size: x-small;
+                line-height: 150%;
+            }
+
+            .tinput2 .thlabel {
+                width: 80px;
+                padding: 5px 10px 5px 10px;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                text-align: right;
+                font-weight: normal;
+                background-color: #DDDDDD;
+            }
+
+            .tinput2 .tlefts {
+                padding: 5px 8px 5px 10px;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                background-color: #EEEEEE;
+            }
+            .popcenter{
+                width:100%;
+                text-align: center;
+            }
+            .grouplist{
+                width:200px;
+                height:20px;
+                display: block;
+            }
+            .grouplist input{
+                margin-right: 5px;
+            }
+            .group_box{
+                overflow: auto;
+                height:215px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <form action="admin.php" method="POST" name="formx" enctype="multipart/form-data" id="formx">
+            <div>
+                <input type="hidden" name="typex" value="view_edit" />
+                <input type="hidden" name="id" id="id" value="{id}" />
+                <input type="hidden" name="cmd" id="cmd" />
+            </div>
+            {html_err}{html_state}
+            <em>※は必須入力項目です。</em>
+            <table cellpadding="0" cellspacing="0" class="theader">
+                <tr><td class="tlefts">ギャラリー編集</td></tr>
+            </table>
+            <table  cellpadding="0" cellspacing="0" class="tinput2">
+                <tr>
+                    <th class="thlabel">ギャラリー名<em>※</em></th>
+                    <td class="tlefts">
+                        <input type="text" id="title" name="title" value="{title}" size="20" />
+                        <input type="button" id="clearbtn" value="新規入力" onclick="return clearname();" style="display:none;"  />
+                        <input type="button" id="savebtn" value="新規登録" onclick="return save();"  />
+                        <div style="float: right;">
+                            <input type="button" id="removebtn" value="削除" onclick="return removeitem();" style="display: none;"  />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="thlabel">ギャラリー一覧</th>
+                    <td class="tlefts"><div class="group_box" >{html_group}</div></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

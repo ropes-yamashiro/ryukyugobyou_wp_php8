@@ -1,0 +1,90 @@
+//================================================
+// 
+
+[1]
+
+%<p class="error">{error}</p>
+//mail,	equal,	メールを必ず同じにしてください,,mailagain
+checkbox_facility,	check_flist,	お問い合わせ施設を一つ以上選択してください。,,manage/config/form/checkbox_facility.txt
+name-sei,	need,	苗字を入力してください。
+name-mei,	need,	名前を入力してください。
+kana-sei,	need,	苗字のふりがなを入力してください。
+kana-mei,	need,	名前のふりがなを入力してください。
+kana-sei,	hirakata,	ひらがなで入力してください。
+kana-mei,	hirakata,	ひらがなで入力してください。
+//name_kana,	hirakata,	ひらがなで入力してください。
+zip,	need,	郵便番号を入力してください。
+//zip,	zip,	000-0000の形式で入力してください。
+pref,	need,	都道府県を一覧から選択してください。
+address1,need,	市区郡入力してください。
+address2,need,	町名・番地を入力してください。
+//place,need,	ビル・マンション名を入力してください。
+tel,	need,	電話番号を入力してください。
+//tel,	phoneall,	電話番号を入力してください。
+mail,	need,	メールアドレスを入力してください。
+mail,	mail,	適切なメールの形式で入力してください。
+//pic1,	need,	写真を添付してください。
+//donaibochi_kind_list, check_flist,	資料希望の堂内墓地をお選びください。,,manage/config/form/donaibochi_kind_list.txt
+
+
+%<p class="error2">{error}</p>
+@any,	入力エラーがありますのでご確認ください。
+
+
+[2]
+
+%<p class="error">{error}</p>
+//mail,	equal,	メールを必ず同じにしてください,,mailagain
+name-sei,	need,	苗字を入力してください。
+name-mei,	need,	名前を入力してください。
+kana-sei,	need,	苗字のふりがなを入力してください。
+kana-mei,	need,	名前のふりがなを入力してください。
+kana-sei,	hirakata,	ひらがなで入力してください。
+kana-mei,	hirakata,	ひらがなで入力してください。
+//name_kana,	hirakata,	ひらがなで入力してください。
+//zip,	need,	郵便番号を入力してください。
+//zip,	zip,	000-0000の形式で入力してください。
+//pref,	need,	都道府県を一覧から選択してください。
+//address1,need,	市区郡入力してください。
+//address2,need,	町名・番地を入力してください。
+//place,need,	ビル・マンション名を入力してください。
+tel,	need,	電話番号を入力してください。
+//tel,	phoneall,	電話番号を入力してください。
+mail,	need,	メールアドレスを入力してください。
+mail,	mail,	適切なメールの形式で入力してください。
+//pic1,	need,	写真を添付してください。
+//donaibochi_kind_list, check_flist,	資料希望の堂内墓地をお選びください。,,manage/config/form/donaibochi_kind_list.txt
+
+%<p class="error2">{error}</p>
+@any,	入力エラーがありますのでご確認ください。
+
+
+[3]
+
+%<p class="error">{error}</p>
+//mail,	equal,	メールを必ず同じにしてください,,mailagain
+name-sei,	need,	苗字を入力してください。
+name-mei,	need,	名前を入力してください。
+kana-sei,	need,	苗字のふりがなを入力してください。
+kana-mei,	need,	名前のふりがなを入力してください。
+kana-sei,	hirakata,	ひらがなで入力してください。
+kana-mei,	hirakata,	ひらがなで入力してください。
+//name_kana,	hirakata,	ひらがなで入力してください。
+//zip,	need,	郵便番号を入力してください。
+//zip,	zip,	000-0000の形式で入力してください。
+//pref,	need,	都道府県を一覧から選択してください。
+//address1,need,	市区郡入力してください。
+//address2,need,	町名・番地を入力してください。
+//place,need,	ビル・マンション名を入力してください。
+tel,	need,	電話番号を入力してください。
+//tel,	phoneall,	電話番号を入力してください。
+mail,	need,	メールアドレスを入力してください。
+mail,	mail,	適切なメールの形式で入力してください。
+kengaku_number,	need,	人数をご選択ください。
+kengaku_day,	need,	日程をご選択ください。
+kengaku_time,	need,	時間をご選択ください。
+//pic1,	need,	写真を添付してください。
+//donaibochi_kind_list, check_flist,	資料希望の堂内墓地をお選びください。,,manage/config/form/donaibochi_kind_list.txt
+
+%<p class="error2">{error}</p>
+@any,	入力エラーがありますのでご確認ください。

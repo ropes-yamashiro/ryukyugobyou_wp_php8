@@ -1,0 +1,76 @@
+﻿/*==================================
+ * Hudom CMS
+ * File version: 1.0.0
+ * Author: Terutaka.Takezaki
+ * Release: 2009/03/05
+ * History:
+ *================================*/
+
+* {
+	padding:0px;
+	margin:0px;
+}
+
+html
+{
+	overflow: scroll;
+}
+body 
+{
+	background-image: url(../image/back-off.jpg);
+	background-repeat: repeat;
+	font-family: Verdana, Arial, "MS UI Gothic", Osaka, Helvetica, sans-serif;
+}
+#pageback {
+	
+	width: auto;
+	background-image: url(../image/back.jpg);
+	background-repeat: repeat-x;
+}
+#page {
+	width :800px;
+	margin: 0 auto;
+	background-repeat: repeat-y;
+	background-image: url(../image/back-on.jpg);
+}
+#pageend {
+	width: 800px;
+	background-image: url(../image/back-e.gif);
+	height: 28px;
+	margin: 0 auto;
+}
+#pageleft {
+	float: left;
+	width: 10px;
+}
+#pageright {
+	float: right;
+	width: 10px;
+}
+#pageon {
+	height: 100%;
+	width: 780px;
+	float: left;
+	font-size:12px;
+	display:block;
+	padding:0px;
+	margin:0px;
+
+}
+
+
+.separate {
+	clear: both;
+}
+
+em{
+	color:#F70000;
+    font-style:normal;
+	font-weight:bold;
+}
+
+i{
+	color:#666666;
+	margin:5px 0 0 10px;
+    font-style:normal;
+}

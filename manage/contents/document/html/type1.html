@@ -1,0 +1,150 @@
+	<!--20150415 投稿画面で入力場所をミスするケースが多々確認させれるのでタイトル、カテゴリー、コンテンツ、写真1を必須に変更。システム的に必須とする必要はなし。文章1は必須にしない。 -->
+<!--<em>※「コンテンツ」「写真１」を入力してください。</em>-->	
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;{viewtype_name}</td></tr>
+		{hidden}
+	</table>
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput2">
+		<tr>
+			<th width="80" class="thlabel">コンテンツ<em>※</em></th>
+                        <td colspan=2 class="tlefts"><label><textarea rows="7" name="summary"  class="ckeditor" style="width:485px">{summary}</textarea></label>
+						<p class="caution">※「"」（ダブルクォーテーション）は誤作動の原因となりますので使用できません。</p>
+						</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真1<em>※</em></th>
+                        <td class="tlefts"><i>画像ファイルを選択してください。（gif,jpeg,jpgファイル）</i><br /><i>画像サイズは最大１メガバイトを目安にしてください。</i><br /><label>{img1}</label></td>
+                        <td  class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img1_pos value=0 {img1_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img1_pos value=1 {img1_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章1</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text1" rows="3"  class="ckeditor" style="width:485px">{text1}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真2</th>
+                        <td class="tlefts"><label>{img2}</label></td>
+                        <td  class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img2_pos value=0 {img2_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img2_pos value=1 {img2_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章2</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text2" rows="3"  class="ckeditor" style="width:485px">{text2}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真3</th>
+                        <td class="tlefts"><label>{img3}</label></td>
+                        <td  class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img3_pos value=0 {img3_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img3_pos value=1 {img3_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章3</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text3" rows="3"  class="ckeditor" style="width:485px">{text3}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真4</th>
+                        <td class="tlefts"><label>{img4}</label></td>
+                        <td class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img4_pos value=0 {img4_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img4_pos value=1 {img4_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章4</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text4" rows="3"  class="ckeditor" style="width:485px">{text4}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真5</th>
+                        <td class="tlefts"><label>{img5}</label></td>
+                        <td  class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img5_pos value=0 {img5_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img5_pos value=1 {img5_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章5</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text5" rows="3"  class="ckeditor" style="width:485px">{text5}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真6</th>
+                        <td class="tlefts"><label>{img6}</label></td>
+                        <td  class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img6_pos value=0 {img6_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img6_pos value=1 {img6_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章6</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text6" rows="3"  class="ckeditor" style="width:485px">{text6}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真7</th>
+                        <td class="tlefts"><label>{img7}</label></td>
+                        <td  class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img7_pos value=0 {img7_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img7_pos value=1 {img7_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章7</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text7" rows="3"  class="ckeditor" style="width:485px">{text7}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真8</th>
+                        <td class="tlefts"><label>{img8}</label></td>
+                        <td  class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img8_pos value=0 {img8_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img8_pos value=1 {img8_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章8</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text8" rows="3"  class="ckeditor" style="width:485px">{text8}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真9</th>
+                        <td class="tlefts"><label>{img9}</label></td>
+                        <td  class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img9_pos value=0 {img9_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img9_pos value=1 {img9_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章9</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text9" rows="3"  class="ckeditor" style="width:485px">{text9}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">写真10</th>
+                        <td class="tlefts"><label>{img10}</label></td>
+                        <td class="tlefts">写真の位置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<label><input type=radio name=img10_pos value=0 {img10_pos_0}>左</label>&nbsp;&nbsp;
+				<label><input type=radio name=img10_pos value=1 {img10_pos_1}>右</label>
+			</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">文章10</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="text10" rows="3"  class="ckeditor" style="width:485px">{text10}</textarea></label></td>
+		</tr>
+	</table>
+	<!-- 新規追加 -->
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput2">
+		<tr>
+			<th width="80" class="thlabel">ファイルの説明</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="descpdf1" rows="3"  class="ckeditor" style="width:485px">{descpdf1}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">リンク名</th>
+                        <td colspan=2  class="tlefts"><label><textarea name="descpdf" rows="3"  class="ckeditor" style="width:485px">{descpdf}</textarea></label></td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">ファイル</th>
+				<td class="tlefts"><label>{selpdf}<br /><i>ファイルを選択してください。（pdf,word,excelファイル）</i><br /><i>ファイル容量は最大１メガバイトを目安にしてください。</i></label></td>
+		</tr>
+	</table>
+

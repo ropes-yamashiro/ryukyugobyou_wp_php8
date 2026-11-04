@@ -1,0 +1,194 @@
+@begin err_container
+ <font color=red>{err}<br></font>
+@end
+
+@begin err_title
+タイトルを入力してください。<br>
+@end
+
+@begin err_img
+画像を選択してください。<br>
+@end
+
+@begin err_file_total
+一度に合計{size}以上はアップロードできません。<br>
+@end
+
+@begin err_file_size
+{size}以上のファイルはアップロードできません。<br>
+@end
+
+@begin err_pic
+写真{num}は、サイズが0のファイルが選択できません。<br>
+@end
+
+@begin err_ext
+写真{num}は、.{ext}のファイルは指定できません。<br>
+@end
+
+@begin hidden
+<input type=hidden name=type value="{type}"  >
+@end
+
+@begin file_exist
+{filename}<input type=hidden name={name}id value={fid} />
+&nbsp;&nbsp;<a href="?typex=icon&cmd=pic&pageid={pid}&param={fid}" target="_blank">表示</a>
+@end
+
+@begin file_nonexist
+<input type=file name={name} class="img_max100"  />
+@end
+
+@begin input_type
+&nbsp;<label><input type=radio name=type onClick="selbox(0,5);" value="0" {type0} />リンク</label>
+&nbsp;<label><input type=radio name=type onClick="selbox(1,5);" value="1" {type1} />ポップアップ</label>
+&nbsp;<label><input type=radio name=type onClick="selbox(2,5);" value="2" {type2} />ファイル</label>
+&nbsp;<label><input type=radio name=type onClick="selbox(3,5);" value="3" {type3} />タイトルのみ</label>
+&nbsp;<label><input type=radio name=type onClick="selbox(4,5);" value="4" {type4} />ブログへリンク</label>
+@end
+
+@begin input
+<!-- <script language="javascript" src="jscript/jquery.js"></script>
+<script language="javascript" src="jscript/editor/ckeditor.js"></script> -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+//更新データを保存する
+function saveonly(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "saveonly";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//更新データを保存する
+function iconsave(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "saveinput";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//項目を削除する
+function back(){
+    if(window.confirm('一覧に戻りますか？')){
+        document.formx.cmd.value = "list";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//コンテンツグループを変更する
+function ch_contents(){
+	document.formx.cmd.value = "ch_contents";
+    document.formx.submit();
+    return false;
+}
+
+// -->
+</SCRIPT>
+<style type="text/css">
+    .thcommand{
+        margin:0 0 15px 0;
+    }
+    .theader{
+        width:100%;
+        border: none;
+    }
+
+    .theader .tlefts{
+        padding-left: 10px;
+    }
+
+    .tinput2{
+        width:100%;
+        margin:0 0 15px 0;
+    }
+    input.method01{
+        margin:4px 0 4px 0;
+    }
+
+    .tinput2 {
+        border-collapse: separate;
+        border-spacing: 0px;
+        font-size: x-small;
+        line-height: 150%;
+    }
+
+    .tinput2 .thlabel {
+        width: 95px;
+        padding: 5px 10px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: right;
+        font-weight: normal;
+        background-color: #DDDDDD;
+    }
+
+    .tinput2 .tlefts {
+        padding: 5px 8px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #EEEEEE;
+    }
+
+    .grouplist {
+        padding-right: 20px;
+    }
+    .errmes{
+        margin-bottom: 15px;
+    }
+
+</style>
+<form method=POST action="?typex=icon" name="formx" enctype="multipart/form-data" class="detail_common icondetail">
+    <input type=hidden name="pageid" value="{pid}" />
+	<input type=hidden name="pageno" value="{pageno}" />
+	<input type=hidden name="count" value="{count}" />
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" />
+	<input type=hidden name="dataid" value="{id}" />
+    <input type=hidden name="sort" value="{sort}" />
+    
+    <div id="contents" class="clearfix">
+        <article>
+          <div class="ttl_area">
+          <h2 class="l_cmn_ttl">「アイコン画像」登録・編集</h2>
+          </div>
+          
+        {err}
+          <section class="page_contents">
+          <div class="container">
+          
+          <div class="block">
+              <p class="ttl pat01">タイトル<span class="redreq">必須</span></p>
+              <div class="in_txtOuter">
+                 <label class="in_txt">
+                  <input class="in_txtItem" type="text" placeholder="タイトルを追加" name="title" value="{title}">
+                 </label>
+            </div>
+          </div>
+          
+          <div class="block">
+              <p class="ttl pat01">写真<span class="redreq">必須</span></p>
+              <div class="inner">
+                <p class="btn_file">{thumbnail}</p>
+                <p class="cou sp_mt15">画像ファイルを選択してください。<br>（gif,jpeg,jpgファイル）画像サイズは最大１メガバイトを目安にしてください。</p>
+           </div>
+              
+          </div>
+              
+          </div>
+          </section>
+          
+          <ul class="btn_save">
+          <li><a href="javascript:void(0);" onclick="return saveonly()">保存</a></li>
+          <li><a href="javascript:void(0);" onclick="return iconsave()">保存して一覧へ</a></li>
+          <li><a href="javascript:void(0);" onclick="return back();">一覧へ</a></li>
+          </ul>
+          
+        </article>
+    </div>
+</form>
+@end

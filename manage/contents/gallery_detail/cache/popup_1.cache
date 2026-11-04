@@ -1,0 +1,80 @@
+a:2:{s:9:"linkblock";s:658:"
+
+<form name="formx" method="post" >
+<input type="hidden" name="id" />
+<input type="hidden" name="gfix" value="{gfix}" />
+<div class="prev_next clearfix">
+<div class="left"><p><a href="javascript:void(0);" onclick="return move_img('{backid}','{popup_back_width}','{popup_back_height}');"><img src="img/img-gallery/prev.gif" alt="前の写真へ" width="83" height="21" border="0" /></a></p>
+</div>
+
+<div class="right"><p><a href="javascript:void(0);" onclick="return move_img('{nextid}','{popup_next_width}','{popup_next_height}');"><img src="img/img-gallery/next.gif" alt="次の写真へ" width="83" height="21" border="0" /></a></p>
+</div>
+</div>
+</form>
+";s:4:"page";s:2225:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift-jis" />
+<title>{title_text}</title>
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<link href="css/gallery_popup.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="manage/jscript/jquery.js"></script>
+<script type="text/javascript" src="manage/jscript/user/gallery.js"></script>
+</head>
+<body> 
+<!-- ラッパー --> 
+<div id="popup_wrapper">
+<div id="contents" >
+
+<dl class="image">
+<dt><span><img src="{popup_img_link}" alt="{title_text}" width="{popup_img_width}" height="{popup_img_height}" /></span></dt>
+<dd class="img_text1" style="width:{popup_img_width}px;">{title_text}</dd>
+<dd class="img_text2" style="width:{popup_img_width}px;">{comment1}</dd>
+</dl>
+
+{title} = タイトル<br />
+{comment1} = コメント１<br />
+{comment2} = コメント２<br />
+<br />
+{popup_img_link} = ポップアップ用のイメージ<br />
+{popup_img_width} = イメージの横幅、<br />
+{popup_img_height} = イメージの縦幅、<br />
+<br />
+{img_width} = ポップアップで使用できるイメージの最大横幅<br />
+{img_height} = ポップアップで使用できるイメージの最大縦幅<br />
+<br />
+{margin_top} = マージン上<br />
+{margin_right} = マージン右<br />
+{margin_bottom} = マージン下<br />
+{margin_left} = マージン左<br />
+<br />
+#linkblock
+<br />
+追加変数<br />
+{back_link} = 前の画像へのリンク<br />
+{next_link} = 次のリンク<br />
+{backid}<br />
+{nextid}<br />
+{popup_back_height}<br />
+{popup_next_height}<br />
+
+<!-- ボタンの部分 -->
+{linkblock}
+<!-- /ボタンの部分 -->
+
+
+<!-- 閉じボタン・トップリンク -->
+<div class="close2">
+<div class="pop_over"><a href="javascript:window.close()"><img src="img/img-gallery/popup-btn_01.gif" alt="ウィンドウを閉じる" width="98" height="24" /></a></div>
+ </div>
+ </div>
+
+</div> 
+<!-- /閉じボタン・トップリンク -->
+
+<!--　wrapper end　-->
+
+</body>
+</html>
+";}

@@ -1,0 +1,179 @@
+//修正後、width={x},height={y},
+//<a href="?typex=topic" 
+//    onclick="window.open('?typex=topic&cmd=pic&pageid={pageid}&param={fid}',
+//    '{name}', 'width={x},height={y},scrollbars=no,resizable=no,status=yes');return false;" target="_blank" >
+    
+    
+@begin line
+<p>
+    <img src="?typex=topic&cmd=pic&pageid={pageid}&param={fid}" width="{xmax}" border="0" /></a>
+</p>
+@end
+
+@begin window
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>{title}</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="css/topic_js.css" rel="stylesheet" type="text/css" />
+<link href="../css/layout.css" rel="stylesheet" type="text/css" />
+<link href="../css/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/topic/popup.js"></script>
+<script type="text/javascript" src="../js/window.js"></script>
+
+</head>
+
+<body class="topic-pop">
+<div id="wrapper">
+<!--コンテンツここから -->
+<div id="contents">
+<h1>{year}/{month}/{day}</h1>
+<h2>{title}</h2>
+<div class="left">
+{left}
+</div>
+<div class="right">
+<p>{contents}</p>
+</div>
+<div id="footer">
+<ul>
+<li class="mthod01"><a href="javascript:window.close();"><img src="../img/img-topic/popup-btn_01.gif" width="90" height="23" alt="close" /></a></li>
+</ul>
+</div>
+</div>
+<!--コンテンツココまで -->
+
+<!--フッタココから -->
+<!--フッタココまで -->
+</div></body>
+</html>
+@end
+
+@begin window-noimage
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>{title}</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/topic_js.css" rel="stylesheet" type="text/css" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.toyonaka-shakyo.or.jp/js/topic/popup.js"></script>
+<script type="text/javascript" src="http://www.toyonaka-shakyo.or.jp/js/window.js"></script>
+
+</head>
+
+<body class="topic-pop">
+<div id="wrapper">
+<!--コンテンツここから -->
+<div id="contents">
+<h1>{year}/{month}/{day}</h1>
+<h2>{title}</h2>
+<div class="center">
+<p>{contents}</p>
+</div>
+<div id="footer">
+<ul>
+<li class="mthod01"><a href="javascript:window.close();"><img src="http://www.toyonaka-shakyo.or.jp/img/img-topic/popup-btn_01.gif" width="90" height="23" alt="close" /></a></li>
+</ul>
+</div>
+</div>
+<!--コンテンツココまで -->
+
+<!--フッタココから -->
+<!--フッタココまで -->
+</div></body>
+</html>
+@end
+
+
+
+@begin window-noimage3
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>社会福祉協議会について｜豊中市社会福祉協議会</title>
+<meta name="Keywords" content="豊中市社会福祉協議会,豊中市社協,とよなか社協,ボランティアセンター" />
+<meta name="Description" content="豊中市社会福祉協議会はボランティアセンターや各種福祉サービスなど豊中市の地域福祉を推進する団体です。" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/default.css" rel="stylesheet" type="text/css" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/popup.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="saiyo3">
+<!-- ラッパー -->
+
+
+
+<!-- コンテナ -->
+
+<!-- コンテンツ -->
+<div id="contents">
+<p class="top">{title}</p>
+<div class="in">
+
+{contents}
+
+</div>
+<p class="btn"><a href="javascript:close();"><img src="http://www.toyonaka-shakyo.or.jp/img/img-saiyo3/btn_close.gif" width="90" height="23" alt="閉じる" /></a></p>
+</div>
+<!-- （終）コンテンツ -->
+
+
+</body>
+</html>
+@end
+
+
+@begin window-noimage4
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>社会福祉協議会について｜豊中市社会福祉協議会</title>
+<meta name="Keywords" content="豊中市社会福祉協議会,豊中市社協,とよなか社協,ボランティアセンター" />
+<meta name="Description" content="豊中市社会福祉協議会はボランティアセンターや各種福祉サービスなど豊中市の地域福祉を推進する団体です。" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/default.css" rel="stylesheet" type="text/css" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="http://www.toyonaka-shakyo.or.jp/css/popup.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="saiyo3">
+<!-- ラッパー -->
+
+
+
+<!-- コンテナ -->
+
+<!-- コンテンツ -->
+<div id="contents">
+<p class="top">{title}</p>
+<div class="in">
+
+{contents}
+
+</div>
+<p class="btn"><a href="javascript:close();"><img src="http://www.toyonaka-shakyo.or.jp/img/img-saiyo3/btn_close.gif" width="90" height="23" alt="閉じる" /></a></p>
+</div>
+<!-- （終）コンテンツ -->
+
+
+</body>
+</html>
+@end

@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link href="../login_caution/login_caution_iframe.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+BODY {
+	font-family: Verdana, Arial, "MS UI Gothic", Osaka, Helvetica, sans-serif;
+	background-color: #EEE;
+	margin: 0px;
+	padding: 0px;
+	background-image: none;
+}
+A         { color: #36C; }
+A:link    { text-decoration: none; }
+A:visited { text-decoration: none; }
+A:hover   { text-decoration: underline; color: #F30; }
+H3 {
+	margin: 0px;
+	padding: 0px;
+}
+td {
+	font-size: 12px;
+	line-height: 1em;
+}
+.message{
+ 	font-size: 12px;
+	font-weight: normal;
+	margin: 10px;
+	padding: 0px;
+	padding-top:10px;
+}
+.error {
+	font-size: 12px;
+	font-weight: normal;
+	color: #F30;
+	margin: 10px;
+	padding: 0px;
+	padding-top:10px;
+}
+#loginform {
+	width: 390px;
+	margin: 0px;
+	padding: 10px;
+}
+#loginform input {
+	font-family: Verdana, Arial, "MS UI Gothic", Osaka, Helvetica, sans-serif;
+}
+#loginform .id_pwd {
+	font-family: Verdana, Arial, "MS UI Gothic", Osaka, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	font-size: 10px;
+	line-height: 10px;
+	height: 18px;
+	width: 200px;
+	padding: 2px;
+	ime-mode: inactive;
+	border: 1px #CCC solid;
+	color: #333;
+	background-color: #FFF;
+}
+#loginform .id_pwd_ov {
+	font-family: Verdana, Arial, "MS UI Gothic", Osaka, Helvetica, sans-serif;
+	letter-spacing: 2px;
+	font-size: 10px;
+	line-height: 10px;
+	height: 18px;
+	width: 200px;
+	padding: 2px;
+	ime-mode: inactive;
+	border: 1px #CCC solid;
+	color: #333;
+	background-color: #E9E9E9;
+}
+#loginform .submit {
+	letter-spacing: 1px;
+	font-size: 10px;
+	line-height: 10px;
+	width: 100px;
+	padding: 3px;
+	color: #333;
+}
+//-->
+</style>
+<title>Login</title>
+</head>
+<body>
+<br>
+<center>
+<div id="login">
+<div id="login_inner">
+<h3 class="{type}">{message}</h3>
+<form method="POST" action="admin.php" target="_top" id="loginform">
+<table border="0" align="center" cellpadding="5" cellspacing="0">
+<input type="hidden" value="login" name="typex" />
+
+<tr>
+	<td align="right">アカウント:</td>
+	<td colspan="2"><input type="text" name="userid" value="{userid}" class="id_pwd" onFocus="this.className='id_pwd_ov';" onBlur="this.className='id_pwd'"></td>
+</tr>
+<tr>
+	<td align="right">パスワード:</td>
+	<td colspan="2"><input type="password" name="passwd" class="id_pwd" onFocus="this.className='id_pwd_ov';" onBlur="this.className='id_pwd'"></td>
+</tr>
+<tr>
+	<td align="right"></td>
+	<td></td>
+	<td align="right">
+	<input type="submit" value="ログイン&gt;&gt;" class="submit">	</td>
+</tr>
+</table>
+</form>
+<iframe id="coution" src="../../login_caution/cms_login_caution.html" frameborder="0" scrolling="no" title="cms管理画面注意書き">インラインフレーム対応のブラウザでご覧下さい。</iframe>
+<div id="copy"><a href="http://www.copyright.com" target="_blank">&copy;&nbsp;@copyright@&nbsp;</a></div>
+</div>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@begin noval
+<center>データがありません</center>
+@end
+
+@begin paging
+&nbsp;<a href="?" onClick="return pagech({no});">{view}</a>
+@end
+
+@begin line		
+<div class="list_area">
+	<table class="list_contents">
+		<tr>
+			<td class="c2">
+				<a href="javascript:void(0)" onClick="return detail({id});" class="linkarea">
+				<p class="kiji_title">{userid}</p>
+				<div class="kiji_info"><p class="kiji_user">ユーザー名/{username}</p><p class="kiji_type">パスワード/{passwd}</p></div>
+				</a>
+			</td>
+			<td class="c3">
+				<p class="btn_delete"><a href="javascript:void(0)" onclick="return delline({id},'{userid}');"><img src="img/img-common/btn_delete.png" alt="削除" class="img_max100" /></a></p>
+			</td>
+		</tr>
+	</table>
+</div>
+@end
+
+@begin page
+<SCRIPT TYPE="text/javascript">
+//ページを変更する
+function pagech(no){
+	document.formx.pageno.value=no;
+	document.formx.submit();
+	return false;
+}
+
+//項目を削除する
+function delline(did,title){
+    if(window.confirm(title + 'を削除しますか？')){
+        document.formx.cmd.value = "delline";
+        document.formx.param.value = did;
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+//新着情報を作成する
+function newuser(){
+    document.formx.cmd.value = "new";
+    document.formx.submit();
+    return false;
+}
+
+//詳細を表示する
+function detail(pid){
+    document.formx.cmd.value = "detail";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+</SCRIPT> 
+<form method="POST" name=formx action="?typex=passwd" class="list_common passwordlist">
+	<input type=hidden name="pageno" value="{pageno}" />
+	<input type=hidden name="cmd" value="list" />
+	<input type=hidden name="param" />
+  <div id="contents" class="clearfix">
+    <article>
+      <div class="ttl_area">
+      <h2 class="l_cmn_ttl">「パスワード設定」</h2>
+      <p class="btn_create"><a href="javscript:void(0);" onclick="return newuser();"><img src="img/img-common/btn_create.png" alt="新規作成" class="img_max100" /></a></p>
+      </div>
+      
+		<section>
+		{table}
+      	</section>
+      
+    </article>
+  </div>
+</form>
+@end

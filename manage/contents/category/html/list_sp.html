@@ -1,0 +1,199 @@
+@begin err_access
+<font color="red">不正アクセスエラー：権限がありません</font>
+@end
+
+@begin err_cmd
+<font color="red">不正アクセスエラー：{cmd}は定義されていません</font>
+@end
+
+@begin err_listview
+<p style='color:red'>{value}</p><br>
+@end
+
+
+@begin paging
+<li><a class="page-numbers" href="javascript:void(0);" onClick="return ch_page({no});">{view}</a></li>
+@end
+@begin paging_current
+<li><span class="page-numbers current">{view}</span></li>
+@end
+
+@begin file_exist
+<input type=hidden name="{name}" value="{fname}" />
+&nbsp;&nbsp;{fname}&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:;" onClick="delpic('{fid}','{fname}'); return false;">削除</a>
+&nbsp;&nbsp;<a href="../{savepath}/{fname}" target="_blank" >表示</a>
+@end
+
+@begin file_nonexist
+<input type=file name='{name}' onFocus="this.className='on';" onBlur="this.className='off';" size="35"  />
+@end
+
+@begin noval
+<tr class="color1"><td colspan="5"><center>データがありません</center></td></tr>
+@end
+
+@begin line		
+				<div class="list_area">
+				<table class="list_contents">
+				<tr>
+					<td class="c1" rowspan="2"><i>表示</i>
+						 <label class="in_check checkbox-red in_check-care">
+						  <input type="checkbox" name="id{id}" {visible} value="1" onclick="return ch_bool({id});"><span></span></label>
+					</td>
+					<td class="c2" rowspan="2">
+					<a href="javascript:void(0);" onclick="return detail({id});" class="linkarea">
+					<p class="kiji_title">{title}</p>
+					<div class="kiji_info"><p class="kiji_user">出力クラス/{class}</p><p class="kiji_type">表示用タイトル/{webtitle}</p></div>
+					</a>
+					<div class="linkarea2">
+					<p class="btn_delete"><a href="javascript:void(0);" onclick="return del_line('{id}','{title}');"><img src="img/img-common/btn_delete.png" alt="削除" class="img_max100" /></a></p>
+					</div>
+					</td>
+					<td class="c3">
+						<p class="up"><a href="javascript:void(0);" onclick="return return up_line('{sort}');"><img src="img/img-common/btn_up.png" alt="上へ" /></a></p>
+					</td>
+				</tr>
+				<tr>
+				<td class="c3 tddown">
+						<p class="down"><a href="javascript:void(0);" onclick="return down_line('{sort}');"><img src="img/img-common/btn_up.png" alt="下へ" /></a></p>
+					</td>
+				</tr>
+				</table>
+				</div>
+@end
+
+
+@begin page
+<SCRIPT TYPE="text/javascript">
+<!--
+//ページを変更する
+function ch_page(no){
+    document.formx.action = "admin.php";
+    document.formx.target = "";	
+	document.formx.pageno.value=no;
+	document.formx.submit();
+	return false;
+}
+
+//表示の数を変える
+function ch_count(){
+    document.formx.action = "admin.php";
+    document.formx.target = "";
+	document.formx.pageno.value=1;
+    document.formx.submit();
+    return false;
+}
+
+//コンテンツを変える
+function ch_contents(cd){
+    document.formx.action = "admin.php";
+    document.formx.target = "";
+	document.formx.pageno.value=1;
+    document.formx.submit();
+    return false;
+}
+
+
+//項目を削除する
+function del_line(cd,title){
+    if(window.confirm(title + 'を削除しますか？')){
+        document.formx.action = "admin.php";	
+        document.formx.target = "";	
+        document.formx.cmd.value = "del_line";
+        document.formx.param.value = cd;
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+//新着情報を作成する
+function newitem(){
+    document.formx.action = "admin.php";	
+    document.formx.target = "";	
+    document.formx.cmd.value = "newitem";
+    document.formx.submit();
+    return false;
+}
+
+//上に移動する
+function up_line(cd){
+    document.formx.action = "admin.php";	
+    document.formx.target = "";	
+    document.formx.cmd.value = "up_line";
+    document.formx.param.value = cd;
+    document.formx.submit();
+    return false;
+}
+
+//下に移動する
+function down_line(cd){
+    document.formx.action = "admin.php";	
+    document.formx.target = "";	
+    document.formx.cmd.value = "down_line";
+    document.formx.param.value = cd;
+    document.formx.submit();
+    return false;
+}
+
+//表示を切り替える
+function ch_bool(cd){
+    document.formx.action = "admin.php";	
+    document.formx.target = "";	
+    document.formx.cmd.value = "ch_bool";
+    document.formx.param.value = cd;
+    document.formx.submit();
+    return false;
+}
+
+//詳細を表示する
+function detail(cd){
+    document.formx.action = "admin.php";	
+    document.formx.target = "";	
+    document.formx.cmd.value = "detail";
+    document.formx.param.value = cd;
+    document.formx.submit();
+    return false;
+}
+
+// -->
+</SCRIPT> 
+<form method="POST" name=formx action="?typex={typex}" class="list_common categorylist">
+	{hidden}
+	<input type=hidden name="cmd" value="listview" />
+	<input type=hidden name="param" />
+	<div id="contents" class="clearfix">
+		<article>
+			<div class="ttl_area">
+			<h2 class="l_cmn_ttl">「カテゴリー設定」</h2>
+			<p class="btn_create"><a href="javascript:void(0);" onclick="return newitem();"><img src="img/img-common/btn_create.png" alt="新規作成" class="img_max100" /></a></p>
+			</div>
+
+			<div class="cont_select">
+			<div class="block container">
+			  <p class="ttl pat02">ブログ</p>
+			  <div class="in_selectOuter in_selectOuter-sbs">
+				  <div class="in_select in_select-sbs in_select-sm js_select">
+				   <select name="contentsid" id="userid" onchange="return ch_contents();">
+					   {contentsid}
+				   </select>
+				  </div>
+			  </div>
+			</div>
+			</div>
+
+			<section>
+				{table}
+			</section>
+
+
+			<div class="page_navi clearfix">
+				<ul class="page-numbers clearfix">
+					{paging}
+				</ul>
+				</div>
+
+		</article>
+	</div>
+</form>
+@end

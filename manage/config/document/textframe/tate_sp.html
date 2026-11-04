@@ -1,0 +1,57 @@
+
+@begin main
+<!--
+<div id="category">
+	<ul class="category">
+		{category}
+		<li><em><a href="document.php?pid={gid}">すべての記事</a></em></li></ul>
+	</ul>
+</div>
+-->
+<section id="id{id}" class="block01">
+	<div class="block01-head">
+		<p class="day">{view_year}/{view_month}/{view_day}</p>
+      <div class="block01-category">
+          {category}
+      </div>
+      </div>
+      <div class="block01-title">
+          <h3>{title}</h3>
+      </div>
+	<div class="block01-body">
+		<p class="user"><a href="{link}">[{username}]</a></p>
+		<section class="top"{display-if(summary)}>{summary}</section>
+		{contents}
+    <dl class="{userid}">
+    <dt><img src="img/img-blog/blog_ttl_02.png" width="257" height="82" alt="店舗のご案内"/></dt>
+    <dd><a href="/shop-{userid}.html">{username}</a></dd>
+    </dl>
+	</div>
+    
+    
+    
+</section>
+@end
+
+@begin pdf
+<section class="pdf_block">
+<section class="text">{descpdf1}</section>
+<section class="link"><a href="../manage/contents/document/pdf/{selpdf}">{descpdf}</a></section>
+</section>
+@end
+
+@begin image
+<p class="{image-pos} gallery">
+<img src="{img}" width="{view-x_sp}" height="{view-y_sp}"/></p>
+@end
+
+@begin item
+<section class="block02">
+<section class="{text-pos}">{text}</section>
+{image-left}{image-right}
+</section>
+@endimage-left
+
+@begin category
+<li><em><a href="{link}">{webtitle}</a></em></li>
+@end

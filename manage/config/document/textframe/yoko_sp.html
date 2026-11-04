@@ -1,0 +1,31 @@
+@begin main
+<!-- 1つの記事 -->
+<section id="id{id}" class="block01 yoko">
+<p class="day">{view_year}/{view_month}/{view_day}</p>
+<h2>{title}</h2>
+<section class="top"{display-if(summary)}>{summary}</section>
+<section class="in_block"><ul class="picture">{contents}</ul></section>
+</section>
+<!-- /1つの記事 -->
+@end
+
+@begin pdf
+<section class="pdf_block">
+<section class="text">{descpdf1}</section>
+<section class="link"><a href="../manage5/contents/document/pdf/{selpdf}">{descpdf}</a></section>
+</section>
+@end
+
+@begin image
+<!-- 写真 -->
+<li class="gallery"><a href="{img}" target="_blank">
+<img src="{img}"  height = "{view-y_sp}" width="{view-x_sp}" style='border:0;' /></a></li>
+<!-- /写真 -->
+@end
+
+
+@begin item
+<!-- 写真単位 -->
+{image-left}{image-right}
+<!-- /写真単位 -->
+@end

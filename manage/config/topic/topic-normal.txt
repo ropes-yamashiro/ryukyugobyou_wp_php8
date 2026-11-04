@@ -1,0 +1,10 @@
+<div class="in clearfix">
+<div class="left">
+<p class="time">{year}/{month}/{day}</p>
+{thumbnail}
+</div>
+<dl>
+<dt>{title}</dt>
+<dd>{summary}</dd>
+</dl>
+</div>

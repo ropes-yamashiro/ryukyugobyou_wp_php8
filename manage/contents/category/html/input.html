@@ -1,0 +1,110 @@
+<SCRIPT TYPE="text/javascript">
+<!--
+//詳細のプレビュー
+function preview(){
+    document.formx.cmd.value = "preview";
+    document.formx.action = "../document.php";
+    document.formx.target = "_blank";
+    document.formx.submit();
+    return false;
+}
+
+//更新データを保存する
+function chtype(){
+   	document.formx.cmd.value = "chtype";
+   	document.formx.action = "admin.php";
+	document.formx.target = "";
+    document.formx.submit();
+    return false;
+}
+//更新データを保存する
+function save(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "save";
+        document.formx.target = "";
+        document.formx.action = "admin.php";
+        document.formx.submit();
+    }
+    return false;
+}
+
+function savelist(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "savelist";
+        document.formx.target = "";
+        document.formx.action = "admin.php";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//項目を削除する
+function back(){
+    if(window.confirm('一覧に戻りますか？')){
+        document.formx.cmd.value = "listview";
+        document.formx.action = "admin.php";
+        document.formx.target = "";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//対象ファイルを削除する
+function delpic(fid,fname){
+    if(window.confirm(fname + 'を削除しますか?')){
+        document.formx.cmd.value = "delfile";
+        document.formx.action = "admin.php";
+        document.formx.param.value = fid;
+        document.formx.target = "";
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+// -->
+</SCRIPT> 
+<form method=POST action="?typex=document" name="formx" enctype="multipart/form-data">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;カテゴリー設定：
+		<input type=submit id=btm value="保存のみ" onclick="return save();" />
+		<input type=submit id=btm value="保存して一覧へ戻る" onclick="return savelist();" />
+		<input type=submit id=Submit1 value="一覧へ戻る" onclick="return back();" /></td></tr>
+	</table>
+ 	{hidden}
+ 	{old_data}
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" />
+	<input type=hidden name="id" value="{id}" />
+	<br>
+	
+	{err}
+    <em>※は必須入力項目です。</em>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;基本データ</td></tr>
+	</table>
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput">
+		<tr>
+			<th width="100">カテゴリー名<em>※</em></th><td>&nbsp;<label><input type=text name=title onFocus="this.className='on';" onBlur="this.className='off'" value="{title}" style="width:400px" /></label>
+            <br /><i>(例)営業担当</i>
+            </td>
+		</tr>
+		<tr>
+			<th width="100">表示用タイトル<em>※</em></th><td>&nbsp;<label><input type=text name=webtitle onFocus="this.className='on';" onBlur="this.className='off'" value="{webtitle}" style="width:400px" /></label>
+            <br /><i>(例)山田太郎</i>
+            </td>
+		</tr>
+		<tr>
+			<th width="100">ブログ</th>
+			<td>
+			&nbsp;<select name=contentsid onFocus="this.className='on';" onBlur="this.className='off'">{contentsid}</select>
+			</td>
+		</tr>
+		<tr>
+			<th width="100">表示設定</th><td>&nbsp;<label><input type=checkbox name=visible value="1" size="37" {visible_1} />ホームページに表示する</label></td>
+		</tr>
+	</table>
+	<br>
+
+	<div>&nbsp;</div>
+</form>

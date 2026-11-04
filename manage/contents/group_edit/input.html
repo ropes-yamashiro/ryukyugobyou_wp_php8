@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="css/design.css" rel="stylesheet" type="text/css" />
+        <link href="css/locate.css" rel="stylesheet" type="text/css" />
+        <script language="javascript" src="jscript/jquery.js"></script>
+        <script TYPE="text/javascript">
+            <!--
+
+            //■初期化関数
+            $(function(){
+                if({firstclose}){
+                    window.parent.close_popup();
+                }
+            });
+
+
+
+
+            //データを保存する
+            function save(){
+                if(window.confirm('保存しますか？')){
+                    document.formx.cmd.value = "save";
+                    document.formx.submit();
+                }
+                return false;
+            }
+
+
+            function closeact(){
+                window.close();
+            }
+
+            // -->
+        </script>
+        <style type="text/css">
+            html{
+                overflow:auto;
+            }
+            body{
+                background: none;
+                background-color: #FFF;
+                padding: 0px;
+            }
+            .thcommand{
+                margin:0 0 15px 0;
+            }
+            .theader{
+                width:100%;
+                border: none;
+            }
+
+            .theader .tlefts{
+                padding-left: 10px;
+            }
+
+            .tinput2{
+                width:100%;
+                margin:0;
+            }
+
+            .tinput2 {
+                border-collapse: separate;
+                border-spacing: 0px;
+                font-size: x-small;
+                line-height: 150%;
+            }
+
+            .tinput2 .thlabel {
+                width: 80px;
+                padding: 5px 10px 5px 10px;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                text-align: right;
+                font-weight: normal;
+                background-color: #DDDDDD;
+            }
+
+            .tinput2 .tlefts {
+                padding: 5px 8px 5px 10px;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                background-color: #EEEEEE;
+            }
+            .popcenter{
+                width:100%;
+                text-align: center;
+            }
+            .grouplist{
+                width:100%;
+                display: inline;
+                float:left;
+                margin:0 10px 0 0;
+
+            }
+            .group_box{
+                overflow: auto;
+                height:215px;
+            }
+            .grouplist input{
+                margin-right: 5px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <form action="admin.php" method="POST" name="formx" enctype="multipart/form-data" id="formx">
+            <div>
+                <input type="hidden" name="typex" value="group_edit" />
+                <input type="hidden" name="id" id="id" value="{id}" />
+                <input type="hidden" name="cmd" id="cmd" />
+                <input type="hidden" name="move_size" id="move_size" />
+                <input type="hidden" name="move_type" id="move_type" />
+            </div>
+            {html_err}{html_state}
+
+            <table cellpadding="0" cellspacing="0" class="theader">
+                <tr><td class="tlefts">グループ登録</td></tr>
+            </table>
+            <table  cellpadding="0" cellspacing="0" class="tinput2">
+                <tr>
+                    <th class="thlabel">グループ名</th>
+                    <td class="tlefts">
+                        <input type="text" id="title" name="title" value="{title}"  />
+                        <input type="button" id="savebtn" value="新規登録" onclick="return save();"  />
+                        <p>{html_sort}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="thlabel">グループ一覧</th>
+                    <td class="tlefts"><div class="group_box">{html_group}</div></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

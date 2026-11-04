@@ -1,0 +1,430 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/base_blog.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="shift_jis">
+	
+<!-- 公開時には必ず削除すること！！！！！！-->
+<!-- 公開時には必ず削除すること！！！！！！-->
+<meta name="robots" content="noindex,nofollow">
+<!-- 公開時には必ず削除すること！！！！！！-->
+<!-- 公開時には必ず削除すること！！！！！！-->	
+<!-- InstanceBeginEditable name="doctitle" -->
+<!-- 公開時には必ず削除すること！！！！！！-->
+<!-- 公開時には必ず削除すること！！！！！！-->
+<meta name="robots" content="noindex,nofollow">
+<!-- 公開時には必ず削除すること！！！！！！-->
+<!-- 公開時には必ず削除すること！！！！！！-->
+<title>ブログ2｜○○○○○株式会社</title>
+<meta name="description" content="○○○○○○○○○○○○○○○○○○" />
+<meta name="Keywords" content="○○○○○○○○○○○○○○○○○" />
+<!-- InstanceEndEditable -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="content-language" content="ja">
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- master css 編集不可 -->
+<!--共通部分-->
+<link href="css/master_pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:992px)" />
+<link href="css/master_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+<!--コーディングファイル-->
+<link href="css/default_pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:992px)" />
+<link href="css/default_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+<link href="css/layout_pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:992px)" />
+<link href="css/layout_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+	
+<!-- GoogleAnalytics -->
+<!-- 公開時には必ずコメント外すこと！！！！！！-->
+<!-- 公開時には必ずコメント外すこと！！！！！！-->
+<!--<script type="text/javascript" src="js/analytics.js"></script>-->
+<!-- 公開時には必ずコメント外すこと！！！！！！-->
+<!-- 公開時には必ずコメント外すこと！！！！！！-->
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!-- エフェクト -->
+<script type="text/javascript" src="js/effect.js"></script>
+<!--ハンバーガーメニュー -->
+<script type="text/javascript" src="js/jquery.slideMenu.js"></script>
+<!-- スムーズスクロール -->
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<!-- TOPへ -->
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+<!--ヘッダー固定-->
+<script type="text/javascript" src="js/hide-header.js"></script>
+<!--ポップアップ-->
+<script type="text/javascript" src="js/popup.js"></script>
+<!--スマホヘッダ動き-->
+<script type="text/javascript" src="js/scroll_sp.js"></script>
+<!--ブラウザー別css-->
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+<!--アコーディオン用-->
+<script type="text/javascript" src="js/jquery.accordion.js"></script>
+<script type="text/javascript">
+//グローバルナビ モーダルウィンドウ処理
+      var ua = navigator.userAgent;
+      if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 
+    && ua.indexOf('Mobile') > 0) {
+      } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+            // タブレット用の処理
+			document.write('<script type="text/javascript" //src="js/tb_modal.js"><\/script>');
+      } else {
+            // PC用の処理
+			document.write('<script type="text/javascript" //src="js/pc_modal.js"><\/script>');
+      }
+</script>
+
+<!-- ファビコン -->
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+
+<!--webフォント-->
+<!--はんなり明朝-->
+<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
+<!--Notosan-->
+<link href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" -->
+<link href="css/blog_pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:992px)" />
+<link href="css/blog_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+<link rel="stylesheet" type="text/css" href="manage/css/jquery.lightbox-0.5.css" media="screen" />
+
+<script type="text/javascript" src="js/dateformat.js"></script>
+<!-- ブログフィード表示用 -->
+<script type="text/javascript" src="js/W3CDTF.js"></script>
+<!-- ブログフィード表示用 -->
+<script type="text/javascript" src="js/jquery.jfeed.js"></script>
+<!-- ブログフィード表示用 -->
+<script type="text/javascript" src="js/jquery.cms.js"></script>
+<!-- ブログフィード表示＆カテゴリ別件数表示用 -->
+<script type="text/javascript">
+
+function goPage(page, pid, cid, param){
+		
+//	var cmd = ( param == "0" ? "" : "anchor");
+//	var url = "./document.php?pno=" + page + "&pid=" + pid + "&cid=" + cid + "&cmd=" + cmd + "&param=" + param + "&ajax=1";
+	var url = "./document.php?pno=" + page + "&pid=" + pid + "&cid=" + cid + "&param=" + param + "&ajax=1";
+	
+	$.ajax({
+		url: url,
+		dataType: 'html',
+		success: function(html){
+			$("#document").append(html);
+		},
+		error: function(){
+			alert("データの読み込みに失敗しました");
+		}
+	})
+}
+
+
+
+//$(document).ready(function () {
+//	var cid = $("#cid").val() || 0;
+//	var param = $("#param").val() || 0;
+//	goPage(1,1,cid,param);
+//});
+</script>
+
+<script type="text/javascript" src="manage/jscript/jquery.lightbox-0.5.js" charset="UTF-8"></script>
+<script type="text/javascript">
+$(function() {
+    $('.gallery a').lightBox();
+});
+</script>
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="parameter" type="text" value="kasou_common blog " -->
+<!-- InstanceParam name="footer_pat01" type="boolean" value="true" -->
+<!-- InstanceParam name="footer_pat02" type="boolean" value="false" -->
+</head>
+
+<body class="kasou_common blog ">
+<div class="wrapper"> 
+  
+  <!--header-->
+  <header class="container-fluid" id="header">
+    <div id="hed_wrp"> 
+      
+      <!--ヘッダー-->
+      <div id="header_menu" class="clearfix container-fluid">
+        <div class="container clearfix">
+          <div class="col-md-8 logo">
+            <h1><a href="http://www.ann-company.net/"><img src="img/img-common/logo.gif" alt=""></a></h1>
+            <p class="ttl">テキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <ul class="col-md-4 no-padding disp_pc">
+            <li>
+              <p class="contact_btn"><a href=""><img src="img/img-common/hed_access.gif" alt="交通アクセス"></a></p>
+              <p class="tel_btn"><a href="form.php"><img src="img/img-common/hed_contact.gif" alt="お問い合わせ"></a></p>
+              <p class="tel"><span>000-000-0000</span></p>
+            </li>
+          </ul>
+          <div class="contact disp_sp clearfix">
+            <p class="contact_btn"><a href="form.php"><img src="img/img-common/hed_contact.gif" alt="お問い合わせ"></a></p>
+            <p class="tel_btn"><a href="tel:"><img src="img/img-common/tel_btn_sp.png" alt="電話番号"></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ヘッダー--> 
+    
+    <!--PC グローバルナビ(開閉ありアイコンタイプ)　gnav02-->
+    <div class="gnav container-fluid disp_pc">
+      <nav class="clearfix container">
+        <ul class="menu container">
+			<li> <a href="http://www.ann-company.net/"><span>HOME</span></a> </li>
+          <li> <a href="company.html"><span>会社案内</span></a> </li>
+          <li class="menu__mega menu1 img"> <a href="javascript:void(0)" class="init-bottom no1"><span>下層ページ集</span></a>
+            <div class="second-level container-fluid">
+              <ul class="container">
+              <li><a href="staff.html"><img src="img/img-common/gnav_img01.jpg" alt="スタッフ紹介"><span>スタッフ紹介</span></a></li>
+                <li><a href="voice.html"><img src="img/img-common/gnav_img02.jpg" alt="お客様の声"><span>お客様の声</span></a></li>
+                <li><a href="flow.html"><img src="img/img-common/gnav_img03.jpg" alt="流れ"><span>流れ</span></a></li>
+                <li><a href="document.php?pid=1"><img src="img/img-common/gnav_img04.jpg" alt="ブログページ"><span>ブログページ</span></a></li>
+                <li><a href="privacy.html"><img src="img/img-common/gnav_img05.jpg" alt="プライバシーポリシー"><span>プライバシーポリシー</span></a></li>
+                <li><a href="sitemap.html"><img src="img/img-common/gnav_img06.jpg" alt="サイトマップ"><span>サイトマップ</span></a></li>
+                <li><a href=""><img src="img/img-common/gnav_img07.jpg" alt="○○○○○○○○"><span>○○○○○○○○</span></a></li>
+                <li><a href=""><img src="img/img-common/gnav_img08.jpg" alt="○○○○○○○○"><span>○○○○○○○○</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__mega menu1 icon"> <a href="javascript:void(0)" class="init-bottom no1"><span>パターン集</span></a>
+            <div class="second-level container-fluid">
+              <ul class="container">
+                <li><a href="title.html"><span>見出し</span></a></li>
+                <li><a href="button.html"><span>ボタン</span></a></li>
+                <li><a href="table.html"><span>テーブル</span></a></li>
+                <li><a href="slider.html"><span>スライダー</span></a></li>
+                <li><a href="basic.html"><span>基本レイアウト</span></a></li>
+                <li><a href="visual.html"><span>ビジュアルレイアウト</span></a></li>
+                <li><a href="jquery.html"><span>動き(JQuery)</span></a></li>
+				 <li><a href=""><span>●●●●●●</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="faq.html"><span>よくあるご質問</span></a> </li>
+          <li> <a href="form.php"><span>お問い合わせ</span></a> </li>
+        </ul>
+      </nav>
+    </div>
+    <!--/PC グローバルナビ(開閉ありアイコンタイプ)　gnav02--> 
+    
+    <!--SP ハンバーガーメニュー-->
+    <div id="hed_sp" class="disp_sp">
+      <p class="menu_open button disp_sp"><img src="img/img-common/sp_menu.png" alt="メニュー" title="メニュー"></p>
+      <div class="hed_menu" id="slide_menu">
+        <nav class="slide_menu_in">
+          <p class="menu_open menu_open1 button disp_sp"><img src="img/img-common/sp_menu_close.png" alt="メニュー" title="メニュー"></p>
+          <p class="menu_logo"><span><a href="http://www.ann-company.net/index.html"><img src="img/img-common/logo.gif" alt="○○○○" /></a></span></p>
+          <div class="inner clearfix">
+            <ul class="menu menu01">
+              <li><a href="http://www.ann-company.net/index.html">○○○○HOME</a></li>
+			<li><a href="company.html">会社案内</a></li>
+              
+              <li>
+                <p class="btn_acc">下層ページ集</p>
+                <ul class="acc">
+                  <li><a href="staff.html"><span>スタッフ紹介</span></a></li>
+                  <li><a href="voice.html"><span>お客様の声</span></a></li>
+				<li><a href="flow.html"><span>流れ</span></a></li>
+                  <li><a href="document.php?pid=1"><span>ブログページ</span></a></li>
+                    <li><a href="privacy.html"><span>プライバシーポリシー</span></a></li>
+                  <li><a href="sitemap.html"><span>サイトマップ</span></a></li>
+<!--                 <li><span>●●●●●●</span></li>
+                  <li><span>●●●●●●</span></li>
+-->                </ul>
+              </li>
+              <li>
+                <p class="btn_acc">パターン集</p>
+                <ul class="acc">
+                  <li><a href="title.html"><span>見出し</span></a></li>
+                  <li><a href="button.html"><span>ボタン</span></a></li>
+                  <li><a href="table.html"><span>テーブル</span></a></li>
+                  <li><a href="slider.html"><span>スライダー</span></a></li>
+                  <li><a href="basic.html"><span>基本レイアウト</span></a></li>
+                  <li><a href="visual.html"><span>ビジュアルレイアウト</span></a></li>
+                  <li><a href="jquery.html"><span>動き(JQuery)</span></a></li>
+                </ul>
+              </li>
+              <li><a href="faq.html">よくあるご質問</a></li>
+            </ul>
+            <p class="menu02_txt">カテゴリーのような内容</p>
+            <ul class="menu02">
+              <li><a href=""><span>キャッチ</span>コンテンツ</a></li>
+              <li><a href=""><span>キャッチ</span>コンテンツ</a></li>
+            </ul>
+            <ul class="menu03">
+              <li><a href="faq.html"><span>よくあるご質問</span></a></li>
+              <li><a href="privacy.html">プライバシーポリシー</a></li>
+            </ul>
+            <p class="btn01"><a href="form.php"><img src="img/img-common/header_sp_btn.png" alt="お問い合わせ"></a></p>
+            <p class="menu_close2 button"><img src="img/img-common/hb_btn02.png" alt="閉じる"></p>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--/SP ハンバーガーメニュー--> 
+    
+  </header>
+  <!--/header-->
+  
+  <main> <!-- InstanceBeginEditable name="contents" -->
+    
+    <h2 class="main_ttl03"><span>ブログ2</span><span class="border"></span></h2>
+    
+    <!-- パン屑-->
+    <p class="bread_crumb container"><a href="http://www.ann-company.net/index.html">○○○○HOME</a>　&gt;　ブログ2</p>
+    <!-- /パン屑-->
+    
+    <!--コンテンツ-->
+    <div id="contents" class="clearfix">
+      <article>
+        <section class="container-fluid">
+            
+          <div class="container2 cmn_block">
+            <p class="menu"><span class="all_count">全 {count} 件（全{pcount}ページ）</span> <span class="disp_sp"><br></span>{paging}</p>
+            
+            <input type="hidden" id="cid" value="{cid}">
+            <input type="hidden" id="param" value="{param}">
+            
+            {contents}
+            <p class="menu menu2"><span class="all_count">全 {count} 件（全{pcount}ページ）</span> <span class="disp_sp"><br></span>{paging}</p>
+           </div>
+        </section>
+      </article>
+    </div>
+    <!--コンテンツ--> 
+
+  <!-- InstanceEndEditable --> </main>
+   
+  <!--フッターパターン1-->
+  <footer>
+    <div class="footer_pat01 clearfix container-fluid">
+      <div class="container">
+        <div class="footer_menu col-md-12 clearfix disp_pc">
+          <nav class="clearfix col-md-3 col-xs-6 sp_mb10">
+            <p>カテゴリー名</p>
+            <ul class="clearfix">
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+            </ul>
+          </nav>
+          <nav class="clearfix col-md-3 col-xs-6 sp_mb10">
+            <p>カテゴリー名</p>
+            <ul class="clearfix">
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+            </ul>
+          </nav>
+          <nav class="clearfix col-md-3 col-xs-6">
+            <p>カテゴリー名</p>
+            <ul class="clearfix">
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+            </ul>
+          </nav>
+          <nav class="menu_list clearfix col-md-3 col-xs-6">
+            <p>カテゴリー名</p>
+            <ul class="clearfix">
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+              <li><a href="" target="_blank">ページ名</a></li>
+            </ul>
+          </nav>
+        </div>
+		  <div class="footer_menu col-md-5 clearfix disp_sp">
+          <nav class="clearfix col-md-6 ">
+            <ul class="clearfix">
+              <li class="home"><a href=""><span>〇〇〇〇〇HOME</span></a></li>
+              <li><a href=""><span>ローカルメニュー</span></a></li>
+              <li><a href=""><span>ローカルメニュー</span></a></li>
+              <li><a href=""><span>ローカルメニュー</span></a></li>
+              <li>
+                <p class="btn_acc"><span>ローカルメニュー</span></p>
+                <div class="acc">
+                  <ul>
+                    <li><a href=""><span>ローカルメニュー</span></a></li>
+                    <li><a href=""><span>ローカルメニュー</span></a></li>
+                    <li><a href=""><span>ローカルメニュー</span></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href=""><span>ローカルメニュー</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="inner clearfix container-fluid">
+      <div class="container">
+        <div class="fot_address col-md-6">
+          <div class="clearfix">
+            <dl>
+              <dt><a href="http://www.ann-company.net/index.html"><img src="img/img-common/logo.gif" alt="○○○○○○○" class="img_max100"></a></dt>
+              <dd>〒550-0014 大阪市西区北堀江2-4-11 <br class="disp_sp" />
+                イオミックビル9F</dd>
+				<dd class="tel"><a href="tel:000-000-0000"><span>000-000-0000</span></a></dd>
+              <dd class="form"><a href="form.php"><span>お問い合わせ</span></a></dd>
+            </dl>
+          </div>
+        </div>
+        <div class="col-md-6 accessmap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.4435349682008!2d135.4288440155391!3d34.81993928040397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f0b8082c1f7b%3A0x1317b86982a59de8!2z44CSNTYzLTAwMjUg5aSn6Ziq5bqc5rGg55Sw5biC5Z-O5Y2X77yR5LiB55uu77yYIOaxoOeUsOWFseaghOODk-ODqyAzRg!5e0!3m2!1sja!2sjp!4v1527492037473" title="googlemap"></iframe>
+        </div>
+      </div>
+    </div>
+    <p id="copyright"><small>Copyright（c）<a href="http://www.ann-company.net/index.html">アンマスターサイト</a>　 All Rights Reserved.</small></p>
+  </footer>
+  <!--フッターパターン1--> 
+   <!--固定ヘッダ-->
+  <div id="hideHeader" class="header_nav container-fluid disp_pc">
+    <div class="gnav container-fluid disp_pc">
+      <nav class="clearfix container">
+        <ul class="menu container">
+			<li> <a href="http://www.ann-company.net/"><span>HOME</span></a> </li>
+          <li> <a href="company.html"><span>会社案内</span></a> </li>
+          <li class="menu__mega menu1 img"> <a href="javascript:void(0)" class="init-bottom no1"><span>下層ページ集</span></a>
+            <div class="second-level container-fluid">
+              <ul class="container">
+              <li><a href="staff.html"><img src="img/img-common/gnav_img01.jpg" alt="スタッフ紹介"><span>スタッフ紹介</span></a></li>
+                <li><a href="voice.html"><img src="img/img-common/gnav_img02.jpg" alt="お客様の声"><span>お客様の声</span></a></li>
+                <li><a href="flow.html"><img src="img/img-common/gnav_img03.jpg" alt="流れ"><span>流れ</span></a></li>
+                <li><a href="document.php?pid=1"><img src="img/img-common/gnav_img04.jpg" alt="ブログページ"><span>ブログページ</span></a></li>
+                <li><a href="privacy.html"><img src="img/img-common/gnav_img05.jpg" alt="プライバシーポリシー"><span>プライバシーポリシー</span></a></li>
+                <li><a href="sitemap.html"><img src="img/img-common/gnav_img06.jpg" alt="サイトマップ"><span>サイトマップ</span></a></li>
+                <li><a href=""><img src="img/img-common/gnav_img07.jpg" alt="○○○○○○○○"><span>○○○○○○○○</span></a></li>
+                <li><a href=""><img src="img/img-common/gnav_img08.jpg" alt="○○○○○○○○"><span>○○○○○○○○</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__mega menu1 icon"> <a href="javascript:void(0)" class="init-bottom no1"><span>パターン集</span></a>
+            <div class="second-level container-fluid">
+              <ul class="container">
+                <li><a href="title.html"><span>見出し</span></a></li>
+                <li><a href="button.html"><span>ボタン</span></a></li>
+                <li><a href="table.html"><span>テーブル</span></a></li>
+                <li><a href="slider.html"><span>スライダー</span></a></li>
+                <li><a href="basic.html"><span>基本レイアウト</span></a></li>
+                <li><a href="visual.html"><span>ビジュアルレイアウト</span></a></li>
+                <li><a href="jquery.html"><span>動き(JQuery)</span></a></li>
+				 <li><a href=""><span>●●●●●●</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="faq.html"><span>よくあるご質問</span></a> </li>
+          <li> <a href="form.php"><span>お問い合わせ</span></a> </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--/固定ヘッダ--> 
+  
+</div>
+</body>
+<!-- InstanceEnd --></html>

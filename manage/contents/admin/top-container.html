@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>{title}</title>
+<meta name="keywords" content="{keywords}" />
+<meta name="description" content="{description}" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<link href="css/design.css" rel="stylesheet" type="text/css" />
+<link href="css/locate.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="jscript/selwin.js"></script>
+</head>
+<body onload="{onload};">
+
+<!-- 画面 -->
+<div id="pageback">
+<div id="page">
+	<div id="pageleft"><img src="image/back-hl.jpg" /></div><!-- pageleft -->
+	<div id="pageright"><img src="image/back-hr.jpg" /></div><!-- pageright -->
+	<div id="pageon">
+	<!-- begin contents-->
+	<div id="topbox">
+		<div class="online">
+			<img src="image/online.gif" width="20" height="20" border="0" align="absmiddle">
+			 アカウント名: <b>{userid}</b><br>
+			<small>{username}</small><br><br>
+			<a href="?typex=logout" onclick="return isCheck('ログアウトしてもいいですか？');"><img  src="image/logout_on.gif" align="absmiddle" onmouseover="src='image/logout_off.gif';" onmouseout="src='image/logout_on.gif'"/></a>	
+		</div>
+		<div class ="logo"><img src="image/logo.gif" /></div>
+		<div class="topleft">
+			<img src="image/date.gif" width="20" height="20" border="0" align="absmiddle">
+			日付: <b>{year}年 {month}月 {day}日</b><br>
+		</div>
+		<div class="separate"></div>
+	</div>
+	
+	<div id="leftbox">
+		<ul>
+{menu}
+                    <li class="homepage"> <a href="{home}" target="_blank"></a></li>
+		</ul>
+	</div>
+	
+	<div id="mainbox">
+		{main}
+	</div>
+	
+	<!-- exit contents -->
+	</div><!-- pageon -->
+	<div class="separate"></div>
+</div>
+<!-- page -->
+<div id="pageend"></div><!-- pageend -->
+</div><!-- pageback -->
+</body>
+</html>

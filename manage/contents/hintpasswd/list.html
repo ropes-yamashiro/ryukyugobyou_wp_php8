@@ -1,0 +1,76 @@
+@begin noval
+<tr class="color1"><td colspan="4"><center>データがありません</center></td></tr>
+@end
+
+@begin paging
+&nbsp;<a href="?" onClick="return pagech({no});">{view}</a>
+@end
+
+@begin line
+		<tr class="color{color}" id="bg_id{id}" onmouseover="chBG('bg_id{id}', 1);" onmouseout="chBG('bg_id{id}', 0);">
+		<td><a href="?typex=hintpasswd&id={pageno}" onClick="return detail({id});" >{hintpasswd}</a></td>
+		<td>{userid}</td>
+		<td>{username}</td>
+		<td><a href="?typex=hintpasswd&id={pageno}" onClick="return delline({id},'{userid}');">削除</a></td>
+		</tr>
+@end
+
+@begin page
+<SCRIPT TYPE="text/javascript">
+<!--
+//ページを変更する
+function pagech(no){
+	document.formx.pageno.value=no;
+	document.formx.submit();
+	return false;
+}
+
+//項目を削除する
+function delline(did,title){
+    if(window.confirm('パスワードを削除しますか？')){
+        document.formx.cmd.value = "delline";
+        document.formx.param.value = did;
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+//新着情報を作成する
+function newuser(){
+    document.formx.cmd.value = "new";
+    document.formx.submit();
+    return false;
+}
+
+//詳細を表示する
+function detail(pid){
+    document.formx.cmd.value = "detail";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+// -->
+</SCRIPT>
+<form method="POST" name=formx action="?typex=hintpasswd&id={pageno}">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%" class="nrline">&nbsp;&nbsp;アクセス制限設定&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type=hidden name="pageno" value="{pageno}" />
+		<input type=hidden name="cmd" value="list" />
+		<input type=hidden name="param" />
+		{newbuttn}
+		</td>
+		<td class="nnline">
+		{paging}&nbsp;
+		</td></tr>
+	</table>
+	<br>
+	{err}
+
+	<table width="590px" cellpadding="0" cellspacing="0" class="tlist">
+		<tr><th width="150px">パスワード</th><th width="200px">名称</th><th width="100px">メモ</th><th>操作</th></tr>
+		{table}
+	</table>
+</form>
+
+@end

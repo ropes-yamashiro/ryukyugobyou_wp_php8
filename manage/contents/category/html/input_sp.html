@@ -1,0 +1,130 @@
+<SCRIPT TYPE="text/javascript">
+//詳細のプレビュー
+function preview(){
+    document.formx.cmd.value = "preview";
+    document.formx.action = "../document.php";
+    document.formx.target = "_blank";
+    document.formx.submit();
+    return false;
+}
+
+//更新データを保存する
+function chtype(){
+   	document.formx.cmd.value = "chtype";
+   	document.formx.action = "admin.php";
+	document.formx.target = "";
+    document.formx.submit();
+    return false;
+}
+//更新データを保存する
+function save(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "save";
+        document.formx.target = "";
+        document.formx.action = "admin.php";
+        document.formx.submit();
+    }
+    return false;
+}
+
+function savelist(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "savelist";
+        document.formx.target = "";
+        document.formx.action = "admin.php";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//項目を削除する
+function back(){
+    if(window.confirm('一覧に戻りますか？')){
+        document.formx.cmd.value = "listview";
+        document.formx.action = "admin.php";
+        document.formx.target = "";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//対象ファイルを削除する
+function delpic(fid,fname){
+    if(window.confirm(fname + 'を削除しますか?')){
+        document.formx.cmd.value = "delfile";
+        document.formx.action = "admin.php";
+        document.formx.param.value = fid;
+        document.formx.target = "";
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+</SCRIPT> 
+<form method=POST action="?typex=document" name="formx" enctype="multipart/form-data" class="detail_common categorydetail">
+ 	{hidden}
+ 	{old_data}
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" />
+	<input type=hidden name="id" value="{id}" />
+  <div id="contents" class="clearfix">
+    <article>
+      <div class="ttl_area">
+      <h2 class="l_cmn_ttl">「カテゴリー設定」登録・編集</h2>
+      </div>
+      
+      <section class="page_contents">
+      <div class="container">
+      
+      <div class="block">
+      	<p class="ttl pat01">カテゴリー名<span class="redreq">必須</span></p>
+      	<div class="in_txtOuter">
+			 <label class="in_txt">
+			  <input class="in_txtItem" type="text" placeholder="（例）営業担当" name="title" value="{title}">
+			 </label>
+		</div>
+      </div>
+      
+      <div class="block">
+      	<p class="ttl pat01">表示用タイトル<span class="redreq">必須</span></p>
+      	<div class="in_txtOuter">
+			 <label class="in_txt">
+			  <input class="in_txtItem" type="text" placeholder="（例）山田太郎" name="webtitle" value="{webtitle}">
+			 </label>
+		</div>
+      </div>
+      
+      <div class="block">
+      	<p class="ttl pat01">ブログ</p>
+        <div class="in_selectOuter in_selectOuter-sbs blogcat">
+			<div class="in_select in_select-sbs in_select-sm js_select sp_mb10">
+             <select name="contentsid" id="contentsid">
+             {contentsid}
+             </select>
+            </div>
+        </div>     
+      </div> 
+      
+      <div class="block ">
+      	<p class="ttl pat02">公 開</p>
+      	<p class="kokai"><label class="in_check checkbox-red in_check-care">
+                  <input type="checkbox" name="visible" value="1" {visible_1}><span></span></label></p>
+      </div>
+      
+
+      	
+      </div>
+      </section>
+      
+      <ul class="btn_save">
+      <li><a href="javascript:void(0);" onclick="return save();">保存</a></li>
+      <li><a href="javascript:void(0);" onclick="return savelist();">保存して一覧へ</a></li>
+      <li><a href="javascript:void(0);" onclick="return back();">一覧へ</a></li>
+      </ul>
+      	
+
+      
+    </article>
+  </div>
+</form>

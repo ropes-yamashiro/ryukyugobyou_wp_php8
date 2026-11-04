@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>ブログ｜サンプル</title>
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="css/king_default.css" rel="stylesheet" type="text/css" />
+<link href="css/king_layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="js/dd_pngfix.js"></script>
+
+    <script type="text/javascript" src="js/dateformat.js"></script>     <!-- ブログフィード表示用 -->
+    <script type="text/javascript" src="js/W3CDTF.js"></script>         <!-- ブログフィード表示用 -->
+    <script type="text/javascript" src="js/jquery.js"></script>         <!-- ブログフィード表示用＆カテゴリ別件数表示用 -->
+    <script type="text/javascript" src="js/jquery.jfeed.js"></script>   <!-- ブログフィード表示用 -->
+    <script type="text/javascript" src="js/jquery.cms.js"></script>     <!-- ブログフィード表示＆カテゴリ別件数表示用 -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //  フィード取得＆表示処理
+            //  ★使えるプレースホルダ
+            //      {updated}       :ブログ記事の日付
+            //      {title}         :ブログ記事の概要
+            //      {description}   :ブログ記事の概要
+            //      {link}          :当該ブログ記事ページへのリンクURL
+            $("#blog").showFeed({
+                url: 'rss.php',													            // フィードを取得するURL（省略可）
+                gid: 1,																        //  ブログの種類のID（省略可）
+                pid: true,                                                                 //  ブログへのリンクURLのgidパラメータをpidにする場合はtrue（省略可）
+                cnt: 20,                                                                    //  取得する件数（省略可）
+                dateFormat: 'yyyy年M月d日',                                                 //  時刻のフォーマット文字列（dateformat.js）（省略可）
+                headerTemplate: '<ul>',												        //  フィード表示部のヘッダテンプレート（省略可）
+                itemTemplate: '<li><!--{updated}&nbsp; --><a href="{link}">{title}</a><br /></li><!--<p style="font-size: smaller;">{description}</p> -->',
+        																			        //  フィード表示部の各エントリのテンプレート（省略可）
+                footerTemplate: '</ul>'												        //  フィード表示部のフッタテンプレート（省略可）
+            });
+
+            //  カテゴリ別投稿数取得＆表示処理
+            //  ★使えるプレースホルダ
+            //      {title}     :CMS管理画面のカテゴリー設定での「カテゴリー名」
+            //      {webtitle}  :CMS管理画面のカテゴリー設定での「表示用タイトル」
+            //      {link}      :当該カテゴリのブログ記事ページへのリンクURL
+            //      {countCategory}     :当該カテゴリの記事件数
+            $("#category").showCategory({
+                url: 'category.php',                                                                //  カテゴリ別投稿件数を取得するURL（省略可）
+                gid: 1,                                                                             //  ブログの種類のID（省略可）
+                pid: true,                                                                         //  ブログへのリンクURLのgidパラメータをpidにする場合はtrue（省略可）
+                headerTemplate: '<ul>',                                                             //  ヘッダテンプレート（省略可）
+                itemTemplate: '<li><a href="{link}">{webtitle}</a>&nbsp;({countCategory})</li>',    //  1カテゴリ表示テンプレート（省略可）
+                                                                                                        //  （※CMS管理画面のカテゴリー設定での「表示用タイトル」は {webtitle} 「カテゴリー名」は {title} で表示できる
+                emptyItemTemplate: '<li>{webtitle}&nbsp;({countCategory})</li>',                    //  該当カテゴリの投稿数がゼロの場合に適用する1カテゴリ表示テンプレート（省略可）
+                footerTemplate: '</ul>',                                                            //  フッタテンプレート（省略可）
+                showEmptyItem: false                                                                //  カテゴリの投稿数がゼロの場合に当該カテゴリを表示する場合は true （省略可）
+            });
+        });
+    </script>
+
+
+<script type="text/javascript" src="manage/jscript/jquery.lightbox-0.5.js"></script>
+<link rel="stylesheet" type="text/css" href="manage/css/jquery.lightbox-0.5.css" media="screen" />
+<script type="text/javascript">
+$(function() {
+    $('.gallery a').lightBox();
+});
+</script>
+
+</head>
+
+<body id="left_frame" class="common news">
+
+<!--ラッパーここから -->
+<div id="wrapper">
+
+<!--コンテンツここから -->
+
+<div id="contents" class="clearfix">
+<!--<p>{user_category}</p> -->
+<p class="menu">全 {count} 件（全{pcount}ページ）　　 {paging}  </p>
+<!--<h2><img src="img/img-news/ttl_01.jpg" width="60" height="17" alt="News" /></h2> -->
+{contents}
+</div>
+<!--コンテンツここまで -->
+
+
+<div id="left_nav">
+<!--<iframe scrolling="no" src="test.html" width="200" height="500" frameborder="0"></iframe>
+--><h2>最新記事</h2>
+<div id="blog"></div>
+
+<h2 class="last">カテゴリ</h2>
+<div id="category"></div>
+<p style="margin:10px 0 0;"><a href="http://www.web-mgr.com/cms-demo/document.php?gid=1">すべての記事</a></p>
+</div> 
+</div>
+<!--ラッパーここまで -->
+<!-- footerここから -->
+<div id="footer">
+</div>
+<!-- / footerここまで -->
+</body>
+</html>
+

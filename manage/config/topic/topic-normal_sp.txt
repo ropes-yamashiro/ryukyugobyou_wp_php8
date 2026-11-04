@@ -1,0 +1,4 @@
+<section>
+<p class="days">{year}/{month}/{day}</p>
+<h3><a href="{link}" {blank}>{title}{thumbnail}</a></h3>
+</section>

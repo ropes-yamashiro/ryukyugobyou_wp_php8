@@ -1,0 +1,6 @@
+<dl>
+<dt>{title}</dt>
+<dd class="picture">{thumbnail}</dd>
+<dd>{summary}</dd>
+<dd class="name">（{customer_name}）</dd>
+</dl>

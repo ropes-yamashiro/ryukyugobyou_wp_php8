@@ -1,0 +1,7 @@
+<dl>
+<dt>{title}{icon}</dt>
+<dd class="day">{year}/{month}/{day}</dd>
+<dd class="picture">{thumbnail}</dd>
+<dd class="txt">{summary}</dd>
+<dd class="name">（{customer_name}）</dd>
+</dl>

@@ -1,0 +1,68 @@
+a:2:{s:9:"linkblock";s:650:"
+
+<form name="formx" method="post" >
+<input type="hidden" name="id" />
+<input type="hidden" name="gfix" value="{gfix}" />
+<div class="prev_next clearfix">
+<div class="left"><p><a href="javascript:void(0);" onclick="return move_img('{backid}','{popup_back_width}','{popup_back_height}');"><img src="img/img-top/prev.gif" alt="前の写真へ" width="83" height="21" border="0" /></a></p>
+</div>
+
+<div class="right"><p><a href="javascript:void(0);" onclick="return move_img('{nextid}','{popup_next_width}','{popup_next_height}');"><img src="img/img-top/next.gif" alt="次の写真へ" width="83" height="21" border="0" /></a></p>
+</div>
+</div>
+</form>
+";s:4:"page";s:2489:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift-jis" />
+<meta name="Keywords" content="若生植木農園,植木販売,庭木販売,若生商店,造園,庭木,樹木,兵庫,大阪,神戸,宝塚" />
+<meta name="Description" content="若生植木農園は大阪・兵庫・神戸・宝塚で植木・庭木・樹木を販売しています。" />
+<title>{title_text}｜植木販売・庭木販売・造園｜大阪・兵庫・神戸・宝塚【若生植木農園】</title>
+<link href="css/gallery_popup.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="manage/jscript/jquery.js"></script>
+<script type="text/javascript" src="manage/jscript/user/gallery.js"></script>
+<script type="text/javascript" src="manage/jscript/user/gallery_init.js"></script>
+</head>
+<body> 
+<!-- ラッパー --> 
+<div id="popup_wrapper">
+<div id="contents" >
+
+<!-- 木のイメージの部分 -->
+<dl class="tree">
+<dt><span><img src="{popup_img_link}" alt="{title_text}" width="{popup_img_width}" height="{popup_img_height}" /></span></dt>
+<dd class="img_text1" style="width:{popup_img_width}px;">{title_text}</dd>
+<dd class="img_text2" style="width:{popup_img_width}px;">{comment1}</dd>
+</dl>
+<!-- /木のイメージの部分-->
+
+
+<!-- ボタンの部分 -->
+{linkblock}
+<!-- /ボタンの部分 -->
+
+
+<!-- 閉じボタン・トップリンク -->
+<div class="close2">
+<div class="pop_over"><a href="javascript:window.close()"><img src="img/img-pop1/pop_over.jpg" alt="ウィンドウを閉じる" width="80" height="18" /></a></div>
+ </div>
+ </div>
+ <div class="link-wakaiki"><a href="http://www.wakaiki.jp/" target="_blank"><img src="img/img-common/link-wakaiki" alt="若生植木農園ホームページへ" width="380" height="105" border="0" /></a>
+</div>
+</div> 
+<!-- /閉じボタン・トップリンク -->
+
+<!--　wrapper end　-->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5060216-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
+";}

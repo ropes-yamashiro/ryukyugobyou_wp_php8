@@ -1,0 +1,392 @@
+a:3:{s:4:"line";s:36:"
+<ul class="clearfix">
+{list}
+</ul>
+";s:11:"list_normal";s:116:"
+<li><img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" style="max-height:{thumb_height}px" /></li>
+";s:4:"page";s:27159:"<?xml version="1.0" encoding="shift_jis"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title>講師紹介｜京都 修学塾</title>
+<meta name="Keywords" content="講師,紹介,京都,塾,修学塾" />
+<meta name="Description" content="修学塾の講師は選び抜かれた「優しく熱意ある京大生」です。修学塾では１人１人の講師に大変な時間をかけて「一流の講師」としての教育をしています。" />
+<meta name="copyright" content="京都 修学塾" />
+<link rel="alternate" media="only screen and (max-width: 640px)" href="http://www.shugakujuku-kyoto.com/sp/gallery.php?g=2" >
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/analytics.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="manage/jscript/user/gallery.js"></script>
+<link rel="stylesheet" href="css/sliderkit.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.sliderkit.1.8.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#index_slide').sliderkit({
+		shownavitems: 11,
+		circular:true,
+		//navitemshover: false,
+		navitemshover: true,
+		autospeed: 5000,
+		//panelfx :'sliding',
+		panelfx :'fading',
+		panelfxspeed: 1500,
+		panelfxfirst: 'none',
+		auto: true,
+		navClipSize: 1500
+	});
+	
+    if(navigator.userAgent.indexOf("MSIE") != -1) {
+        $('img').each(function() {
+            if($(this).attr('src').indexOf('.png') != -1) {
+                $(this).css({
+                    'filter': 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' +
+                    $(this).attr('src') +
+                    '", sizingMethod="scale");'
+                });
+            }
+        });
+    }
+	
+	
+});
+</script>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />  
+<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body class="koushi">
+<!-- ラッパー -->
+
+<div id="wrapper" class="clearfix">
+
+<!-- ヘッダー -->
+<div id="header" class="clearfix">
+
+<h1>修学塾の講師は選び抜かれた「優しく熱意ある京大生」だけ！</h1>
+<ul class="subnav">
+<li><a href="faq.html"><img src="img/img-common/hed_nav01.gif" alt="よくあるご質問" width="115" height="30" /></a></li>
+<li class="method02"><a href="access.html"><img src="img/img-common/hed_nav02.gif" alt="交通アクセス" width="111" height="30" /></a></li>
+<li class="method03"><a href="https://shugakujuku.heteml.jp/form.php?pid=1"><img src="img/img-common/hed_nav03.png" alt="お問い合わせ" width="160" height="30" /></a></li>
+</ul>
+<p class="logo"><a href="http://www.shugakujuku-kyoto.com/"><img src="img/img-common/hed_logo01.png" alt="修学塾" width="184" height="53" /></a></p>
+<ul id="gnav">
+<li class="method01"><a href="study.html"><img src="img/img-common/gnav_01.png" alt="京都大学式必勝学習法" width="178" height="52" /></a></li>
+<li class="method02"><a href="gallery.php?g=2"><img src="img/img-common/gnav_02.png" alt="講師紹介" width="105" height="52" /></a></li>
+<li class="method03"><a href="topicimg.php"><img src="img/img-common/gnav_03.png" alt="合格実績" width="104" height="52" /></a></li>
+<li class="method04"><a href="customer.php?top=1"><img src="img/img-common/gnav_04.png" alt="塾生の声" width="103" height="52" /></a></li>
+<li class="method05"><a href="class01.html"><img src="img/img-common/gnav_05.png" alt="クラスと料金" width="128" height="52" /></a></li>
+<li class="method06"><a href="rinen.html"><img src="img/img-common/gnav_06.png" alt="教育理念" width="105" height="52" /></a></li>
+<li class="method07"><a href="gallery.php?g=1"><img src="img/img-common/gnav_07.png" alt="授業風景" width="105" height="52" /></a></li>
+<li class="method08"><a href="taiken.html"><img src="img/img-common/gnav_08.png" alt="体験授業" width="122" height="52" /></a></li> 
+</ul>
+</div>
+<!-- （終）ヘッダー -->
+
+<div id="container">
+<!-- コンテンツ -->
+<div id="contents">
+
+<p id="bread"><a href="http://www.shugakujuku-kyoto.com/">修学塾HOME</a> &gt; 講師紹介</p>
+<h2><img src="img/img-koushi/ttl_01.gif" alt="講師紹介" width="694" height="50" /></h2>
+<div class="sliderkit" id="index_slide">
+<div class="sliderkit-panels">
+<div class="back"><img src="img/img-koushi/img_11.png" alt="コメント枠" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_00.png" alt="京大生講師として指導力・評判ともに京都No.1に！" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_01.png" alt="講師コメント1" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_02.png" alt="講師コメント2" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_03.png" alt="講師コメント3" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_04.png" alt="講師コメント4" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_05.png" alt="講師コメント5" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_06.png" alt="講師コメント6" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_07.png" alt="講師コメント7" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_08.png" alt="講師コメント8" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_09.png" alt="講師コメント9" width="609" height="161" /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_10.png" alt="講師コメント10" width="609" height="161" /><span></span></div>
+</div>
+<div class="sliderkit-nav">
+<div class="sliderkit-nav-clip">
+<ul>
+<li class="method00"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_00.png" alt="講師サムネイル0" /></a></li>
+<li class="method01"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_01.png" alt="講師サムネイル1" /></a></li>
+<li class="method02"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_02.png" alt="講師サムネイル2" /></a></li>
+<li class="method03"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_03.png" alt="講師サムネイル3" /></a></li>
+<li class="method04"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_04.png" alt="講師サムネイル4" /></a></li>
+<li class="method05"><a href="javascript:void(0);" ><img src="img/img-koushi/thumb_05.png" alt="講師サムネイル5" /></a></li>
+<li class="method01 method06"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_06.png" alt="講師サムネイル" /></a></li>
+<li class="method02 method07"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_07.png" alt="講師サムネイル7" /></a></li>
+<li class="method03 method08"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_08.png" alt="講師サムネイル8" /></a></li>
+<li class="method04 method09"><a href="javascript:void(0);"><img src="img/img-koushi/thumb_09.png" alt="講師サムネイル9" /></a></li>
+<li class="method05 method10"><a href="javascript:void(0);" ><img src="img/img-koushi/thumb_10.png" alt="講師サムネイル10" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="block01" id="link02">
+<h3 class="first"><img src="img/img-koushi/ttl_02.gif" alt="講師心得" width="658" height="49" /></h3>
+<p>修学塾には、講師の成長の指針となる「講師心得」という冊子があります。</p>
+<p class="last">代表が情熱を注いで書き上げ、「心の章」「技の章」合わせて約60テーマ、35,000字に及びます。<br />
+本来、講師だけに配布しているものですが、<strong>修学塾が講師を教育する際にどんなことを大切にしているのか<br />
+お分かりいただきたいと思い、いくつかをご紹介いたします。</strong></p>
+<div class="left">
+<h3><img src="img/img-koushi/ttl_03.gif" alt="講師心得（「目標」から引用）" /></h3>
+
+<dl>
+<dt><img src="img/img-koushi/ttl_04.jpg" alt="修学塾を熱心で優秀な京大生講師を示すブランドにする" /></dt>
+<dd>由緒ある地、京都において「熱意ある京大生講師といえば、修学塾。」<br />
+と言っていただけるよう、「京都で一番の塾」を目指します。</dd>
+<dd>私は<strong>“塾の武器は講師の実力がすべて”</strong>であると考えています。<br />
+情報量やサポート制度などバックアップももちろん重要ですが、<br />
+塾の根本を支えるのは講師の実力です。</dd>
+<dd>生徒にとって、担当講師の印象が塾の印象です。つまり、<strong>修学塾講師<br />
+として働くということは、塾の看板の一角を担うということ</strong>です。<br />
+誇りを持って頑張っていただきたい。「先生に習えてよかった」と<br />
+言ってもらえるような、記憶に残る講師となってください。</dd>
+<dd class="last">期待しています。</dd>
+</dl>
+
+
+
+<div class="block02">
+<p>上に記載しましたのは「講師心得」導入部分の一つ、「目標」です。　</p>
+<p>講師は全て京都大学の学生・院生です。しかし、京大生だからといって修学塾講師になれるわけではありません。</p>
+<p>修学塾では、京大生を４段階審査（書類選考→面接→模擬授業→模擬授業）で選抜し、<strong>「熱意を持った明るく良識ある人材」だけを採用</strong>します。その後、<strong>講師たちは自分の専門科目を決め、京大式必勝学習法での指導を研究</strong>します。また「講師の心構え」として、説得力のある話し方や振る舞い、褒め方や叱り方も学んでいきます。</p>
+<p>仕事と割り切って淡白に働くのではなく、教えるのが好きな人たちが切磋琢磨して働いているので、塾は本当にいい雰囲気に満ちています。</p>
+<p><strong>世の中どこへ出ても活躍し貢献できるであろう素晴らしい人材が、修学塾の仕事にやりがいを感じ、こんなにも多く集まってくれている</strong>ことが、何より誇らしいと感じます。</p>
+<p>“修学塾の講師の質は高い”とのお声をいただくことが多くなっており、大変ありがたく光栄でございます。</p>
+</div>
+
+<h3><img src="img/img-koushi/ttl_05.gif" alt="講師心得（一部）" width="500" height="86" /></h3>
+<dl>
+<dt><img src="img/img-koushi/ttl_06.jpg" alt="自分が出来ることと、人に教えることは違う。" width="533" height="94" /></dt>
+<dd>自分が勉強して成績を上げるのと、それを教えて生徒の成績を上げる<br />
+のはまったく違います。</dd>
+<dd><strong>自分が１を理解することは１の努力で出来るとしても、生徒に<br />
+  １を伝えるには１０を知らないと上手く出来ません。</strong>あらゆる角度<br />
+  からの質問に答えられるように自分が学習した上で、その中からもっと<br />
+  も使用頻度の高い部分だけを効率的に生徒に教えてあげましょう。</dd>
+<dd>そして、<strong>説明内容は徹底的にシンプルにすることが大切です。</strong>１回の説明で５分かかっても長すぎると思って下さい。５分後には説明の最初の方は忘れています。余分な説明をそぎ落とし、<strong>生徒が必要としているまさにそのポイントだけ</strong>を的確に指導して下さい。</dd>
+<dd class="last">こっちが教えたいことを教えるのではなく、相手が習いたいことを明確に伝えるのです。</dd>
+</dl>
+<p class="pagetop"><a href="#header"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭へ戻る" width="115" height="10" /></a></p>
+
+<dl>
+<dt><img src="img/img-koushi/ttl_07.jpg" alt="発言はいつも前向きに" width="533" height="90" /></dt>
+<dd><strong>いつも前向きで明るい態度・発言を保つようにしましょう。</strong>聞き手<br />
+  に気を遣わせてしまうような話題はなるべく控えることをお薦めします。</dd>
+<dd>例えば、（言い方にもよりますが）「今日体調不良ですっごいしんどい<br />
+  んですよ。」「今日は授業がいっぱいで、気力がもつかなぁ。」などのセ<br />
+  リフは、「大丈夫ですよ、頑張って下さい！」と言ってもらえるでしょう<br />
+  が、これはただ相手に気を遣わせているだけです。それは人を疲れさ<br />
+  せます。</dd>
+<dd>いつも明るく元気な人というのは、やはり魅力的です。人がついてい<br />
+  き、人が集まるところには、必ず元気で明るい人がいるはずです。自<br />
+  分がそのような魅力的な人間であるために、まずは話題から自分を<br />
+  変えていってください。<strong>「今日は疲れた」ではなく「今日は充実した一日だった」と言葉を替える</strong>のです。<br />
+</dd></dl>
+<p class="pagetop"><a href="#header"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭へ戻る" width="115" height="10" /></a></p>
+
+<dl>
+<dt><img src="img/img-koushi/ttl_08.jpg" alt="常に明るく元気でいること。生徒を笑顔にしよう。" width="533" height="111" /></dt>
+  <dd>塾に来て講師が疲れているのでは勉強する元気も出ません。<br />
+    <strong>生徒の前では常に元気な姿を見せるようにしてください。</strong><br />
+    修学塾のカラーとして“明るく、楽しく、元気な授業”を心がけましょう。</dd>
+  <dd>集中をとぎらせることなく１時間以上も同じ科目を勉強し続けるのは難しいことです。また、成績が上がれば勉強は楽しくなるものですが、それまではなかなかしんどいものです。</dd>
+  <dd>そこまでを<strong>少しでも楽しくステップアップさせてあげるためにも“明るく、楽しく、元気な授業”</strong>を心がけ、１回の授業で最低１回は生徒を笑顔にさせてください。</dd>
+  <dd class="last">とはいえ笑わせているばかりでは授業になりません。真剣な中での一瞬の緩み、これを起爆剤にして次の集中に入ってもらうのです。</dd>
+</dl>
+<p class="pagetop"><a href="#header"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭へ戻る" width="115" height="10" /></a></p>
+
+
+<dl>
+<dt><img src="img/img-koushi/ttl_09.jpg" alt="人の話は一旦聞く" width="531" height="86" /></dt>
+<dd>これは上手いコミュニケーションをする上で非常に重要です。人から<br />
+何かのアドバイスを受けた時、もしくは自分の意に沿わない意見を<br />
+提示された時、ついつい「いや、私は…」などと話を挟んでしまうこと<br />
+があります。これはあまり良いこととはいえません。</dd>
+<dd>誰もあなたを根本から否定しようと思って言っているのではありませ<br />
+ん。<strong>人さまのセリフは全て自分のために発せられていると思いましょ<br />
+う。</strong>あなたをより良くしたいと思って言ってくれているのです。</dd>
+<dd>まずは感謝しましょう。<strong>受け入れがたい話であったとしても、一旦す<br />
+べて聞き、「ありがとうございます」と言いましょう。</strong>それを自分に取り<br />
+入れるかどうかはその後で考えればよいことです。</dd>
+<dd class="last">自分の考えの方が正しいとしても、その場で主張して貫き通す必要<br />
+などありません。考えの正しさは世間が必ず認めてくれます。自分<br />
+が正しいと自信があるのなら、それこそ相手の話をしっかり聞いて<br />
+あげましょう。それが器の大きさです。</dd>
+</dl>
+<p class="pagetop"><a href="#header"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭へ戻る" width="115" height="10" /></a></p>
+
+<dl>
+<dt><img src="img/img-koushi/ttl_10.jpg" alt="教える内容の重要性を先に伝える" width="531" height="89" /></dt>
+  <dd><strong>伝える内容の重要度をあらかじめ教えておくことで、聞き手の集中<br />
+    力・興味を引き出すことができます。</strong>これはプレゼンテーションの秘<br />
+    訣でもあります。</dd>
+  <dd>「重要なのは当然なんだから、説明しているうちに分かってくれるだ<br />
+    ろう」などという勝手な希望を持ってはいけません。<br />
+    仮に説明せずに伝わる場合であっても、そこをあえて言語化し、はっ<br />
+    きりと伝えることで、もっと短時間で目的に達することが出来ます。</dd>
+  <dd>これはとても重要な技術なので話し方の例を挙げておきましょう。</dd>
+  <dd class="center">――例は省略いたします。塾で体験してください。――</dd>
+  <dd class="last">そうすることで、それを使って何が出来るのかが直感的に分かるの<br />
+    で、授業内容を積極的に吸収していこうという姿勢が生まれるわけ<br />
+    です。</dd>
+</dl>
+<p class="pagetop"><a href="#header"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭へ戻る" width="115" height="10" /></a></p>
+
+
+<dl>
+<dt><img src="img/img-koushi/ttl_11.jpg" alt="授業には付加価値をつけ、お金をいただく価値のあるものにする" width="531" height="115" /></dt>
+<dd>塾は学校と違い、生徒はお金を払って習いに来ています。講師に<br />
+とって授業とは１回１回が生徒のためのショーなのだと心がけましょ<br />
+う。</dd>
+<dd>勉強するだけなら本を読めば足ります。授業を聞きたいだけなら学<br />
+校だけで十分です。<strong>優秀な塾講師であるあなただけの付加価値を<br />
+つける</strong>ことで、生徒の心を鷲づかみにしてください。</dd>
+<dd>例えば、<em>「生徒の一人一人の能力・性格を分析し、成長に必要な道<br />
+のりを段階化して示してあげる」</em>、これは非常に良い付加価値です。<br />
+また、圧倒的な勉強経験値を活かして、<em>「生徒の学力に最適な問題<br />
+や参考書を選んで提示してあげる」</em>こと、これもよいでしょう。それか<br />
+ら、<em>「講師自身があらゆる質問にも答えられる学力をつけ、生徒の<br />
+質問にはすべて明確に答えられる」</em>ことが出来れば、どんな辞書で<br />
+も
+追いつかない付加価値になります。</dd>
+<dd class="last">授業には付加価値をつけ、生徒があなたを選ぶ理由、修学塾を選<br />
+ぶ理由を提供していきましょう。</dd>
+</dl>
+<p class="pagetop"><a href="#header"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭へ戻る" width="115" height="10" /></a></p>
+
+<dl>
+<dt><img src="img/img-koushi/ttl_12.jpg" alt="叱るとは手段の1つと心得よ" width="531" height="117" /></dt>
+  <dd>生徒の叱り方やそのタイミングは非常に重要です。<br />
+   まず<strong>やってはいけないのは、「なんでこんな問題が解けないんだ」<br />
+    「これくらい出来て当然やろ」という叱り方</strong>です。一生懸命やっている<br />
+    のに、こう言われると結構こたえます。あなたも塾長から「数学のこ<br />
+    んな問題教えるくらい、出来て当然やろ」「そんなん常識やろ」と言い<br />
+    放たれると、かなり傷つくのではありませんか？生徒だって同じですよ。</dd>
+  <dd><strong>叱るとは手段の１つ</strong>であると肝に銘じて下さい。「相手のここを直した<br />
+    い」という目的に対して、その手段として「叱る」を選択したのです。イ<br />
+    ラっとしたから叱るのは、ただ怒っているだけです。正しく叱るには<br />
+    「相手をよりよくしてあげたい」という愛情が必要不可欠です。そし<br />
+    て、<strong>理由をしっかり話して叱る</strong>こと、また道徳的な理由から叱ることで<br />
+    す。　　</dd>
+  <dd>――具体例は割愛いたします。――</dd>
+  <dd>叱るというのは一言では表現できないくらい多様です。相手に対す<br />
+    る愛情が必要だという点は絶対条件ですが、その方法はケースバイ<br />
+    ケースで学んでいきましょう。</dd>
+</dl>
+<p class="btn"><a href="topicimg.php"><img src="img/img-koushi/btn_01.jpg" alt="合格実績" width="246" height="64" /></a></p>
+
+</div>
+<div class="right">
+
+{line}
+</div>
+
+</div>
+</div>
+<!-- （終）コンテンツ -->
+
+<!-- 左ナビ -->
+<div id="left_nav" class="stickybox">
+
+<dl class="local_nav">
+<dt><img src="img/img-common/left_ttl01.gif" alt="メニュー" width="210" height="28" /></dt>
+<dd><em><a href="gallery.php?g=2#bread">講師紹介</a></em></dd>
+<dd class="last"><em><a href="gallery.php?g=2#link02">講師心得</a></em></dd>
+</dl>
+
+<ul class="bnr">
+<li class="method01"><a href="topicimg.php?pid=1"><img src="img/img-common/left_nav01.png" alt="京都修学塾からの合格実績" width="201" height="78" /></a></li>
+<li class="method02"><a href="rinen.html"><img src="img/img-common/left_nav02.png" alt="ごあいさつ" width="201" height="105" /></a></li>
+<li class="method03"><a href="taiken.html"><img src="img/img-common/left_nav03.png" alt="京都修学塾の体験授業" width="205" height="94" /></a></li>
+<li class="method04"><a href="form.php?pid=1"><img src="img/img-common/left_nav04.png" alt="無料パンフレット" width="201" height="86" /></a></li>
+<li class="method05"><a href="hint.php"><img src="img/img-common/left_nav05.png" alt="受験のヒント" width="200" height="82" /></a></li>
+<li class="method06"><a href="nekketsu.html"><img src="img/img-common/left_nav06.png" alt="熱血先生で紹介されました！" width="210" height="92" /></a></li>
+<!--<li class="method07"><a href="customer.php?top=1"><img src="img/img-common/left_nav07.png" alt="塾生の声 保護者の声" width="202" height="90" /></a></li>
+<li class="method08"><a href="study.html">講師は全員が優しくて熱意のある京大生</a></li> -->
+</ul>
+</div>
+<!-- （終）左ナビ -->
+</div>
+</div>
+<!-- （終）ラッパー -->
+
+<div id="fot_wrp">
+<!-- フッター -->
+<div id="footer">
+<div id="pagetop">
+<p><a href="#header"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭へ戻る" width="115" height="10" /></a></p>
+</div>
+<ul>
+<li><a href="study.html">「京大式」必勝学習法</a></li><li><a href="gallery.php?g=2">講師紹介</a></li><li><a href="topicimg.php?pid=1">合格実績</a></li><li><a href="customer.php?top=1">塾生の声</a></li><li><a href="class01.html">クラスと料金</a></li><li><a href="rinen.html">教育理念</a></li><li><a href="gallery.php?g=1">授業風景</a></li><li><a href="taiken.html">体験授業</a></li><li><a href="faq.html">よくあるご質問</a></li><li><a href="access.html">交通アクセス</a></li>
+</ul>
+</div>
+<!-- （終）フッター -->
+
+<div id="seo">
+<p>修学塾では、京都大学、大阪大学などの国立七大学を筆頭に、慶應、早稲田、関関同立などの有名私立大、また堀川高校や西京、嵯峨野高校など京都の難関高校に合格者を輩出し、毎年多くのドラマが生まれています。多くの塾生の方から「塾の勉強は楽しい」「勉強の仕方が本当にわかった！」などのお声をいただき、大変ありがたいです！京都で塾をやらせていただく以上、京都の方々に貢献できるよう頑張ってまいります。「京大生講師の修学塾」として、指導力・評判で京都No.1を目指しております。なにとぞ応援のほどお願いいたします。
+</p>
+</div>
+<div class="block01">
+<dl class="method01">
+<dt><img src="img/img-common/fot_ttl01.gif" alt="京都修学塾御池校" width="42" height="14" /></dt>
+<dd>〒604-8106<br />
+京都市中京区 堺町通御池下ル <br />
+丸木材木町676 <br />
+SHICATA HUIT BLDG 5階<br />
+TEL： 075-241-7580</dd>
+</dl>
+<dl class="method02">
+<dt><img src="img/img-common/fot_ttl02.gif" alt="京都修学塾下鴨校" width="42" height="14" /></dt>
+<dd>〒606-0815<br />
+京都市左京区下鴨<br />
+膳部町90-10<br />
+TEL： 075-721-6565</dd>
+</dl>
+<dl class="method03">
+<dt><img src="img/img-common/fot_ttl03.gif" alt="京都修学塾一乗寺校（本館）" width="97" height="15" /></dt>
+<dd>〒606-8117<br />
+京都市左京区一乗寺<br />
+里ノ前町93<br />
+TEL： 075-702-5671</dd>
+</dl>
+<dl class="method04">
+<dt><img src="img/img-common/fot_ttl04.gif" alt="京都修学塾一乗寺校（別館）" width="97" height="15" /></dt>
+<dd>〒606-8153<br />
+京都市左京区一乗寺<br />
+谷田町六<br />
+TEL： 075-702-5671</dd>
+</dl>
+</div>
+<p id="copyright">Copyright（c）<a href="http://www.shugakujuku-kyoto.com/">京都 修学塾</a> All Rights Reserved.</p>
+</div>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/stickysidebar.jquery.js"></script>
+<script type="text/javascript">
+      $(function () {
+	  	setTimeout(function(){
+			$stickies = $(".stickybox").stickySidebar({
+				speed: 600
+			  , easing: "easeInOutQuad"
+			  ,	constrain: true
+			});
+					$(".remove").click(function (ev) {
+			  ev.preventDefault();
+			  $("#" + this.rel).stickySidebar("remove");
+			});
+			$("#destroyAll").click(function (ev) {
+			  ev.preventDefault();
+			  $(".stickybox").stickySidebar("destroy");
+			});
+		},1000);
+      });
+
+</script>
+</body>
+</html>";}

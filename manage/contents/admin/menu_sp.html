@@ -1,0 +1,31 @@
+//======================================================
+//  管理画面のメニュー
+
+
+//管理レベルのカテゴリ
+@begin admin
+<p class="menu03_txt">{title}</p>
+<ul class="menu03">
+@end
+@begin admin_end
+	</ul>
+@end
+
+
+//ユーザーレベルのカテゴリ
+@begin user
+<li>
+	<p class="btn_acc">{title}</p>
+	<ul class="acc">
+@end
+@begin user_end
+	</ul>
+</li>
+@end
+
+
+//アクセス用の行
+@begin line 
+		<li><a href="admin.php?typex={typex}">{title}</a></li>
+@end
+

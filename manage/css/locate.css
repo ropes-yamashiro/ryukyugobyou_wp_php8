@@ -1,0 +1,376 @@
+/*==================================
+ * Hudom CMS
+ * File version: 1.0.0
+ * Author: Terutaka.Takezaki
+ * Release: 2009/03/05
+ * History:
+ *================================*/
+
+* {
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+}
+
+img{border:solid 0px;}
+a         { color: #36C; }
+a:link    { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover   { text-decoration: underline; color: red; }
+
+
+#topbox{
+	border-bottom: solid 1px #999999;
+}
+
+.logo{
+	padding: 10px 0px 0px 15px;
+}
+
+.topleft{
+	color: #666;
+	float: left;
+	padding: 5px 0 0 20px;
+}
+
+.online {
+	padding: 10px 20px 12px 0;
+	float: right;
+	text-align: right;
+}
+
+.logout  {
+	display:block; 
+	height:20px;
+	width:70px;
+ }
+
+
+/*                                          */
+#leftbox{
+	padding-left:20px;
+	padding-top:10px;
+	float: left;
+	width: 140px;
+	letter-spacing: 0.1em;
+}
+
+#leftbox a {
+	display: block;
+	background-image: url(../image/icon_list.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin: 0px 0px 0px 10px;
+	padding: 2px 0px 2px 20px;
+	width: 100px;
+}
+#leftbox a:hover {
+	text-decoration: none;
+}
+
+#leftbox ul{
+	padding: 0px 0px 15px;
+	margin: 0px;
+}
+
+#leftbox li{
+	padding: 0px;
+	margin-right: 0px;
+	list-style-type: none;
+	margin-top:1px;
+	margin-bottom:1px;
+}
+
+#leftbox li.homepage {
+	margin: 15px 0px 15px 10px;
+}
+
+#leftbox li.homepage a {
+	display: block;
+	margin: 0;
+	padding: 0px;
+	width: 100px;
+	background: url(../image/btn_home.jpg) no-repeat left top;
+	text-indent: -10000px;
+	height: 25px;
+	outline: none;
+	overflow: hidden;
+}
+
+#leftbox li.homepage a:hover {
+	background-position: right top;
+}
+
+
+
+#leftbox .list_title{
+
+	font-size: 14px;
+	color: #666;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	padding: 3px 0px 3px 20px;
+	width:115px;
+	font-weight: bold;
+	background-image: url(../image/icon_list_title.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	
+}
+
+#leftbox .list_admin{
+
+	font-size: 14px;
+	color: #666;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	padding: 3px 0px 3px 20px;
+	width:115px;
+	font-weight: bold;
+	background-image: url(../image/icon_list_admin.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	
+}
+
+
+/*                                             */
+#mainbox {
+	width: 590px;
+	padding: 20px 0px 10px 10px;
+	float:left;
+}
+
+
+.on {
+	background-color: #FFEEEE;
+}
+
+.off{
+	background-color: #FFF;
+}
+
+form select:focus, input:focus, textarea:focus {
+ background-color: #FFEEEE;
+}
+
+/*=======modify - header======================*/
+
+.theader
+{
+	border-collapse: separate;
+	border-spacing: 0px;
+	font-size: x-small;
+	line-height: 150%;
+}
+
+.theader td
+{
+	padding: 5px;
+	border-right: 1px solid #ccc;
+	border-bottom: solid 1px #9999CC;
+	background-color: #EEEEEE;
+}
+
+.theader .nnline
+{
+	padding: 5px;
+	text-align:right;
+	border-right: 1px solid #ccc;
+	border-bottom: solid 1px #9999CC;
+	background-color: #EEEEEE;
+}
+
+.theader .nrline
+{
+	width :70%;
+	padding: 5px;
+	border-right: solid 0px red;
+	border-bottom: solid 1px #9999CC;
+	background-color: #EEEEEE;
+}
+
+/*========modify - tabheader =================*/
+
+.tabheader
+{
+	border-collapse: separate;
+	border-spacing: 0px;
+	font-size: x-small;
+	line-height: 150%;
+}
+
+.tabheader td
+{
+	padding: 5px;
+	border-bottom: solid 1px #9999CC;
+	background-color: #EEEEEE;	
+}
+
+.tabheader .empty{
+	border-bottom: solid 1px #91A7B4;
+	border-right:0px;
+}
+
+.tabheader .space{
+	font-size:0px;
+	width:1px;
+}
+
+.tabheader .right{
+	font-size:0px;
+	border-right: 1px solid #ccc;
+	width:1px;
+}
+
+.tabheader .pictab{
+	border:solid 0px;
+	text-align: center;
+	padding:7px 0px 0px 0px;
+}
+
+
+/*========modify - input =====================*/
+.tinput {
+	border-collapse: separate;
+	border-spacing: 0px;
+	font-size: x-small;
+	line-height: 150%;
+}
+
+.tinput th {
+	padding: 5px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	text-align: right;
+	font-weight: normal;
+	background-color: #DDDDDD;
+}
+
+.tinput td {
+	padding: 5px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: #EEEEEE;
+}
+
+/*=========modify - list  ======================*/
+.tlist {
+	border: 1px solid #CCC;
+	border-collapse: collapse;
+	border-spacing: 2px;
+}
+
+.tlist th {
+	background-image: url(../image/data_th.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	font-size: 11px;
+	line-height: 11px;
+	text-align: left;
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	padding: 6px;
+	border-right: 1px solid #999;
+}
+
+.tlist td {
+	font-size: small;
+	line-height: 150%;
+	padding: 3px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.tlist th.date22,
+.tlist td.date22 {
+	display:none;
+}
+
+.tlist .color1 {
+	background-color: #FFFFFF;
+}
+.tlist .color2 {
+	background-color: #F3F3F3;
+}
+
+/*===========================================*/
+.spc {
+	font-size: 11px;
+	line-height: 1em;
+	border-bottom: solid 1px #91A7B4;
+	white-space: nowrap;
+}
+
+.acline
+{
+	font-size: small;
+	line-height: 150%;
+	padding: 2px , 0 , 2px, 0;
+}
+
+
+
+/************************************/
+/*  tab                             */
+/************************************/
+
+#tab1,#tab2{
+
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	white-space: nowrap;
+	margin: 0px;
+	padding:0px;
+	text-align: center;
+	width: 80px;
+	height: 19px;
+	display: block;
+	cursor:pointer;
+	line-height: 150%;
+}
+
+.close {
+	background-image: url(../image/tab_c.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	white-space: nowrap;
+}
+
+.open {
+	
+	background-image: url(../image/tab_o.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	white-space: nowrap;
+}
+
+.boxtext {
+	height:400px;
+	width:588px;
+	font-size:0px;
+}
+
+
+
+.boxtext textarea{
+	float:left;
+	border :solid #9999cc 1px;
+	border-top: 0px;
+	font-size: 11px;
+	width:588px;
+	font-family: Verdana, Arial, "MS UI Gothic", Osaka, Helvetica, sans-serif;
+	overflow: auto;
+}
+
+
+
+
+
+#onlyfont{
+	font-size: 118%;
+}
+

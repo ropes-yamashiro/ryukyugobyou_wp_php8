@@ -1,0 +1,47 @@
+//ボチボチ日記-縦イメージ
+@begin main
+<!---------------------------------------------------------------------------->
+<!--  contents  label                                                       -->
+<!---------------------------------------------------------------------------->
+<div id="id{id}" class="block clearfix">
+<!--<p class="user">{username}</p>-->
+
+<h3><em>{title}</em></h3>
+<p class="day">{view_year}/{view_month}/{view_day}</p>
+<!--<p class="category">{category}</p>-->
+<div class="top" {display-if(summary)}>{summary}</div>
+<div class="block1">
+{contents}
+</div>
+
+</div>
+
+<!-- / 記事単位-->
+
+@end
+
+
+@begin item
+<!-- 写真単位-->
+<div class="block01 clearfix">
+{image-left}{image-right}
+<div class="{text-pos}">{text}</div>
+
+</div>
+<!-- /写真単位-->
+@endimage-left
+
+
+@begin image
+<p class="{image-pos} gallery">
+<a href="{img}" target="_blank"><img src="{img}" /></a></p>
+@end
+
+@begin pdf
+<div class="pdf_block">
+<span class="pdf_comment">{descpdf1}</span>
+<span class="pdf_link"><a href="manage/contents/document/pdf/{selpdf}" target="_blank">{descpdf}</a></span>
+</div>
+@end
+
+

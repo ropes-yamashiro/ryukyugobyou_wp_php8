@@ -1,0 +1,192 @@
+<!-- #MEMO# -------------------------------------------------
+行データ
+{line_class} = 行ごとに設定するクラス method01,method02,... と追加される
+
+列データ
+{thumb_width} = サムネイルの最大横幅
+{thumb_height} = サムネイルの最大縦幅
+
+ギャラリーのデータ
+{img_mini_path} = サムネイルのイメージのパス
+{img_big_path} = イメージのパス
+{img_width} = イメージの横幅
+{img_height} =　イメージの縦幅
+{img_title} =　イメージのタイトル
+{img_comment1} = イメージのコメント1
+{img_comment2} = イメージのコメント2
+{img_link} = リンク先URL
+
+その他のデータ
+{today_year} =　今日の年
+{today_mon} =　今日の月
+{today_mday} = 今日の日
+{today_week} = 曜日
+
+{final_year} =　最終更新日の年
+{final_mon} =　最終更新日の月
+{final_mday} = 最終更新日の日
+{final_week} = 最終更新日の曜日
+
+{view_id} = 表示ID
+{view_title} = 表示位置のタイトル
+{view_comment} = 表示位置のコメント
+
+
+{popup_width} = ポップアップウインドウの横幅
+{popup_height} = ポップアップウインドウの縦幅
+{popup_url} = ポップアップのURL
+{popup_id} =　表示する内容のID
+
+{group_comment} = グループのコメント
+{group_title} = グループのタイトル
+
+
+#lineブロック　行データ
+#list_top     列データの開始データ
+#list_end     列データの終了データ
+#list_normal  列の通常データ　list_top,list_endがない場合これを使う
+
+
+※このコメントは表示には消去します
+---------------------------------------------------------
+--><!-- rep("../../../","") --><!-- rep("utf-8","shift_jis") -->
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="copyright" content="" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="../../../css/default.css" rel="stylesheet" type="text/css" />
+<link href="../../../css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../../js/analytics.js"></script>
+<script type="text/javascript" src="../../../js/smoothscroll.js"></script>
+<script type="text/javascript" src="../../../manage/jscript/user/gallery.js"></script>
+</head>
+<body class="fuukei">
+<!-- ラッパー -->
+
+<div id="wrapper" class="clearfix">
+
+
+<div id="container">
+
+  <!-- コンテンツ -->
+<div id="contents">
+
+<h2><img src="../../../img/img-gallery/ttl_01.gif" alt="ギャラリーＣＭＳ" width="692" height="50" /></h2>
+<div class="block01">
+
+
+
+
+
+<!-- #line start -->
+<ul>
+<!-- #list_top start -->
+<li>
+<dl>
+<dt><a href="javascript:void(0);" target="_top" onclick="return popup('{popup_id}','{view_id}','{popup_width}','{popup_height}','{gfix}')" >
+<img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" /></a></dt>
+<dd class="tittle">{img_comment1}</dd>
+<dd>{img_comment2}</dd>
+</dl>
+</li>
+<!-- #list_top end -->
+
+<!-- #list_normal start -->
+<li>
+<dl>
+<dt><a href="javascript:void(0);" target="_top" onclick="return popup('{popup_id}','{view_id}','{popup_width}','{popup_height}','{gfix}')" >
+<img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" /></a></dt>
+<dd class="tittle">{img_comment1}</dd>
+<dd>{img_comment2}<br />
+{line_class} = 行ごとに設定するクラス method01,method02,... と追加される
+<br />
+列データ<br />
+{thumb_width} = サムネイルの最大横幅<br />
+{thumb_height} = サムネイルの最大縦幅<br />
+
+ギャラリーのデータ<br />
+{img_mini_path} = サムネイルのイメージのパス<br />
+{img_big_path} = イメージのパス<br />
+{img_width} = イメージの横幅<br />
+{img_height} =　イメージの縦幅<br />
+{img_title} =　イメージのタイトル<br />
+{img_comment1} = イメージのコメント1<br />
+{img_comment2} = イメージのコメント2<br />
+{img_link} = リンク先URL<br />
+<br />
+その他のデータ<br />
+{today_year} =　今日の年<br />
+{today_mon} =　今日の月<br />
+{today_mday} = 今日の日<br />
+{today_week} = 曜日<br />
+<br />
+{final_year} =　最終更新日の年<br />
+{final_mon} =　最終更新日の月<br />
+{final_mday} = 最終更新日の日<br />
+{final_week} = 最終更新日の曜日<br />
+<br />
+{view_id} = 表示ID<br />
+{view_title} = 表示位置のタイトル<br />
+{view_comment} = 表示位置のコメント<br />
+<br />
+
+{popup_width} = ポップアップウインドウの横幅<br />
+{popup_height} = ポップアップウインドウの縦幅<br />
+{popup_url} = ポップアップのURL<br />
+{popup_id} =　表示する内容のID<br />
+
+{group_comment} = グループのコメント<br />
+{group_title} = グループのタイトル
+</dd>
+</dl>
+</li>
+<!-- #list_normal end -->
+
+<!-- #list_end start -->
+<li>
+<dl>
+<dt><a href="javascript:void(0);" target="_top" onclick="return popup('{popup_id}','{view_id}','{popup_width}','{popup_height}','{gfix}')" >
+<img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" /></a></dt>
+<dd class="tittle">{img_comment1}</dd>
+<dd>{img_comment2}</dd>
+</dl>
+</li>
+<!-- #list_end end -->
+
+<!-- {list} -->
+
+
+<!-- #INGORE start -->
+<!--ポップアップ保存用-->
+<li><a href="javascript:void(0);" target="_top" onclick="return popup('{popup_id}','{view_id}','{popup_width}','{popup_height}','{gfix}')" ><img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" height="{img_height}" /></a></li>
+
+<!--リンク保存用-->
+<li><a href="{img_link}" target="_top"><img src="{img_mini_path}" alt="{img_title}" width="{thumb_width}" height="{img_height}" /></a></li>
+
+<!-- #INGORE end -->
+
+</ul>
+<!-- #line end -->
+<!-- {line} -->
+
+
+
+</div>
+</div>
+<!-- （終）コンテンツ -->
+
+</div>
+</div>
+<!-- （終）ラッパー -->
+
+
+</body>
+</html>

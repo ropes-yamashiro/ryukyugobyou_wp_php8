@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- 公開時には必ず削除すること！！！！！！-->
+<!-- 公開時には必ず削除すること！！！！！！-->
+<meta name="robots" content="noindex,nofollow">
+<!-- 公開時には必ず削除すること！！！！！！-->
+<!-- 公開時には必ず削除すること！！！！！！-->
+<title>ログイン画面｜○○○○○株式会社</title>
+<meta name="description" content="○○○○○○" />
+<meta name="Keywords" content="○○○○○○" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="content-language" content="ja">
+<!-- bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- master css 編集不可 -->
+<!--共通部分-->
+<link href="css/master_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+<!--コーディングファイル-->
+<link href="css/default_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+<link href="css/form_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+<link href="css/layout_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+<!-- GoogleAnalytics -->
+<!-- 公開時には必ずコメント外すこと！！！！！！-->
+<!-- 公開時には必ずコメント外すこと！！！！！！-->
+<!--<script type="text/javascript" src="js/analytics.js"></script>-->
+<!-- 公開時には必ずコメント外すこと！！！！！！-->
+<!-- 公開時には必ずコメント外すこと！！！！！！-->
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!-- エフェクト -->
+<script type="text/javascript" src="js/effect.js"></script>
+<!--ハンバーガーメニュー -->
+<script type="text/javascript" src="js/jquery.slideMenu.js"></script>
+<!-- スムーズスクロール -->
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<!-- TOPへ -->
+<!--<script type="text/javascript" src="js/jquery.scrollTo.js"></script>-->
+<!--ヘッダー固定-->
+<!--<script type="text/javascript" src="js/hide-header.js"></script>-->
+<!--ポップアップ-->
+<!--<script type="text/javascript" src="js/popup.js"></script>-->
+<!--スマホヘッダ動き-->
+<script type="text/javascript" src="js/scroll_sp.js"></script>
+<!--ブラウザー別css-->
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+<!--アコーディオン用-->
+<script type="text/javascript" src="js/jquery.accordion.js"></script>
+<!--<script type="text/javascript">
+//グローバルナビ モーダルウィンドウ処理
+      var ua = navigator.userAgent;
+      if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 
+    && ua.indexOf('Mobile') > 0) {
+      } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+            // タブレット用の処理
+			document.write('<script type="text/javascript" //src="js/tb_modal.js"><\/script>');
+      } else {
+            // PC用の処理
+			document.write('<script type="text/javascript" //src="js/pc_modal.js"><\/script>');
+      }
+</script>-->
+<!-- ファビコン -->
+<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico?v=3.0.17">
+<link rel="apple-touch-icon" href="img/img-common/apple-touch-icon-180x180.png?v=3.0.17" sizes="180x180">
+<link rel="icon" type="image/png" href="img/img-common/android-chrome-192x192.png?v=3.0.17" sizes="192x192">
+<!--webフォント-->
+<!--はんなり明朝-->
+<link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
+<!--Notosan-->
+<link href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="admin">
+<div class="wrapper"> 
+  
+ 
+ <main>
+ <!--コンテンツ-->
+  <div id="contents" class="clearfix">
+    <article>
+     <section class="page_contents container">
+<form method="POST" action="admin.php" target="_top" id="loginform">
+<input type="hidden" value="login" name="typex" />
+      <div class="ttl_area">
+        <h2 class="l_cmn_ttl"><img src="img/img-common/login_bg01sp.png" alt="LoginForm" /></h2>
+        </div>
+          <p class="firsttxt {type}">{message}</p>
+          <div class="block sp_mb10">
+            <p class="ttl pat01">アカウント名</p>
+            <div class="in_txtOuter">
+              <label class="in_txt">
+                <input class="in_txtItem" type="text" placeholder="" name="userid" value="{userid}">
+                </label>
+              </div>
+            </div>
+          
+          <div class="block sp_mb10">
+            <p class="ttl pat01">パスワード</p>
+            <div class="in_txtOuter">
+              <label class="in_txt">
+                <input class="in_txtItem" type="password" placeholder="" name="passwd">
+                </label>
+              </div>
+            </div>
+          
+          
+          <div class="btn_wrp sp_mb30">
+                <label>
+                  <input type="submit" id="btnNext" name="next" value="ログイン" class="btn">
+                </label>
+            </div>
+          
+          <div class="coution">
+          <p>【管理者の方へ】</p>
+          <p class="sp_mb10">ログインパスワードは、「パスワード設定」メニューから変更できます。推測されやすいものや短い単語などは避けてください。</p>
+          <p>パスワードの漏えいはホームページ改ざんにつながる可能性がありますので、定期的な変更をおすすめします。</p>
+          </div>
+          
+          <div id="copy"><a href="http://www.copyright.com" target="_blank">©&nbsp;@copyright@&nbsp;</a></div>
+          
+</form>
+        </section>
+      
+      
+      </article>
+  </div>
+  <!--コンテンツ-->
+  </main>
+</div>
+</body>
+</html>

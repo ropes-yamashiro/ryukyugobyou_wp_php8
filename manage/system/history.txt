@@ -1,0 +1,5 @@
+version	auther			remark
+----------------------------------------------------------
+1.2.4	
+1.2.5	SB/K.Arikata	documentプラグイン　PHP7対応
+1.2.6	SB/K.Arikata	formプラグイン　reCAPTHCAv3導入

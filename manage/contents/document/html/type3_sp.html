@@ -1,0 +1,80 @@
+	
+
+<div id="box1">
+		
+	<div class="sp_mb30" id="box0">
+	<p class="ttl sp_mb5">{viewtype_name}{hidden}<span class="redreq">必須</span></p>
+		{hidden}
+				
+		<div class="sp_mb10">
+		<p class="thlabel ttl ">ことば</p>
+		<p class="tlefts sp_mb10"><textarea rows="5" name="summary" id="summary" style="width:100%">{summary}</textarea></p>
+		</div>
+		
+		<div class="sp_mb10">
+		<p class="thlabel ttl ">No</p>
+		<p class="tlefts sp_mb10"><label><input name="text1" style="width:50px" value="{text1}"></label></p>
+		</div>
+
+		<div class="sp_mb10">
+		<p class="thlabel ttl ">カテゴリ</p>
+		<p class="tlefts sp_mb10"><label><input name="text2" style="width:150px" value="{text2}"></label></p>
+		</div>
+
+		<div class="sp_mb10">
+		<p class="thlabel ttl ">出典</p>
+		<p class="tlefts sp_mb10"><label><textarea rows="2" name="text3" style="width:100%">{text3}</textarea></label></p>
+		</div>
+		
+		<div class="sp_mb10">
+		<p class="thlabel ttl ">解説1</p>
+		<p class="tlefts sp_mb10"><label><textarea rows="6" name="text4" id="text4" style="width:100%">{text4}</textarea></label></p>
+		</div>
+		
+		<div class="sp_mb10">
+		<p class="thlabel ttl ">出典</p>
+		<p class="tlefts sp_mb10"><label><textarea rows="3" name="text5" id="text5" style="width:100%">{text5}</textarea></label></p>
+		</div>
+		
+		<div class="sp_mb10">
+		<p class="thlabel ttl ">人名(非表示)</p>
+		<p class="tlefts sp_mb10"><label><textarea rows="2" name="text6" style="width:100%">{text6}</textarea></label></p>
+		</div>
+		
+	</div>
+			
+</div>
+
+
+	
+<script type="text/javascript">
+	function summaryChanged(titleElement, summaryElement) {
+		var length = summaryElement.value.length;
+		titleElement.value = summaryElement.value.replace(/\r\n/g, " ").replace(/\n/g, " ").substring(0, (length > 18) ? 16 : length) + ((length > 18) ? "..." : "");
+	}
+	var titleElement = document.getElementsByName('title')[0];
+	titleElement.parentNode.parentNode.parentNode.style.display = 'none';
+	var summaryElement = document.getElementsByName('summary')[0];
+	summaryChanged(titleElement, summaryElement);
+	summaryElement.onblur = function() {summaryChanged(titleElement, this);};
+</script>
+	
+<!--<script type="text/javascript">
+$(function(){
+    CKEDITOR.replace('summary',{
+		customConfig: '/manage/jscript/editor/config.js',
+		toolbar: 'Smartphone',
+		height:'100',
+	});
+    CKEDITOR.replace('text4',{
+		customConfig: '/manage/jscript/editor/config.js',
+		toolbar: 'Smartphone',
+		height:'100',
+	});
+    CKEDITOR.replace('text5',{
+		customConfig: '/manage/jscript/editor/config.js',
+		toolbar: 'Smartphone',
+		height:'70',
+	});
+});
+</script>-->

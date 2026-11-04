@@ -1,0 +1,5 @@
+{thumbnail}
+<dl>
+<dt><a href="{link}" {blank}>{title}</a></dt>
+<dd>{summary}</dd>
+</dl>

@@ -1,0 +1,15 @@
+//確認画面で使用するテンプレート
+//使用できる変数
+//{value} : チェックボックスの値
+//{nline} : 奇数行・偶数行を示す値
+//(config.ini内のodd-name even-nameを参照)
+@begin check
+・{value} <br />
+@end
+
+//自動返信メールで使用するテンプレート
+//使用できる変数
+//{value} : チェックボックスの値
+@begin mail
+　・{value}
+@end

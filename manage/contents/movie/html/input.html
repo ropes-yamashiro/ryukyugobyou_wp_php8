@@ -1,0 +1,139 @@
+<script language="javascript" src="jscript/jquery.js"></script>
+<script language="javascript" src="jscript/editor/ckeditor.js"></script>
+<SCRIPT TYPE="text/javascript">
+<!--
+//詳細のプレビュー
+function preview(){
+    document.formx.cmd.value = "preview";
+    document.formx.action = "contents/movie/preview.php?id={id}";
+    document.formx.target = "_blank";
+    document.formx.submit();
+    return false;
+}
+
+//更新データを保存する
+function chtype(){
+   	document.formx.cmd.value = "chtype";
+   	document.formx.action = "admin.php";
+	document.formx.target = "";
+    document.formx.submit();
+    return false;
+}
+//更新データを保存する
+function save(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "save";
+        document.formx.target = "";
+        document.formx.action = "admin.php";
+        document.formx.submit();
+    }
+    return false;
+}
+
+function savelist(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "savelist";
+        document.formx.target = "";
+        document.formx.action = "admin.php";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//項目を削除する
+function back(){
+    if(window.confirm('一覧に戻りますか？')){
+        document.formx.cmd.value = "listview";
+        document.formx.action = "admin.php";
+        document.formx.target = "";
+        document.formx.submit();
+    }
+    return false;
+}
+
+$(function() {
+    //CKEDITOR.replace('nontitle',{toolbar : 'NonLink'});
+    //CKEDITOR.replace('editor1',{toolbar : 'Full'});
+    //CKEDITOR.replace('editor2',{toolbar : 'Full'});
+});
+
+// -->
+</SCRIPT>
+<style type="text/css">
+    .thcommand{
+        margin:0 0 15px 0;
+    }
+    .theader{
+        width:100%;
+        border: none;
+    }
+
+    .theader .tlefts{
+        padding-left: 10px;
+    }
+
+    .tinput2{
+        width:100%;
+        margin:0 0 15px 0;
+    }
+
+    .tinput2 {
+        border-collapse: separate;
+        border-spacing: 0px;
+        font-size: x-small;
+        line-height: 150%;
+    }
+
+    .tinput2 .thlabel {
+        width: 80px;
+        padding: 5px 10px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: right;
+        font-weight: normal;
+        background-color: #DDDDDD;
+    }
+
+    .tinput2 .tlefts {
+        padding: 5px 8px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #EEEEEE;
+    }
+    .errmes{
+        margin-bottom: 15px;
+    }
+
+</style>
+<form method=POST action="?typex=movie" name="formx" enctype="multipart/form-data">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;動画管理&nbsp;&nbsp;{group}：
+		<input type=submit id=btm value="保存" onclick="return save();" />
+		<input type=submit id=Submit1 value="プレビュー" onclick="return preview();" /></td></tr>
+	</table>
+	<br>
+	
+	{err}
+    <em>※は必須入力項目です。</em>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;基本データ</td></tr>
+	</table>
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput2">
+		<tr>
+			<th width="80" class="thlabel">ID</th>
+            <td class="tlefts">&nbsp;{id}</td>
+		</tr>
+		<tr>
+			<th width="80" class="thlabel">タイトル<em>※</em></th>
+            <td class="tlefts">&nbsp;<label><input type=text name=title onFocus="this.className='on';" onBlur="this.className='off'" value="{title}" style="width:400px" /></label></td>
+		</tr>
+	</table>
+	<br>
+	{viewtype_input}
+	<div>&nbsp;</div>
+ 	{hidden}
+ 	{old_data}
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" />
+	<input type=hidden name="id" value="{id}" />
+</form>

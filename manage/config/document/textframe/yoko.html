@@ -1,0 +1,26 @@
+@begin main
+<div id="id{id}" class="block clearfix">
+<h3><em>{title}</em></h3>
+<p class="day">{view_year}/{view_month}/{view_day}</p>
+<!--<p class="category">{category}</p>-->
+<div class="top" {display-if(summary)}>{summary}</div>
+<ul class="clearfix">{contents}</ul>
+
+</div>
+@end
+
+@begin item
+{image-left}{image-right}
+@end
+
+@begin image
+<li class="gallery"><a href="{img}" target="_blank">
+<img src="{img}" /></a></li>
+@end
+
+@begin pdf
+<div id="id{id}" class="yoko pdf_block">
+<span class="pdf_comment">{descpdf1}</span>
+<span class="pdf_link"><a href="manage/contents/document/pdf/{selpdf}" target="_blank">{descpdf}</a></span>
+</div>
+@end

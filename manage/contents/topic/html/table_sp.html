@@ -1,0 +1,191 @@
+@begin err_access
+<font color="red">不正アクセスエラー：権限がありません</font>
+@end
+
+@begin err_access2
+<font color=red>不正アクセスが発生しました</font>
+@end
+
+@begin format_db
+データを初期化しました
+@end
+
+@begin err_cmd
+<font color="red">不正アクセスエラー：{cmd}は定義されていません</font>
+@end
+
+@begin menu
+新着情報
+@end
+
+@begin authinfo
+新着情報の{title}の編集が可能になります。
+@end
+
+@begin page
+<li><a class="page-numbers" href="?" onClick="return pagech({no});">{view}</a></li>
+@end
+@begin page_current
+<li><span class="page-numbers current">{view}</span></li>
+@end
+
+@begin notpic
+<font color=red >対応する写真はありません</font>
+@end
+
+@begin preview2
+<a href="?typex=topic&cmd=preview&pageid={pid}&param={id}" onclick="openWindow('?typex=topic&cmd=preview&pageid={pid}&param={id}','','scrollbars=yes,resizable=yes,width=670,height=430');return false;"><img src="img/img-common/btn_preview.png" alt="プレビュー" class="img_max100" /></a>
+@end
+
+@begin preview3
+<a href="../document.php?pid={contents_group}&param={contents_title}" target="_blank"><img src="img/img-common/btn_preview.png" alt="プレビュー" class="img_max100" /></a>
+@end
+
+@begin preview4
+<a href="../document.php?pid={contents_group}&param={contents_title}&cmd=anchor#id{contents_title}" target="_blank"><img src="img/img-common/btn_preview.png" alt="プレビュー" class="img_max100" /></a>
+@end
+
+@begin preview
+<a href="?typex=topic&cmd=preview&pageid={pid}&param={id}" target="_blank"><img src="img/img-common/btn_preview.png" alt="プレビュー" class="img_max100" /></a>
+@end
+
+@begin notdata
+<tr class="color1"><td colspan="6"><center>データがありません</center></td></tr>
+@end
+
+@begin table_line	
+<div class="list_area">
+	<table class="list_contents">
+		<tr>
+			<td class="c1" rowspan="2"><i>表示</i>
+				<label class="in_check checkbox-red in_check-care">
+					<input type=checkbox name=id{id} value="1" {visible} onClick="return chvisible({id});" /><span></span>
+				</label>
+			</td>
+			<td class="c2" rowspan="2">
+			<!--<a href="newsdetail.html" class="linkarea">-->
+			<a href="javascript:void(0)" onClick="return detail({id});" class="linkarea">
+			<p class="kiji_date">{view_year}年 {view_month}月 {view_day}日</p>
+			<p class="kiji_title">{title}</p>
+			<!--<p class="kiji_title"><a href="javascript:void(0)" onClick="return detail({id});">{title}</a></p>-->
+			<div class="kiji_info"><p class="kiji_user">ユーザー/システム管理者</p><p class="kiji_type">タイプ/{type}</p></div>
+			</a>
+			<div class="linkarea2">
+			<p class="btn_preview">{preview}</p>
+			<p class="btn_delete"><a href="javascript:void(0)" onClick="return delline({id},'{title}');"><img src="img/img-common/btn_delete.png" alt="削除" class="img_max100" /></a></p>
+			</div>
+			</td>
+			<td class="c3">
+				<p class="up"><a href="javascript:void(0)" onClick="return upline('{sort}');" ><img src="img/img-common/btn_up.png" alt="上へ" /></a></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="c3 tddown">
+				<p class="down"><a href="javascript:void(0)" onClick="return downline('{sort}');" ><img src="img/img-common/btn_up.png" alt="下へ" /></a></p>
+			</td>
+		</tr>
+	</table>
+</div>
+@end
+
+
+@begin table
+<SCRIPT TYPE="text/javascript">
+//ページを変更する
+function pagech(no){
+	document.formx.pageno.value=no;
+	document.formx.submit();
+	return false;
+}
+
+//表示の数を変える
+function countch(){
+    document.formx.pageno.value=1;
+    document.formx.submit();
+    return false;
+}
+
+
+//項目を削除する
+function delline(did,title){
+    if(window.confirm(title + 'を削除しますか？')){
+        document.formx.cmd.value = "delline";
+        document.formx.param.value = did;
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+//新着情報を作成する
+function newtopic(){
+    document.formx.cmd.value = "newtopic";
+    document.formx.submit();
+    return false;
+}
+
+//上に移動する
+function upline(pid){
+    document.formx.cmd.value = "upline";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+
+//下に移動する
+function downline(pid){
+    document.formx.cmd.value = "downline";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+
+//表示を切り替える(PC)
+function chvisible(pid){
+    document.formx.cmd.value = "chvisible";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+
+//表示を切り替える(SP)
+function chvisibleSp(pid){
+    document.formx.cmd.value = "chvisible_sp";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+
+//詳細を表示する
+function detail(pid){
+    document.formx.cmd.value = "detail";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+</SCRIPT>
+<form method="POST" name=formx action="?typex=topic" class="list_common newslist">
+	<div id="contents" class="clearfix">
+		<article>
+			<div class="ttl_area">
+				<h2 class="l_cmn_ttl">「新着情報」一覧</h2>
+				<p class="btn_create"><a href="javascript:void(0)" onclick="return newtopic();"><img src="img/img-common/btn_create.png" alt="新規作成" class="img_max100" /></a></p>
+			</div>
+
+			<section>
+				{view}
+			</section>
+
+			<div class="page_navi clearfix">
+				<ul class="page-numbers clearfix">
+					{paging}
+				</ul>
+			</div>
+		</article>
+	</div>
+		<input type=hidden name="pageid" value="{pid}" />
+		<input type=hidden name="pageno" value="{pageno}" />
+		<input type=hidden name="cmd" value="list" />
+		<input type=hidden name="param" />
+</form>
+@end

@@ -1,0 +1,315 @@
+
+<link href="css/smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" type="text/css" />
+<link href="jscript/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="jscript/jquery.js"></script>
+<script language="javascript" src="jscript/jquery-ui.js"></script>
+<script language="javascript" src="jscript/editor/ckeditor.js"></script>
+<script language="javascript" src="jscript/gallery-init.js"></script>
+<script language="javascript" src="jscript/facebox/facebox.js"></script>
+<script TYPE="text/javascript">
+    <!--
+
+    //データを保存する
+    function save(){
+        if(window.confirm('保存しますか？')){
+            document.formx.cmd.value = "save";
+            document.formx.submit();
+        }
+        return false;
+    }
+
+    //データを読込み直す
+    function road(){
+        if(window.confirm("データを読込み直します。\n編集している内容は失われます")){
+            document.formx.cmd.value = "reload";
+            document.formx.submit();
+        }
+        return false;
+    }
+
+    //一覧に戻る
+    function back(){
+        if(window.confirm("一覧に戻りますか？\n編集している内容は失われます")){
+            document.formx.cmd.value = "backlist";
+            document.formx.submit();
+        }
+        return false;
+    }
+
+    //イメージを削除する
+    function delimage(){
+        if(window.confirm("イメージを削除しますか？")){
+            document.formx.cmd.value = "imgremove";
+            document.formx.submit();
+        }
+        return false;
+    }
+
+    //データを保存して一覧に戻る
+    function saveback(){
+        if(window.confirm("保存して一覧に戻りますか？")){
+            document.formx.cmd.value = "saveback";
+            document.formx.submit();
+        }
+        return false;
+    }
+    
+    //特定のURLにジャンプする
+    function jumplink(url){
+        if(url != ''){
+            window.open(url,null);
+        }
+        return false;
+    }
+
+    //位置を移動させる
+    function moveitem(size,updown){
+        $("#state_move_size").val(size);
+        $("#state_move_type").val(updown);
+        $("#cmd").val("rotate");
+
+        $.post('admin.php?typex=gallery_detail&ajaxmode=true'
+            , $("#formx").serialize()
+            , function(data) {
+                $('#sortnum').html(data);
+            });
+        return false;
+    }
+
+    function close_popup(){
+        $.facebox.close();
+        popup_modal();
+    }
+
+    //ダイアログを表示する
+    function popup_modal(){
+        $("#cmd").val("list");
+        $.post('admin.php?typex=gallery_detail&ajaxmode=true'
+            , $("#formx").serialize()
+            , function(data) {
+              $('select[name="groupid"]').html(data);
+            });
+        //モーダルダイアログが終了すると、ここからスクリプトが続行される
+        return false;
+    }
+
+
+    $(function() {
+        CKEDITOR.replace('nontitle',{toolbar : 'NonLink',height:'50'});
+        CKEDITOR.replace('editor1',{toolbar : 'Full'});
+        CKEDITOR.replace('editor2',{toolbar : 'Full'});
+    });
+    
+    // -->
+</script>
+<style type="text/css">
+    .thcommand{
+        margin:0 0 15px 0;
+    }
+    .theader{
+        width:100%;
+        border: none;
+    }
+
+    .theader .tlefts{
+        padding-left: 10px;
+    }
+
+    .tinput2{
+        width:100%;
+        margin:0 0 15px 0;
+    }
+
+    .tinput2 {
+        border-collapse: separate;
+        border-spacing: 0px;
+        font-size: x-small;
+        line-height: 150%;
+    }
+
+    .tinput2 .thlabel {
+        width: 80px;
+        padding: 5px 10px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: right;
+        font-weight: normal;
+        background-color: #DDDDDD;
+    }
+
+    .tinput2 .tlefts {
+        padding: 5px 8px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #EEEEEE;
+    }
+    .errmes{
+        margin-bottom: 15px;
+    }
+
+    /* 上ボタン
+    ---------------------------------------------------------------------------*/
+
+    a.btnup1{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        margin-left: 6px;
+        background: url(image/btn/up1.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+
+    a.btnup1:hover{
+        background-position: right top;
+    }
+
+     a.btnup10{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/up10.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+    a.btnup10:hover{
+        background-position: right top;
+    }
+
+    a.btnupmax{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/upmax.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+    a.btnupmax:hover{
+        background-position: right top;
+    }
+
+
+    /* 下ボタン
+    ---------------------------------------------------------------------------*/
+
+    a.btndn1{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        margin-left: 6px;
+        background: url(image/btn/dn1.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+
+    a.btndn1:hover{
+        background-position: right top;
+    }
+
+     a.btndn10{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/dn10.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+    a.btndn10:hover{
+        background-position: right top;
+    }
+
+    a.btndnmax{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/dnmax.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+    a.btndnmax:hover{
+        background-position: right top;
+    }
+
+</style>
+
+<form method="POST" name="formx" enctype="multipart/form-data" id="formx">
+    {html_state}
+    {html_paging}
+    {id}
+    <input type="hidden" name="cmd" id="cmd" />
+    <input type="hidden" name="state_move_size" id="state_move_size" />
+    <input type="hidden" name="state_move_type" id="state_move_type" />
+    <table border="0" cellpadding="0" cellspacing="0" class="theader thcommand">
+        <tr>
+            <td class="tlefts">画像詳細
+                <input type="button" value="保存のみ"     onclick="return save()" />
+                <input type="button" value="保存して一覧へ戻る" onclick="return saveback()" />
+                <input type="button" value="一覧へ戻る"   onclick="return back();" />
+            </td>
+        </tr>
+    </table>
+    {html_err}
+    <em>※は必須入力項目です。</em>
+    <table cellpadding="0" cellspacing="0" class="theader">
+        <tr><td class="tlefts">表示設定</td></tr>
+    </table>
+    <table  cellpadding="0" cellspacing="0" class="tinput2">
+        <tr>
+            <th class="thlabel">表示</th>
+            <td class="tlefts">
+                <label>
+                    <input type="checkbox" name="isvisible" value="1" {isvisible_1} />ホームページに表示する
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">表示期間</th>
+            <td class="tlefts">
+                <label>
+                    <input type="checkbox" name="useviewterm" value="1" {useviewterm_1} />表示期間を有効にする　
+                </label>
+                <input type="text" id="fromdate" name="fromdate" value="{fromdate}"  />～
+                <input type="text" id="finishdate" name="finishdate" value="{finishdate}"   />
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">グループ</th>
+            <td class="tlefts"><select name="groupid">{html_group}</select>
+                {html_group_edit}
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">表示順位</th>
+            <td class="tlefts">
+                {html_sort}
+            </td>
+        </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" class="theader">
+        <tr><td class="tlefts">画像情報</td></tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" class="tinput2">
+        <tr>
+            <th class="thlabel">タイトル<em>※</em></th>
+            <td class="tlefts"><textarea name="title" cols="60" rows="5" id="nontitle">{title}</textarea></td>
+        </tr>
+        <tr>
+            <th class="thlabel">写真<em>※</em></th>
+            <td class="tlefts"><i>写真を選択してください。（gif,jpeg,jpgファイル）</i><br /><i>写真サイズは最大１メガバイトを目安にしてください。</i><br />{html_img}</td>
+        </tr>
+        <tr>
+            <th class="thlabel">リンクURL</th>
+            <td class="tlefts">
+                <input type="text" id="linkurl" name="linkurl" value="{linkurl}" size="60" />
+                <input type="button" value="テスト" onclick="return jumplink($('#linkurl').val());">
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">コメント１</th>
+            <td class="tlefts"><textarea name="comment1" cols="60" rows="5" id="editor1">{comment1}</textarea></td>
+        </tr>
+        <tr>
+            <th class="thlabel">コメント２</th>
+            <td class="tlefts"><textarea name="comment2" cols="60" rows="5" id="editor2">{comment2}</textarea></td>
+        </tr>
+
+    </table>
+
+
+
+</form>

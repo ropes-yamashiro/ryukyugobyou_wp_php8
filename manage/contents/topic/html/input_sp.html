@@ -1,0 +1,393 @@
+@begin err_container
+ <font color=red>{err}<br></font>
+@end
+
+@begin err_file_total
+一度に合計{size}以上はアップロードできません。<br>
+@end
+
+@begin err_file_size
+{size}以上のファイルはアップロードできません。<br>
+@end
+
+@begin err_title
+タイトルを入力してください。<br>
+@end
+
+@begin err_nonday
+掲載開始日は存在しない日付です。<br>
+@end
+
+@begin err_type
+表示タイプを選択してください。<br>
+@end
+
+@begin err_link
+リンク先を入力を入力してください。<br>
+@end
+
+@begin err_linkto
+表示形式を選択してください。<br>
+@end
+
+@begin err_linkto2
+表示形式に不正なデータが入力されています。<br>
+@end
+
+@begin err_pic
+写真{num}は、サイズが0のファイルが選択できません。<br>
+@end
+
+@begin err_ext
+写真{num}は、.{ext}のファイルは指定できません。<br>
+@end
+
+@begin err_contents
+内容を入力してください。<br>
+@end
+
+@begin err_file
+ファイルを選択してください。<br>
+@end
+
+@begin err_filesize
+サイズが0のファイルが選択できません。<br>
+@end
+
+@begin err_type_value
+データタイプに不正なデータが入力されています。<br>
+@end
+
+@begin hidden
+<input type=hidden name=type value="{type}"  >
+@end
+
+@begin file_exist
+<em>{filename}</em><input type=hidden name={name}id value={fid} />
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:delfile('{fid}','{filename}');">削除</a>
+&nbsp;&nbsp;<a href="?typex=topic&cmd=pic&pageid={pid}&param={fid}" target="_blank">表示</a>
+@end
+
+@begin file_nonexist
+<input type=file name={name} class="img_max100"  />
+@end
+<!--<span class="filebtn"><i>ファイルを選択</i></span>
+<input type="file" class="files" name={name} />
+<input type="text" class="filename" name={name} placeholder="選択されていません" readonly />-->
+
+@begin input_type
+<div class="in_checkOuter sp_mb20">
+<label class="in_radio in_radio-status checkbox-red in_radio-status-org sp_mb10"><input type=radio name=type onClick="selbox(0,5);" value="0" {type0} /><span>リンク</span></label>
+<label class="in_radio in_radio-status checkbox-red in_radio-status-org sp_mb10"><input type=radio name=type onClick="selbox(1,5);" value="1" {type1} /><span>ポップアップ</span></label>
+<label class="in_radio in_radio-status checkbox-red in_radio-status-org sp_mb10"><input type=radio name=type onClick="selbox(2,5);" value="2" {type2} /><span>ファイル</span></label>
+<label class="in_radio in_radio-status checkbox-red in_radio-status-org sp_mb10"><input type=radio name=type onClick="selbox(3,5);" value="3" {type3} /><span>タイトルのみ</label>
+</div>
+@end
+
+@begin input
+<!--<script language="javascript" src="jscript/jquery.js"></script>-->
+<!--<script language="javascript" src="jscript/editor/ckeditor.js"></script>-->
+<script src="//cdn.ckeditor.com/4.13.1/full-all/ckeditor.js"></script>
+<SCRIPT TYPE="text/javascript">
+//更新データを保存する
+function saveonly(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "saveonly";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//更新データを保存する
+function topicsave(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "saveinput";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//項目を削除する
+function back(){
+    if(window.confirm('一覧に戻りますか？')){
+        document.formx.cmd.value = "list";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//対象ファイルを削除する
+function delfile(fid,fname){
+    if(window.confirm(fname + 'を削除しますか?')){
+        document.formx.cmd.value = "delfile";
+        document.formx.param.value = fid;
+        document.formx.submit();
+    }
+    return false;
+}
+
+//コンテンツグループを変更する
+function ch_contents(){
+	document.formx.cmd.value = "ch_contents";
+    document.formx.submit();
+    return false;
+}
+
+$(function() {
+    CKEDITOR.replace('nontitle', {
+		customConfig: SITE_DIR+'manage/jscript/editor/config.js',
+		toolbar: 'Smartphone',
+		height:'200'
+	});
+//	CKEDITOR.replace('editor',{toolbar : 'Full'});
+
+    $("#visible_both").click(function(){
+    	$(".visible_area").find('input[type=\'checkbox\']').attr('checked', this.checked);
+    });
+});
+</SCRIPT>
+
+
+
+<form method=POST action="?typex=topic" name="formx" enctype="multipart/form-data" class="detail_common newsdetail">
+    <input type=hidden name="pageid" value="{pid}" />
+	<input type=hidden name="pageno" value="{pageno}" />
+	<input type=hidden name="count" value="{count}" />
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" />
+	<input type=hidden name="dataid" value="{id}" />
+	<input type=hidden name="sort" value="{sort}" />
+  <div id="contents" class="clearfix">
+    <article>
+      <div class="ttl_area">
+      <h2 class="l_cmn_ttl">「新着情報」記事登録・編集</h2>
+      </div>
+      
+	{err}
+      <section class="page_contents">
+      <div class="container">
+      
+      <div class="block">
+      	<p class="ttl pat01">タイトル<span class="redreq">必須</span></p>
+      	<div class="in_txtOuter">
+			 <label class="in_txt">
+			  <input class="in_txtItem" type="text" placeholder="タイトルを追加" name="title" value="{title}">
+			 </label>
+		</div>
+      </div>
+      
+      <div class="block">
+      	<div class="wpselect">
+      	<p class="ttl pat02">掲載日</p>
+      	<div class="inselect">
+      	<div class="in_selectOuter in_selectOuter-sbs year">
+			<div class="in_select in_select-sbs in_select-sm js_select mr30-pc mr30-sp">
+             <select name="view_year" id="year">{view_year}</select>
+             <span class="ml10">年</span>
+            </div>
+        </div>
+      	<div class="in_selectOuter in_selectOuter-sbs month">
+			<div class="in_select in_select-sbs in_select-sm js_select mr30-pc mr30-sp">
+             <select name="view_month" id="month">{view_month}</select>
+             <span class="ml10">月</span>
+            </div>
+        </div>
+        <div class="in_selectOuter in_selectOuter-sbs day">
+			<div class="in_select in_select-sbs in_select-sm js_select mr30-pc mr30-sp">
+             <select name="view_day" id="day">{view_day}</select>
+             <span class="ml10">日</span>
+            </div>
+        </div>
+        </div>
+       </div>
+     <p class="kome sp_mt10">※未来の日時を設定すると、設定日の0時に記事が反映されます。</p>
+      </div>
+      
+      <div class="block visible_area">
+      	<p class="ttl pat02">公 開</p>
+      	<p class="kokai">
+			<label class="in_check checkbox-red in_check-care">
+				  <input type=checkbox id="visible_both" name="visible_both" value="1" {visible_both1} />
+			<span></span>
+			</label>
+			
+		</p>
+		<input type=checkbox id=visible	name="visible" value="1" style="display:none;" {visible1} />
+		<input type=checkbox id="visible_sp" name=visible_sp value="1" style="display:none;" {visible_sp1} />
+      </div>
+      
+      
+      
+      <div class="block">
+      	<p class="ttl pat01">表示タイプ</p>
+      	
+		{type}
+		
+		  
+	<!-- ラジオボタン版 -->
+      <div class="block view_type">
+		<div id="box0" style="visibility:hidden;position:absolute;display: none;">
+
+		<div class="displaytype">
+			<div class="" id="box0">
+			<p class="ttl sp_mb5">リンク先URL<span class="redreq">必須</span></p>
+				<div class="in_txtOuter sp_mb10">
+				<label class="in_txt">
+				<input class="in_txtItem" type="text" placeholder="(例)http://www.ann-company.com/" name="link" value="{link}">
+				</label>
+				</div>
+
+			<p class="ttl sp_mb5">表示ウィンドウ</p>
+				<div class="in_checkOuter displaywidow sp_mb10">
+				<label class="in_radio in_radio-status checkbox-red in_radio-status-gray pc_mb20">
+				<input type="radio" name="linkto"  value="0" {linkto0}><span>現在のウィンドウ</span></label>
+				<label class="in_radio in_radio-status checkbox-red in_radio-status-gray pc_mb20">
+				<input type="radio" name="linkto"  value="1" {linkto1}><span>新しいウインドウ</span></label>
+				</div>
+			</div>
+		</div>
+
+		</div>
+
+		<div id="box1" style="visibility:hidden;position:absolute;display: none;">
+		
+			<div class="displaytype">
+				<div class="" id="box0">
+				<p class="ttl sp_mb5">内容<span class="redreq">必須</span></p>
+					<div class="in_txtOuter sp_mb10">
+					<label class="in_txt"><textarea rows="10" name="contents" style="width:485px" id="editor">{contents}</textarea></label>
+	※「"」（ダブルクォーテーション）は誤作動の原因となりますので使用できません。
+					</div>
+
+					<div class="sp_mb10">
+					<p class="thlabel ttl ">写真1</p>
+					<p class="tlefts"><label>{picname1}</label></p>
+					</div>
+
+					<div class="sp_mb10">
+					<p class="thlabel ttl ">写真2</p>
+					<p class="tlefts"><label>{picname2}</label></p>
+					</div>
+
+					<div class="sp_mb10">
+					<p class="thlabel ttl ">写真3</p>
+					<p class="tlefts"><label>{picname3}</label></p>
+					</div>
+
+					<div class="sp_mb10">
+					<p class="thlabel ttl ">写真4</p>
+					<p class="tlefts"><label>{picname4}</label></p>
+					</div>
+
+					<div class="sp_mb10">
+					<p class="thlabel ttl ">写真5</p>
+					<p class="tlefts"><label>{picname5}</label></p>
+					</div>
+
+				</div>
+			</div>		
+
+		</div>
+
+		<div id="box2" style="visibility:hidden;position:absolute;display: none;">
+		
+			<div class="sp_mb10">
+			<p class="thlabel ttl ">ファイル</p>
+			<p class="tlefts"><label>{filename}</label></p>
+			<i>※ ファイルサイズは最大１メガバイトを目安にしてください。</i>
+			</div>
+
+		</div>
+
+		<div id="box4" style="visibility:hidden;position:absolute;display: none;">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+			<tr><td width="100%">&nbsp;&nbsp;リンクするブログの記事を選択</td></tr>
+		</table>
+
+		<table width="100%" cellpadding="0" cellspacing="0" class="tinput2">
+			<tr>
+				<th class="thlabel">ブログ</th>
+							<td class="tlefts">&nbsp;&nbsp;<label><select name=contents_group onchange="return ch_contents();" onFocus="this.className='on';" onBlur="this.className='off'" >{contents_group}</select></label></td>
+			</tr>
+			<tr>
+				<th class="thlabel">ブログ記事タイトル</th>
+							<td class="tlefts">&nbsp;&nbsp;<label><select name=contents_title onFocus="this.className='on';" onBlur="this.className='off'" >{contents_title}</select></label></td>
+			</tr>
+			<tr>
+				<th class="thlabel">表示先</th>
+							<td class="tlefts">
+					&nbsp;<label><input type="radio" name="linktoD"  value="0" {linktoD0}/>現在のウインドウ</label>
+					&nbsp;<label><input type="radio" name="linktoD"  value="1" {linktoD1}/>新しいウインドウ</label>
+				</td>
+			</tr>
+			<tr>
+				<th class="thlabel">表示形式</th>
+							<td  class="tlefts">
+					&nbsp;<label><input type=radio name=anchor  value="0" {anchor0}/>一覧表示</label>
+					&nbsp;<label><input type=radio name=anchor  value="1" {anchor1}/>単独表示</label>
+				</td>
+			</tr>
+		</table>
+		<br>
+		</div>
+		  
+      </div>
+     <!-- ラジオボタン版 -->
+
+      </div>		  
+      
+      
+      <div class="block in_txt in_txt-fullWidth mt0">
+      	<p class="ttl pat01">概要</p>
+      	<textarea class="in_txtItem-area" placeholder="概要を入力" name="summary" id="nontitle">{summary}</textarea>
+      	<p class="kome sp_mt10">※「”」（ダブルクォーテーション）は誤作動の原因となりますので使用できません。</p>
+      </div>
+      
+
+      
+      <div class="block">
+      	<p class="ttl pat01">サムネイル</p>
+      	<div class="inner">
+      	  <p class="btn_file">{thumbnail}</p>
+      	  <p class="cou sp_mt15">画像ファイルを選択してください。<br>（gif,jpeg,jpgファイル）画像サイズは最大１メガバイトを目安にしてください。</p>
+       </div>
+      	
+      </div>
+      	
+      </div>
+      </section>
+      
+      <ul class="btn_save">
+      <li><a href="javascript:void(0);" onclick="return saveonly()">保存</a></li>
+      <li><a href="javascript:void(0);" onclick="return topicsave()">保存して一覧へ</a></li>
+      <li><a href="javascript:void(0);" onclick="return back();">一覧へ</a></li>
+      </ul>
+      
+    </article>
+  </div>
+</form>
+
+
+<script type="text/javascript">
+ $(function() {
+     $('.files').css({
+         'position': 'absolute',
+         'top': '-9999px'
+     })
+	 .change(function() {
+         var val = $(this).val();
+         var path = val.replace(/\\/g, '/');
+         var match = path.lastIndexOf('/');
+    $('.filename').css("display","inline-block");
+         $('.filename').val(match !== -1 ? val.substring(match + 1) : val);
+     });
+     $('.filename').bind('keyup, keydown, keypress', function() {
+         return false;
+     });
+     $('.filename, .filebtn').click(function() {
+         $('.files').trigger('click');
+     });
+ });
+</script>
+
+@end

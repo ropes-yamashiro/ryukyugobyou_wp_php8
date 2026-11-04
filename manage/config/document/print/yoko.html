@@ -1,0 +1,26 @@
+@begin main
+<!-- 1つの記事 -->
+<div id="id{id}" class="in clearfix">
+<h3>{title}</h3>
+<p class="date"><em>{view_year}/{view_month}/{view_day}</em></p>
+<div class="top" {display-if(summary)}>{summary}</div>
+<ul>{contents}</ul>
+</div>
+
+<!-- /1つの記事 -->
+@end
+
+
+@begin image
+
+<li class="gallery"><a href="{img}" target="_blank">
+<img src="{img}"  height = "{view-y}" width="{view-x}" style='border:0;' /></a></li>
+
+@end
+
+
+@begin item
+<!-- 写真単位 -->
+{image-left}{image-right}
+<!-- /写真単位 -->
+@end

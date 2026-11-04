@@ -1,0 +1,292 @@
+<link href="jscript/facebox/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="jscript/jquery.js"></script>
+<script language="javascript" src="jscript/editor/ckeditor.js"></script>
+<script language="javascript" src="jscript/view-init.js"></script>
+<script language="javascript" src="jscript/facebox/facebox.js"></script>
+
+<script TYPE="text/javascript">
+    <!--
+
+    function onvalue(list){
+        for(var name in list){
+            $("#" + list[name]).attr('disabled',false);
+            $("#" + list[name]).css('background-color','#FFF');
+        }
+    }
+
+    function offvalue(list){
+        for(var name in list){
+            $("#" + list[name]).attr('disabled',true);
+            $("#" + list[name]).css('background-color','#CCC');
+        }
+    }
+
+    function chstatus(){
+        if($("#event_popup").attr('checked')){
+            onvalue(["pop_fix","pop_image","img_width","img_height"]);
+
+            if($("#pop_fix").attr('checked')){
+                onvalue(["pop_width","pop_height"]);
+                offvalue(["margin_top","margin_right","margin_bottom","margin_left"]);
+            }
+            if($("#pop_image").attr('checked')){
+                offvalue(["pop_width","pop_height"]);
+                onvalue(["margin_top","margin_right","margin_bottom","margin_left"]);
+            }
+        }
+        if($("#event_link").attr('checked')){
+            offvalue(["pop_fix","pop_image","img_width","img_height"]);
+            offvalue(["pop_width","pop_height"]);
+            offvalue(["margin_top","margin_right","margin_bottom","margin_left"]);
+        }
+        
+    }
+
+    function chpos(){
+        var nowid = $('#id').val();
+        if(nowid == 0){
+            document.formx.cmd.value = "view";
+            document.formx.submit();
+            return false;
+        }
+
+        var newpos = $('#position :selected').val();
+        if(newpos == 0) return false;
+
+        if(window.confirm("表示位置を切換えます。\n編集している内容は失われます")){
+            document.formx.cmd.value = "view";
+            document.formx.submit();
+        }
+        return false;
+    }
+
+    //データを保存する
+    function save(){
+        if(window.confirm('保存しますか？')){
+            document.formx.cmd.value = "save";
+            document.formx.submit();
+        }
+        return false;
+    }
+
+    //データを読込み直す
+    function reload(){
+        if(window.confirm("データを読込み直します。\n編集している内容は失われます")){
+            document.formx.cmd.value = "reload";
+            document.formx.submit();
+        }
+        return false;
+    }
+
+
+    //ダイアログを閉じた後の処理
+    function popup_modal(){
+        //表示場所一覧の切換え
+        $("#cmd").val("none");
+        document.formx.submit();
+        //モーダルダイアログが終了すると、ここからスクリプトが続行される
+        return false;
+    }
+
+    function ch_percount(){
+        if($("#pertext").html() == "") $("#pertext").html(" 枚ずつ表示");
+        var count = $("#row_count").val() *  $("#column_count").val();
+        $("#percount").html(count);
+    }
+
+    function selectall(){
+        if($("#group_all:checked").length){
+            $("input[name^='group_edit_id']").attr('checked',true);
+        }
+        else{
+            $("input[name^='group_edit_id']").attr('checked',false);
+        }
+    }
+
+    $(function() {
+        offvalue(["pop_fix","pop_image","img_width","img_height"]);
+        offvalue(["pop_width","pop_height"]);
+        offvalue(["margin_top","margin_right","margin_bottom","margin_left"]);
+        chstatus();
+
+        //$("#group_all").change(selectall);
+        CKEDITOR.replace('nontitle',{toolbar : 'NonLink',height:'50'});
+        CKEDITOR.replace('editor',{toolbar : 'Full'});
+    });
+
+
+    // -->
+</script>
+<style type="text/css">
+    .thcommand{
+        margin:0 0 15px 0;
+    }
+    .theader{
+        width:100%;
+        border: none;
+    }
+
+    .theader .tlefts{
+        padding-left: 10px;
+    }
+
+    .tinput2{
+        width:100%;
+        margin:0 0 15px 0;
+    }
+    input.method01{
+        margin:4px 0 4px 0;
+    }
+
+    .tinput2 {
+        border-collapse: separate;
+        border-spacing: 0px;
+        font-size: x-small;
+        line-height: 150%;
+    }
+
+    .tinput2 .thlabel {
+        width: 95px;
+        padding: 5px 10px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: right;
+        font-weight: normal;
+        background-color: #DDDDDD;
+    }
+
+    .tinput2 .tlefts {
+        padding: 5px 8px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #EEEEEE;
+    }
+
+    .grouplist {
+        padding-right: 20px;
+        width:110px;
+        float:left;
+    }
+    .errmes{
+        margin-bottom: 15px;
+    }
+
+</style>
+
+<form method="POST" name="formx" enctype="multipart/form-data" id="formx">
+    {html_state}
+    <input type="hidden" name="id" id="id" value="{id}" />
+    <input type="hidden" name="cmd" id="cmd" />
+    <table border="0" cellpadding="0" cellspacing="0" class="theader thcommand">
+        <tr>
+            <td class="tlefts">ギャラリー設定
+                {html_save}
+                {html_reload}
+
+            </td>
+        </tr>
+    </table>
+    {html_err}
+    <em>※は必須入力項目です。</em>
+    <table cellpadding="0" cellspacing="0" class="theader">
+        <tr><td class="tlefts">表示設定</td></tr>
+    </table>
+    <table  cellpadding="0" cellspacing="0" class="tinput2">
+        <tr>
+            <th class="thlabel">ギャラリー名</th>
+            <td class="tlefts"><select name="position" id="position"  onchange="return chpos();" >{html_position}</select>{html_edit_position}</td>
+        </tr>
+        <tr>
+            <th class="thlabel">タイトル</th>
+            <td class="tlefts"><textarea name="title" cols="60" rows="15" id="nontitle">{title}</textarea></td>
+        </tr>
+        <tr>
+            <th class="thlabel">コメント</th>
+            <td class="tlefts"><textarea name="comment" cols="60" rows="15" id="editor">{comment} </textarea></td>
+        </tr>
+        <tr>
+            <th class="thlabel">表示するグループ<em>※</em></th>
+            <td class="tlefts"><span id="html_group">{html_group}</span></td>
+        </tr>
+
+        <tr>
+            <th class="thlabel">グループ表示方法<em>※</em></th>
+            <td class="tlefts">
+                <label><input type="radio" name="group_view" value="1" class="method01" {group_view_1}  />グループをまとめる</label><br />
+                <label><input type="radio" name="group_view" value="2" class="method01" {group_view_2} />表示するグループを順番に切り替える</label><br />
+                <label><input type="radio" name="group_view" value="3" class="method01" {group_view_3} />表示するグループをランダムに切り換える</label>
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">画像の表示方法<em>※</em></th>
+            <td class="tlefts">
+                
+                <label><input type="radio" name="image_view" value="1" class="method01" {image_view_1} />表示順で表示　{pertext2}</label><br />
+                <label><input type="radio" name="image_view" value="2" class="method01" {image_view_2} />ランダムで表示　{pertext1}</label><br />
+                <label><input type="radio" name="image_view" value="3" class="method01" {image_view_3} />固定で表示　{pertext3}</label><br />
+                
+            </td>
+        </tr>
+    </table>
+
+    <!-- #AUTH_START -->
+    <table cellpadding="0" cellspacing="0" class="theader">
+        <tr><td class="tlefts">詳細設定</td></tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" class="tinput2">
+        <tr>
+            <th class="thlabel">クリック時の処理</th>
+            <td class="tlefts">
+                <label><input type="radio" name="event_type" id="event_popup" value="1" {event_type_1} />ポップアップ表示</label>
+                <label><input type="radio" name="event_type" id="event_link" value="2" {event_type_2} />リンク先へ移動</label>
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">サムネイルの<br>画像サイズ<em>※</em></th>
+            <td class="tlefts">
+                最大縦幅<input type="text" id="thumbnail_height" name="thumbnail_height" value="{thumbnail_height}" size="10" />px
+                　最大横幅<input type="text" id="thumbnail_width" name="thumbnail_width" value="{thumbnail_width}" size="10" />px
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">サムネイルの<br>並べ方<em>※</em></th>
+            <td class="tlefts">
+                行<input type="text" id="row_count" name="row_count" value="{row_count}" size="9" onchange="ch_percount();" />
+                列<input type="text" id="column_count" name="column_count" value="{column_count}" size="9" onchange="ch_percount();" />
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">ポップアップ内の<br>画像サイズ<em>※</em></th>
+            <td class="tlefts">
+                最大縦幅<input type="text" id="img_height" name="img_height" value="{img_height}" size="9" />px
+            　最大横幅<input type="text" id="img_width" name="img_width" value="{img_width}" size="9" />px
+            </td>
+        </tr>
+
+        <tr>
+            <th class="thlabel">ホップアップの<br>サイズ<em>※</em></th>
+            <td class="tlefts">
+                <div>
+                <label><input type="radio" name="pop_type" id="pop_fix" value="1" {pop_type_1} />サイズ固定</label><br />
+                縦<input type="text" id="pop_height" name="pop_height" value="{pop_height}" size="9" />px
+                　横<input type="text" id="pop_width" name="pop_width" value="{pop_width}" size="9" />px<br />
+                </div>
+
+                <div style="margin-top: 10px;"><label><input type="radio" name="pop_type" id="pop_image" value="2" {pop_type_2} />イメージに合わせる</label><br />
+                上<input type="text" id="margin_top" name="margin_top" value="{margin_top}" size="9" />px
+                　右<input type="text" id="margin_right" name="margin_right" value="{margin_right}" size="9" />px
+                　下<input type="text" id="margin_bottom" name="margin_bottom" value="{margin_bottom}" size="9" />px
+                　左<input type="text" id="margin_left" name="margin_left" value="{margin_left}" size="9" />px
+                 </div>
+            </td>
+        </tr>
+        <tr>
+            <th class="thlabel">アクセス用のURL</th>
+            <td class="tlefts">
+                    {view_url}
+            </td>
+        </tr>
+
+    </table> 
+    <!-- #AUTH_END -->
+</form>

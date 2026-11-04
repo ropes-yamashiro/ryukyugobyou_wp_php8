@@ -1,0 +1,52 @@
+<SCRIPT TYPE="text/javascript">
+<!--
+
+//ユーザーを変更する
+function chuser(){
+    document.formx.cmd.value = "chuser";
+    document.formx.submit();
+    return false;
+}
+
+function chauth(authkey){
+    document.formx.cmd.value = "chauth";
+    document.formx.param.value = authkey;
+    document.formx.submit();
+    return false;
+}
+
+// -->
+</SCRIPT> 
+<form method=POST action="?typex=account" name="formx">
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" />
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;アカウント権限設定</td></tr>
+	</table>
+	<br>
+	
+
+
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;基本データ</td></tr>
+	</table>
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput">
+		<tr>
+			<th width="100">ユーザー名</th><td>&nbsp;
+                            <label><select name='userid' onFocus="this.className='on';" onBlur="this.className='off'" onchange="return chuser();">{userid}</select></label></td>
+		</tr>
+	</table>
+	<br>
+	
+	{errcode}
+	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;権限詳細 : 設定の変更はログイン時に有効になります</td></tr>
+	</table>
+	
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput">
+{auth_line}
+	</table>
+	<br>
+	<div>&nbsp;</div>
+</form>

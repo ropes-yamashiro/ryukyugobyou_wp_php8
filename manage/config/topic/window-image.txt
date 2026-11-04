@@ -1,0 +1,1 @@
+<p id="gallery"><a href="{link}" target="_blank"><img src="{link}" width="{xmax}" /></a></p>

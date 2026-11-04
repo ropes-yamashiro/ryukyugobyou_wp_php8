@@ -1,0 +1,5 @@
+  <div class="pagetop">
+  <p><a href="#wrapper"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭に戻る"></a></p>
+  </div>
+
+<h2><img src="img/img-voice/ttl_04.gif" alt="高校受験" width="600" height="38"></h2>

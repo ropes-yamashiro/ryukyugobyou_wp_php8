@@ -1,0 +1,340 @@
+<!-- #MEMO# -------------------------------------------------
+行データ
+{line_class} = 行ごとに設定するクラス method01,method02,... と追加される
+
+列データ
+{thumb_width} = サムネイルの最大横幅
+{thumb_height} = サムネイルの最大縦幅
+
+ギャラリーのデータ
+{img_mini_path} = サムネイルのイメージのパス
+{img_big_path} = イメージのパス
+{img_width} = イメージの横幅
+{img_height} =　イメージの縦幅
+{img_title} =　イメージのタイトル
+{img_title_nontag} = タグのないイメージタイトル
+{img_comment1} = イメージのコメント1
+{img_comment2} = イメージのコメント2
+{img_link} = リンク先URL
+
+その他のデータ
+{today_year} =　今日の年
+{today_mon} =　今日の月
+{today_mday} = 今日の日
+{today_week} = 曜日
+
+{final_year} =　最終更新日の年
+{final_mon} =　最終更新日の月
+{final_mday} = 最終更新日の日
+{final_week} = 最終更新日の曜日
+
+{view_id} = 表示ID
+{view_title} = 表示位置のタイトル
+{view_comment} = 表示位置のコメント
+
+
+{popup_width} = ポップアップウインドウの横幅
+{popup_height} = ポップアップウインドウの縦幅
+{popup_url} = ポップアップのURL
+{popup_id} =　表示する内容のID
+
+{group_comment} = グループのコメント
+{group_title} = グループのタイトル
+
+
+#lineブロック　行データ
+#list_top     列データの開始データ
+#list_end     列データの終了データ
+#list_normal  列の通常データ　list_top,list_endがない場合これを使う
+
+
+※このコメントは表示には消去します
+---------------------------------------------------------
+--><!-- rep("../../../","") --><!-- rep("utf-8","shift_jis") --><!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>講師紹介｜京都 修学塾</title>
+<meta name="Keywords" content="講師,紹介,京都,塾,修学塾">
+<meta name="Description" content="修学塾の講師は選び抜かれた「優しく熱意ある京大生」です。修学塾では１人１人の講師に大変な時間をかけて「一流の講師」としての教育をしています。">
+<meta name="viewport" content="width=device-width">
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.0.1.css">-->
+<link rel="canonical" href="http://www.shugakujuku-kyoto.com/gallery.php?g=2" >
+<link rel="stylesheet" href="css/default.css" />
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/sliderkit.css" />
+<script src="js/jquery.mobile-1.0.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.cookie_para.js"></script>
+<script type="text/javascript" src="js/smoothScroll.js"></script>
+<script type="text/javascript">
+function hideAdBar(){
+    setTimeout("scrollTo(0,1)", 100);
+
+		$('.sliderkit-nav-clip li').css( 'width', 'auto');
+		$('.sliderkit-nav-clip li').css( 'maxWidth', '100%');
+		$('.sliderkit-nav-clip li').css( 'height', 'auto');
+		$('.sliderkit-nav-clip ul').css( 'width', 'auto');
+		$('.sliderkit-nav-clip').css( 'width', 'auto');
+
+}
+$(function(){
+
+	$(".accordion h3").click(function(){
+		$(this).next("section").slideToggle();
+		$(this).children("span").toggleClass("open");
+		//setTimeout("alert($('.block02').height() + ' pixel')", 500);
+	/*	$("ol").height(function(".block02", height) {
+			return height * 5;
+		});*/
+	});
+
+})
+</script>
+<script type="text/javascript" src="js/analytics.js"></script>
+<script type="text/javascript" src="js/jquery.sliderkit.1.8.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#sliderkit_firstimg").click(function(){
+		$('#index_slide').sliderkit({
+			shownavitems: 11,
+			circular:true,
+			navitemshover: false,
+			//navitemshover: true,
+			autospeed: 10000,
+			//panelfx :'sliding',
+			panelfx :'fading',
+			panelfxspeed: 1500,
+			panelfxfirst: 'fading',
+			auto: true,
+			navClipSize: 1500
+		});
+		
+		if(navigator.userAgent.indexOf("MSIE") != -1) {
+			$('img').each(function() {
+				if($(this).attr('src').indexOf('.png') != -1) {
+					$(this).css({
+						'filter': 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="' +
+						$(this).attr('src') +
+						'", sizingMethod="scale");'
+					});
+				}
+			});
+		}
+		
+		$("#sliderkit_firstimg").addClass("empty");		
+		
+	});
+});
+</script>
+<link rel="icon" href="http://www.shugakujuku-kyoto.com/favicon_sp.ico" type="image/x-icon" />  
+<link rel="Shortcut Icon" type="image/x-icon" href="http://www.shugakujuku-kyoto.com/favicon_sp.ico" />
+<link href="/sp-icon.png"rel="apple-touch-icon-precomposed">
+</head>
+<body onLoad="hideAdBar()" onOrientationChange="hideAdBar()" class="koushi">
+<div id="wrapper">
+<header id="header">
+<h1><a href="index.php"><img src="img/img-common/hed_logo.png" alt="修学塾"></a></h1>
+<p class="change"><a href="{href}" onClick="changeView()"><img src="img/img-common/hed_btn01.png" alt="PCサイト"></a></p>
+</header>
+
+
+<div id="contents">
+    <h2 class="first"><img src="img/img-koushi/ttl_01.gif" alt="講師紹介" width="639" height="70"></h2>
+<div class="block01">
+<p><img src="img/img-koushi/img_12.png" alt="京大生講師として指導力・評判ともに京都No.1に！" id="sliderkit_firstimg" /></p>
+<div class="sliderkit" id="index_slide">
+<p><img src="img/img-koushi/thumbtn_01.png" alt="講師サムネイル1" /></p>
+<div class="sliderkit-panels">
+<div class="back"><img src="img/img-koushi/img_11.png" alt="コメント枠"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_01.png" alt="講師コメント1"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_02.png" alt="講師コメント2"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_03.png" alt="講師コメント3"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_04.png" alt="講師コメント4"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_05.png" alt="講師コメント5"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_06.png" alt="講師コメント6"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_07.png" alt="講師コメント7"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_08.png" alt="講師コメント8"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_09.png" alt="講師コメント9"  /><span></span></div>
+<div class="sliderkit-panel"><img src="img/img-koushi/img_10.png" alt="講師コメント10"  /><span></span></div>
+</div>
+<div class="sliderkit-nav">
+<div class="sliderkit-nav-clip">
+<ul>
+<li class="method01"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_10.png" alt="講師サムネイル1" /></a></li>
+<li class="method02"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_02.png" alt="講師サムネイル2" /></a></li>
+<li class="method03"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_03.png" alt="講師サムネイル3" /></a></li>
+<li class="method04"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_04.png" alt="講師サムネイル4" /></a></li>
+<li class="method05"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_05.png" alt="講師サムネイル5" /></a></li>
+<li class="method06"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_06.png" alt="講師サムネイル" /></a></li>
+<li class="method07"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_07.png" alt="講師サムネイル7" /></a></li>
+<li class="method08"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_08.png" alt="講師サムネイル8" /></a></li>
+<li class="method09"><a href="javascript:void(0);"><img src="img/img-koushi/thumbtn_09.png" alt="講師サムネイル9" /></a></li>
+<li class="method10"><a href="javascript:void(0);" ><img src="img/img-koushi/thumbtn_10.png" alt="講師サムネイル10" /></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+ <script type="text/javascript">// <![CDATA![
+/*        window.onload = function() {
+
+            $('.sliderkit-nav-clip li').css( 'width', 'auto');
+            $('.sliderkit-nav-clip li').css( 'maxWidth', '100%');
+            $('.sliderkit-nav-clip li').css( 'height', 'auto');
+            $('.sliderkit-nav-clip ul').css( 'width', 'auto');
+            $('.sliderkit-nav-clip').css( 'width', 'auto');
+
+        }*/
+//]]></script>
+
+<link rel="stylesheet" href="css/sliderkit.css" />
+
+<section class="block03">
+<h3><img src="img/img-koushi/ttl_02.gif" alt="講師心得"></h3>
+<p><em>修学塾には、講師の成長の指針となる「講師心得」という冊子があります。</em></p>
+<p class="last">代表が情熱を注いで書き上げ、「心の章」「技の章」合わせて約60テーマ、35,000字に及びます。<br>
+  本来、講師だけに配布しているものですが、<em>修学塾が講師を教育する際にどんなことを大切にしているのかお分かりいただきたいと思い、いくつかをご紹介いたします。</em></p>
+<h3><img src="img/img-koushi/ttl_03.gif" alt="講師心得（一部）"></h3>
+</section>
+
+
+<section class="block02 clearfix">
+
+<ul class="accordion">
+<li>
+<h3><span><img src="img/img-koushi/btn_01.jpg" alt="自分が出来ることと、人に教えることは違う" width="461" height="77"><img src="img/img-koushi/btn_00.png" alt="open" width="461" height="77" class="open_btn"></span></h3>
+<section class="first">
+<p class="first">自分が勉強して成績を上げるのと、それを教えて生徒の成績を上げるのはまったく違います。</p>
+
+<p><strong>自分が１を理解することは１の努力で出来るとしても、生徒に１を伝えるには１０を知らないと上手く出来ません。</strong>あらゆる角度からの質問に答えられるように自分が学習した上で、その中からもっとも使用頻度の高い部分だけを効率的に生徒に教えてあげましょう。</p>
+
+<p>そして、<strong>説明内容は徹底的にシンプルにすることが大切</strong>です。１回の説明で５分かかっても長すぎると思って下さい。５分後には説明の最初の方は忘れています。余分な説明をそぎ落とし、<strong>生徒が必要としているまさにそのポイントだけ</strong>を的確に指導して下さい。</p>
+
+<p>こっちが教えたいことを教えるのではなく、相手が習いたいことを明確に伝えるのです。</p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_02.jpg" alt="発言はいつも前向きに" width="461" height="77"><img src="img/img-koushi/btn_00.png" alt="open" width="461" height="77" class="open_btn"></span></h3>
+<section class="first">
+<p class="first"><strong>いつも前向きで明るい態度・発言を保つようにしましょう。</strong>聞き手に気を遣わせてしまうような話題はなるべく控えることをお薦めします。</p>
+<p>例えば、（言い方にもよりますが）「今日体調不良ですっごいしんどいんですよ。」「今日は授業がいっぱいで、気力がもつかなぁ。」などのセリフは、「大丈夫ですよ、頑張って下さい！」と言ってもらえるでしょうが、これはただ相手に気を遣わせているだけです。それは人を疲れさせます。</p>
+<p>いつも明るく元気な人というのは、やはり魅力的です。人がついていき、人が集まるところには、必ず元気で明るい人がいるはずです。自分がそのような魅力的な人間であるために、まずは話題から自分を変えていってください。<strong>「今日は疲れた」ではなく「今日は充実した一日だった」と言葉を替える</strong>のです。のです。</p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_03.jpg" alt="常に明るく元気でいること生徒を笑顔にしよう" width="461" height="77"><img src="img/img-koushi/btn_00.png" alt="open" width="461" height="77" class="open_btn"></span></h3>
+<section class="first">
+<p class="first">塾に来て講師が疲れているのでは勉強する元気も出ません。<strong>生徒の前では常に元気な姿を見せるようにしてください。</strong>修学塾のカラーとして“明るく、楽しく、元気な授業”を心がけましょう。</p>
+<p>集中をとぎらせることなく１時間以上も同じ科目を勉強し続けるのは難しいことです。また、成績が上がれば勉強は楽しくなるものですが、それまではなかなかしんどいものです。</p>
+<p>そこまでを<strong>少しでも楽しくステップアップさせてあげるためにも“明るく、楽しく、元気な授業”</strong>を心がけ、１回の授業で最低１回は生徒を笑顔にさせてください。</p>
+<p>とはいえ笑わせているばかりでは授業になりません。真剣な中での一瞬の緩み、これを起爆剤にして次の集中に入ってもらうのです。</p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_04.jpg" alt="人の話は一旦聞く" width="461" height="77"><img src="img/img-koushi/btn_00.png" alt="open" width="461" height="77" class="open_btn"></span></h3>
+<section class="first">
+<p class="first">これは上手いコミュニケーションをする上で非常に重要です。人から何かのアドバイスを受けた時、もしくは自分の意に沿わない意見を提示された時、ついつい「いや、私は…」などと話を挟んでしまうことがあります。これはあまり良いこととはいえません。</p>
+<p>誰もあなたを根本から否定しようと思って言っているのではありません。<strong>人さまのセリフは全て自分のために発せられていると思いましょう。</strong>あなたをより良くしたいと思って言ってくれているのです。</p>
+<p>まずは感謝しましょう。<strong>受け入れがたい話であったとしても、一旦すべて聞き、「ありがとうございます」と言いましょう。</strong>それを自分に取り入れるかどうかはその後で考えればよいことです。</p>
+<p>自分の考えの方が正しいとしても、その場で主張して貫き通す必要などありません。考えの正しさは世間が必ず認めてくれます。自分が正しいと自信があるのなら、それこそ相手の話をしっかり聞いてあげましょう。それが器の大きさです。</p>
+</section>
+</li>
+<li>
+  <h3><span><img src="img/img-koushi/btn_05.jpg" alt="教える内容の重要性を先に伝える"><img src="img/img-koushi/btn_00.png" alt="open" width="461" height="77" class="open_btn"></span></h3>
+  <section class="first">
+<p class="first"><strong>伝える内容の重要度をあらかじめ教えておくことで、聞き手の集中力・興味を引き出すことができます。</strong>これはプレゼンテーションの秘訣でもあります。</p>
+<p>「重要なのは当然なんだから、説明しているうちに分かってくれるだろう」などという勝手な希望を持ってはいけません。<br>
+  仮に説明せずに伝わる場合であっても、そこをあえて言語化し、はっきりと伝えることで、もっと短時間で目的に達することが出来ます。</p>
+<p>これはとても重要な技術なので話し方の例を挙げておきましょう。</p>
+<p>――例は省略いたします。――<br>
+  ――塾で体験してください。――</p>
+<p>そうすることで、それを使って何が出来るのかが直感的に分かるので、授業内容を積極的に吸収していこうという姿勢が生まれるわけです。</p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_06.jpg" alt="授業には付加価値をつけ、お金を頂く価値のあるものにする" width="461" height="77"><img src="img/img-koushi/btn_00.png" alt="open" width="461" height="77" class="open_btn"></span></h3>
+<section class="first">
+<p class="first">塾は学校と違い、生徒はお金を払って習いに来ています。講師にとって授業とは１回１回が生徒のためのショーなのだと心がけましょう。</p>
+<p>勉強するだけなら本を読めば足ります。授業を聞きたいだけなら学校だけで十分です。<strong>優秀な塾講師であるあなただけの付加価値をつける</strong>ことで、生徒の心を鷲づかみにしてください。</p>
+<p>例えば、<em>「生徒の一人一人の能力・性格を分析し、成長に必要な道のりを段階化して示してあげる」</em>、これは非常に良い付加価値です。<br>
+  また、圧倒的な勉強経験値を活かして、<em>「生徒の学力に最適な問題や参考書を選んで提示してあげる」</em>こと、これもよいでしょう。それから、<em>「講師自身があらゆる質問にも答えられる学力をつけ、生徒の質問にはすべて明確に答えられる」</em>ことが出来れば、どんな辞書でも 追いつかない付加価値になります。</p>
+<p>授業には付加価値をつけ、生徒があなたを選ぶ理由、修学塾を選ぶ理由を提供していきましょう。</p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_07.jpg" alt="叱るとは手段の1つと心得よ叱るときは、理由をつけて、道徳的に" width="461" height="77"><img src="img/img-koushi/btn_00.png" alt="open" width="461" height="77" class="open_btn"></span></h3>
+<section class="first">
+<p class="first">生徒の叱り方やそのタイミングは非常に重要です。<br>
+  まず<strong>やってはいけないのは、「なんでこんな問題が解けないんだ」「これくらい出来て当然やろ」という叱り方</strong>です。一生懸命やっているのに、こう言われると結構こたえます。あなたも塾長から「数学のこんな問題教えるくらい、出来て当然やろ」「そんなん常識やろ」と言い放たれると、かなり傷つくのではありませんか？生徒だって同じですよ。</p>
+<p><strong>叱るとは手段の１つ</strong>であると肝に銘じて下さい。「相手のここを直したい」という目的に対して、その手段として「叱る」を選択したのです。イラっとしたから叱るのは、ただ怒っているだけです。正しく叱るには「相手をよりよくしてあげたい」という愛情が必要不可欠です。そして、<strong>理由をしっかり話して叱る</strong>こと、また道徳的な理由から叱ることです。　　</p>
+<p>――具体例は割愛いたします。――</p>
+<p>叱るというのは一言では表現できないくらい多様です。相手に対する愛情が必要だという点は絶対条件ですが、その方法はケースバイケースで学んでいきましょう。</p>
+</section>
+</li>
+</ul>
+  <ol>
+    <!-- #line start -->
+    <!-- #list_normal start -->
+    <li><img src="{img_mini_path}" alt="{img_nontag_title}" width="{thumb_width}" height="{thumb_height}" /></li>
+    <!-- #list_normal end --><!-- {list} -->
+<!--
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+-->
+    <!-- #line end --><!-- {line} -->
+  </ol>
+</section>
+
+<div style="background:#FFFFFF; position:relative; z-index:4; padding:8% 0 0;">
+  <p class="btn"><a href="rinen.html"><img src="img/img-koushi/btn_08.jpg" alt="教育理念" height="104"></a></p>
+</div>
+
+</div>
+
+<footer id="footer" style="position:relative; z-index:4; background:#FFFFFF; padding:8% 0 0;">
+<p class="pagetop"><a href="#wrapper"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭に戻る"></a></p>
+<section id="kousha">
+<h2><img src="img/img-common/fot_ttl01.gif" alt="修学塾 校舎のご紹介" width="640" height="105"></h2>
+<ul>
+	<li><a href="tel:075-241-7580"><img src="img/img-common/fot_btn01.jpg" alt="御池校"></a></li>
+	<li><a href="tel:075-721-6565"><img src="img/img-common/fot_btn02.jpg" alt="下鴨校"></a></li>
+	<li><a href="tel:075-702-5671"><img src="img/img-common/fot_btn03.jpg" alt="一乗寺校"></a></li>
+	<li><a href="access.html"><img src="img/img-common/fot_btn04.jpg" alt="交通アクセス"></a></li>
+</ul>
+</section>
+<p class="btn"><a href="inquiry.html"><img src="img/img-common/fot_btn05.jpg" alt="お問い合わせ・資料請求" width="480" height="117"></a></p>
+
+<ul class="fot_link">
+<li><a href="../gallery.php?g=1">授業風景</a></li><li class="last"><a href="../faq.html">よくあるご質問</a></li>
+</ul>
+<!--<ul class="fot_link">
+<li><a href="../gallery.php?g=1">授業風景</a></li><li><a href="../faq.html">よくあるご質問</a></li><li class="last"><a href="../hint.php">受験のヒント</a></li>
+</ul>-->
+
+<div id="pagetop">
+<p><a href="#wrapper"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭に戻る"></a></p>
+</div>
+<p id="copy">COPYRIGHT（C） <a href="http://www.shugakujuku-kyoto.com/">京都 修学塾</a> ALL RIGHTS RESERVED.　</p>
+</footer>
+</div>
+</body>
+</html>

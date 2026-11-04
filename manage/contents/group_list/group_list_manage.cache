@@ -1,0 +1,310 @@
+a:5:{s:8:"list_odd";s:1340:"
+        
+        
+        <tr class="color2" id="bg_id{id}" name="bg{id}" onmouseover="chBG2('bg{id}', 1);" onmouseout="chBG2('bg{id}', 0);">
+            <td style="padding-left:8px"><a href="javascript:void(0)" onclick="return detail_group('{id}');">{html_title}</a></td>
+            <td style="padding-left:8px">{html_comment}</td>
+            <td>
+                <div style="text-align: center;">
+                    <a href="javascript:void(0);" class="btnup1"  onclick="return moveitem('{id}',1,1);"><img src="image/btn/up1.gif" width="26" height="26" /></a>
+                    <a href="javascript:void(0);" class="btndn1"  onclick="return moveitem('{id}',1,0);"><img src="image/btn/dn1.gif" width="26" height="26" /></a>
+                    <a href="javascript:void(0);" class="btnupmax" onclick="return moveitem('{id}',0,1);"><img src="image/btn/upmax.gif" width="26" height="26" /></a>
+                    <a href="javascript:void(0);" class="btndnmax" onclick="return moveitem('{id}',0,0);"><img src="image/btn/dnmax.gif" width="26" height="26" /></a>
+                </div>
+            </td>
+            <td>
+                <div style="text-align: center;">
+                    <a href="javascript:void(0);" onclick="return removeall('{id}','{html_title}');">削除</a>
+                </div>
+            </td>
+	</tr>
+        ";s:9:"list_even";s:1341:"
+        
+        
+        <tr class="color1" id="bg_id{id}" name="bg{id}" onmouseover="chBG2('bg{id}', 1);" onmouseout="chBG2('bg{id}', 0);">
+            <td style="padding-left:8px"><a href="javascript:void(0)" onclick="return detail_group('{id}');">{html_title}</a></td>
+            <td style="padding-left:8px">{html_comment}</td>
+            <td>
+                <div style="text-align: center;">
+                    <a href="javascript:void(0);" class="btnup1"  onclick="return moveitem('{id}',1,1);"><img src="image/btn/up1.gif" width="26" height="26" /></a>
+                    <a href="javascript:void(0);" class="btndn1"  onclick="return moveitem('{id}',1,0);"><img src="image/btn/dn1.gif" width="26" height="26" /></a>
+                    <a href="javascript:void(0);" class="btnupmax" onclick="return moveitem('{id}',0,1);"><img src="image/btn/upmax.gif" width="26" height="26" /></a>
+                    <a href="javascript:void(0);" class="btndnmax" onclick="return moveitem('{id}',0,0);"><img src="image/btn/dnmax.gif" width="26" height="26" /></a>
+                </div>
+            </td>
+            <td>
+                <div style="text-align: center;">
+                    <a href="javascript:void(0);" onclick="return removeall('{id}','{html_title}');">削除</a>
+                </div>
+            </td>
+	</tr> 
+        ";s:9:"list_none";s:262:"
+        
+        
+        <tr class="color1" id="bg_id{id}" name="bg{id}" onmouseover="chBG2('bg{id}', 1);" onmouseout="chBG2('bg{id}', 0);">
+            <td style="text-align: center;" colspan="4"><label>データがありません</label></td>
+	</tr>
+        ";s:6:"paging";s:149:"
+                 
+                 
+                 &nbsp;<a href="javascript:void(0)" onClick="return ch_page({no});">{view}</a>
+                 ";s:4:"page";s:6521:"
+
+
+
+<script language="javascript" src="jscript/jquery.js"></script>
+<script language="javascript" src="jscript/editor/ckeditor.js"></script>
+<script TYPE="text/javascript">
+    <!--
+
+    //新規データを作成する
+    function detail_group(id){
+        document.formx.action = "admin.php?typex=group_detail&id=" + id;
+        document.formx.typex.value = "group_detail";
+        document.formx.cmd.value = "view";
+        document.formx.submit();
+        return false;
+    }
+
+    //ページを切り替える
+    function ch_page(no){
+        $("#cmd").val("view");
+        $("#pageno").val(no);
+        document.formx.submit();
+        return false;
+    }
+
+    //新規データを作成する
+    function new_group(){
+        document.formx.action = "admin.php?typex=group_detail";
+        document.formx.typex.value = "group_detail";
+        document.formx.cmd.value = "view";
+        document.formx.submit();
+        return false;
+    }
+
+    //グループを変更する
+    function ch_state(){
+        document.formx.pageno.value = 1;
+        document.formx.cmd.value="view";
+        document.formx.submit();
+        return false;
+    }
+
+
+    //表示の切換え
+    function removeall(id,title){
+        if(window.confirm(title + "を削除しますか？")){
+            document.formx.cmd.value = "removeall";
+            document.formx.targetid.value = id;
+            document.formx.submit();
+        }
+        return false;
+    }
+
+
+    //色付け
+    function chBG2(obj, color){
+        var bgcolors = new Array("", "#FFDDDD");
+        $("tr[name='" + obj + "']").css('background-color',bgcolors[color]);
+    }
+
+    //==========================================================================
+
+    //位置を移動させる
+    function moveitem(target,size,updown){
+        $("#move_size").val(size);
+        $("#move_type").val(updown);
+        $("#targetid").val(target)
+        $("#cmd").val("rotate");
+        document.formx.submit();
+        return false;
+    }
+
+    // -->
+</script>
+
+<style type="text/css">
+    .thcommand{
+        margin:0 0 15px 0;
+    }
+    .theader{
+        width:100%;
+        border: none;
+    }
+    th.start{
+        padding-left:3px;
+    }
+    .selheader{
+        text-decoration: underline;
+        font-size:11px;
+    }
+    .selheader:link{
+        text-decoration: none;
+        color:#3366cc;
+    }
+    .selheader:hover{
+        color:red;
+    }
+
+    .theader .tlefts{
+        padding-left: 10px;
+    }
+
+    .tinput2{
+        width:100%;
+        margin:0 0 15px 0;
+    }
+
+    .tinput2 {
+        border-collapse: separate;
+        border-spacing: 0px;
+        font-size: x-small;
+        line-height: 150%;
+    }
+
+    .tinput2 .thlabel {
+        width: 80px;
+        padding: 5px 10px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: right;
+        font-weight: normal;
+        background-color: #DDDDDD;
+    }
+
+    .tinput2 .tlefts {
+        padding: 5px 8px 5px 10px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background-color: #EEEEEE;
+    }
+    .errmes{
+        margin-bottom: 15px;
+    }
+
+   /* 上ボタン
+    ---------------------------------------------------------------------------*/
+
+    a.btnup1{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        margin-left: 8px;
+        background: url(image/btn/up1.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+
+    a.btnup1:hover{
+        background-position: right top;
+    }
+
+     a.btnup10{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/up10.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+    a.btnup10:hover{
+        background-position: right top;
+    }
+
+    a.btnupmax{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/upmax.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+    a.btnupmax:hover{
+        background-position: right top;
+    }
+
+
+    /* 下ボタン
+    ---------------------------------------------------------------------------*/
+
+    a.btndn1{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/dn1.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+
+    a.btndn1:hover{
+        background-position: right top;
+    }
+
+     a.btndn10{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/dn10.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+    a.btndn10:hover{
+        background-position: right top;
+    }
+
+    a.btndnmax{
+        display: inline;
+        float: left;
+        width: 26px; height: 26px;
+        background: url(image/btn/dnmax.gif) no-repeat top left;
+        text-indent: -10000px;
+    }
+    a.btndnmax:hover{
+        background-position: right top;
+    }
+
+
+</style>
+<!--[if IE]>
+<link href="css/ie.css" media="screen" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<form method="POST" name="formx" enctype="multipart/form-data" id="formx" action="">
+    <input type="hidden" name="cmd" id="cmd" />
+    <input type="hidden" name="typex" id="typex" value="group_list" />
+    <input type="hidden" name="pageno" id="pageno" value="{pageno}"/>
+    <input type="hidden" name="targetid" id="targetid" />
+    <input type="hidden" name="move_size" id="move_size" />
+    <input type="hidden" name="move_type" id="move_type" />
+    <table border="0" cellpadding="0" cellspacing="0" class="theader thcommand">
+        <tr>
+            <td class="tlefts"><div style="float:left;">グループ一覧：
+                <input type="button" value="新規" onclick="return new_group()" />
+                　表示件数：<select name="count" onchange="return ch_state();">{html_count}</select>
+
+                </div>
+                 <div style="float:right;margin: 3px;" >
+                 {html_paging}
+                 
+                 
+                 </div>
+            </td>
+        </tr>
+    </table>
+
+    {html_err}
+
+    <table width="590px" cellpadding="0" cellspacing="0" class="tlist">
+        <tr id="tableheader">
+            <th width="150px">グループ名aaaaaaaaaaaaaaaaaaaa</th>
+            <th>コメント</th>
+            <th width="120px">順位変更</th>
+            <th width="50px">削除</th>
+        </tr>
+
+        {out_list}
+        
+
+
+
+        
+
+        
+    </table>
+
+</form>";}

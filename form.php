@@ -162,7 +162,7 @@ if($userencode != $systemenc){
 }
 $page = rep($page, 'form', basename(__FILE__));
 $page = phash($err, $page);
-$page = rep($page, hidden, html_hidden($hidden));
+$page = rep($page, "hidden", html_hidden($hidden));
 
 if ($check) {
     $page = form_fileview($page, $var, $info, 'check');

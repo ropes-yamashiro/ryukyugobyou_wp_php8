@@ -1,0 +1,182 @@
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>{filename}</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="css/layout_pc.css" rel="stylesheet" type="text/css" />
+<link href="css/default_pc.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/window.js"></script>
+<script type="text/javascript" src="js/css_browser_selector.js"></script>
+
+<style type="text/css">
+/*@media screen and (max-width: 769px) {
+	html{
+		font-size: 20px;
+	}
+	.right{
+		font-size: 200%!important;
+	}
+	.left img{
+		width: 40%!important;
+	}
+}*/
+.iphone html,
+.android html{
+  font-size:2.8rem;
+}
+.iphone #wrapper,
+.android #wrapper{
+	width:90%;
+  font-size:2.8rem;
+}
+.iphone h1,
+.android h1{
+  font-size: 3.6rem;
+  margin:3% 0 2%;
+ 	background-image:url(../img/img-common/ttlh3_bg.gif);
+	background-size:100% !important;
+}
+.iphone h1 span,
+.android h1 span{
+  font-size: 4rem;
+	background:url(../img/img-common/ttlh3_ico.gif) no-repeat left center;
+	border-left: 10px solid #93D7FE !important;
+	background-size:1% !important;
+}
+.iphone .date,
+.android .date{
+  font-size: 2.4rem !important;
+}
+.iphone .right,
+.android .right{
+  width:100%;
+}
+.iphone .left,
+.android .left{
+  width: 100%!important;
+}
+.iphone .left img,
+.android .left img{
+  width: 100%!important;
+}
+
+.iphone #footer ul,
+.android #footer ul {
+	width:100% !important;
+}
+.iphone #footer .method01,
+.android #footer .method01 {
+	margin:0 0 20% !important;
+	width:60% !important;
+	float:right;
+}
+.iphone #footer .method01 img,
+.android #footer .method01 img {
+	width:100% !important;
+}
+
+.iphone #footer .mthod01,
+.android #footer .mthod01 {
+	margin:10% auto 10% !important;
+	width:50% !important;
+}
+.iphone #footer .mthod01 a,
+.android #footer .mthod01 a {
+	width:100% !important;
+}
+.iphone #footer .last,
+.android #footer .last{
+	display:none;
+}
+
+
+.ipad html{
+  font-size: 20px;
+}
+.ipad #wrapper{
+	width:60%;
+}
+.ipad h1{
+  font-size: 300%;
+  margin:3% 0 2%;
+}
+.ipad h2{
+  font-size: 280%;
+}
+.ipad .right{
+  font-size: 250%!important;
+	width:60%;
+}
+.ipad .left{
+	width:40%;
+}
+.ipad .left img{
+	width:100% !important;
+}
+.ipad #footer ul{
+	width:100% !important;
+}
+.ipad #footer .method01{
+	margin:0 0 20% !important;
+	width:30% !important;
+	float:right;
+}
+.ipad #footer .method01 img{
+	width:100% !important;
+}
+
+.ipad #footer .mthod01{
+	margin:10% auto 10% !important;
+	width:30% !important;
+}
+.ipad #footer .mthod01 a{
+	width:100% !important;
+}
+.ipad #footer .last{
+	clear:both;
+	width:100% !important;
+}
+.ipad #footer .last span{
+	text-align:center!important;
+  font-size: 200%!important;
+
+}
+
+
+
+
+</style>
+
+</head>
+
+<body onload="">
+<div id="wrapper" >
+<!--コンテンツここから -->
+<div id="contents">
+<p><img src="{link}" width="{x}" height="{y}" /></p>
+
+
+<div id="footer">
+<ul>
+<li class="mthod01"><a href="javascript:window.close();"><img src="img/img-topic/close.gif" alt="閉じる"></a></li>
+</ul>
+<p class="method01"><a href="./" target="_blank"><img src="img/img-topic/btn_02.gif" alt="Topへ"></a></p>
+<p class="last"><span>Copyright（c）大阪空港ホテル All Rights Reserved.</span></p>
+</div>
+
+
+
+</div>
+<!--コンテンツココまで -->
+
+<!--フッタココから -->
+<!--フッタココまで -->
+</div></body>
+</html>

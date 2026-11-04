@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="ja" prefix="og: https://ogp.me/ns#" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  <link href="/favicon.ico" rel="shortcut icon">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- All in One SEO 4.0.12 -->
+  <title>琉球御廟 | 見学予約フォーム</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLNZCGPJTY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XLNZCGPJTY');
+  </script>
+  <meta name="description" content="沖縄初の室内墓所、琉球御廟の見学予約フォームです。" />
+  <link rel="canonical" href="https://ryukyugobyou.okinawa/" />
+  <meta property="og:site_name" content="琉球御廟 – 沖縄初の室内墓所、琉球御廟が誕生します。沖縄のお墓の悩みを解決してくれる室内墓所をご覧ください。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="琉球御廟" />
+  <meta property="og:description" content="沖縄初の室内墓所、琉球御廟が誕生します。沖縄のお墓の悩みを解決してくれる室内墓所をご覧ください。" />
+  <meta property="og:url" content="https://ryukyugobyou.okinawa/" />
+  <meta property="article:published_time" content="2020-10-25T05:56:25Z" />
+  <meta property="article:modified_time" content="2021-01-25T00:30:23Z" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:domain" content="ryukyugobyou.okinawa" />
+  <meta property="twitter:title" content="琉球御廟" />
+  <meta property="twitter:description" content="沖縄初の室内墓所、琉球御廟が誕生します。沖縄のお墓の悩みを解決してくれる室内墓所をご覧ください。" />
+  <script type="application/ld+json" class="aioseo-schema">
+    {"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/ryukyugobyou.okinawa\/#website","url":"https:\/\/ryukyugobyou.okinawa\/","name":"\u7409\u7403\u5fa1\u5edf","description":"\u6c96\u7e04\u521d\u306e\u5ba4\u5185\u5893\u5730\u3001\u7409\u7403\u5fa1\u5edf\u304c\u8a95\u751f\u3057\u307e\u3059\u3002\u6c96\u7e04\u306e\u304a\u5893\u306e\u60a9\u307f\u3092\u89e3\u6c7a\u3057\u3066\u304f\u308c\u308b\u5ba4\u5185\u5893\u5730\u3092\u3054\u89a7\u304f\u3060\u3055\u3044\u3002","publisher":{"@id":"https:\/\/ryukyugobyou.okinawa\/#organization"},"potentialAction":{"@type":"SearchAction","target":"https:\/\/ryukyugobyou.okinawa\/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"Organization","@id":"https:\/\/ryukyugobyou.okinawa\/#organization","name":"\u7409\u7403\u5fa1\u5edf","url":"https:\/\/ryukyugobyou.okinawa\/"},{"@type":"BreadcrumbList","@id":"https:\/\/ryukyugobyou.okinawa\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/ryukyugobyou.okinawa\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/ryukyugobyou.okinawa\/#item","name":"\u30db\u30fc\u30e0","description":"\u6c96\u7e04\u521d\u306e\u5ba4\u5185\u5893\u5730\u3001\u7409\u7403\u5fa1\u5edf\u304c\u8a95\u751f\u3057\u307e\u3059\u3002\u6c96\u7e04\u306e\u304a\u5893\u306e\u60a9\u307f\u3092\u89e3\u6c7a\u3057\u3066\u304f\u308c\u308b\u5ba4\u5185\u5893\u5730\u3092\u3054\u89a7\u304f\u3060\u3055\u3044\u3002","url":"https:\/\/ryukyugobyou.okinawa\/"}}]},{"@type":"WebPage","@id":"https:\/\/ryukyugobyou.okinawa\/#webpage","url":"https:\/\/ryukyugobyou.okinawa\/","name":"\u7409\u7403\u5fa1\u5edf","description":"\u6c96\u7e04\u521d\u306e\u5ba4\u5185\u5893\u5730\u3001\u7409\u7403\u5fa1\u5edf\u304c\u8a95\u751f\u3057\u307e\u3059\u3002\u6c96\u7e04\u306e\u304a\u5893\u306e\u60a9\u307f\u3092\u89e3\u6c7a\u3057\u3066\u304f\u308c\u308b\u5ba4\u5185\u5893\u5730\u3092\u3054\u89a7\u304f\u3060\u3055\u3044\u3002","inLanguage":"ja","isPartOf":{"@id":"https:\/\/ryukyugobyou.okinawa\/#website"},"breadcrumb":{"@id":"https:\/\/ryukyugobyou.okinawa\/#breadcrumblist"},"datePublished":"2020-10-25T05:56:25+09:00","dateModified":"2021-01-25T00:30:23+09:00"}]}
+</script>
+  <script type="text/javascript" src="/wp/wp-content/themes/ryukyugobyou/js/tagmanager.js"></script>
+  <!-- All in One SEO -->
+  <link rel='dns-prefetch' href='//s.w.org' />
+  <!-- This site uses the Google Analytics by MonsterInsights plugin v7.14.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+  <!-- Note: MonsterInsights is not currently configured on this site. The site owner needs to authenticate with Google Analytics in the MonsterInsights settings panel. -->
+  <!-- No UA code set -->
+  <!-- / Google Analytics by MonsterInsights -->
+  <script type="text/javascript">
+    window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/ryukyugobyou.okinawa\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3" } };
+    !function (e, a, t) { var r, n, o, i, p = a.createElement("canvas"), s = p.getContext && p.getContext("2d"); function c(e, t) { var a = String.fromCharCode; s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, e), 0, 0); var r = p.toDataURL(); return s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, t), 0, 0), r === p.toDataURL() } function l(e) { if (!s || !s.fillText) return !1; switch (s.textBaseline = "top", s.font = "600 32px Arial", e) { case "flag": return !c([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) && (!c([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !c([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447])); case "emoji": return !c([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212]) }return !1 } function d(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (i = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, o = 0; o < i.length; o++)t.supports[i[o]] = l(i[o]), t.supports.everything = t.supports.everything && t.supports[i[o]], "flag" !== i[o] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[i[o]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (r = t.source || {}).concatemoji ? d(r.concatemoji) : r.wpemoji && r.twemoji && (d(r.twemoji), d(r.wpemoji))) }(window, document, window._wpemojiSettings);
+  </script>
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+
+  <link href="css/default_pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:992px)" />
+  <link href="css/default_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+  <link href="css/layout_pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:992px)" />
+  <link href="css/layout_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+  <link href="css/form_pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:992px)" />
+  <link href="css/form_sp.css" rel="stylesheet" type="text/css" media="screen and (max-width:991px)" />
+  <link rel="stylesheet" href="/wp/wp-content/themes/ryukyugobyo_2025/style.css" />
+  <script type='text/javascript'
+    src='https://ryukyugobyou.okinawa/wp/wp-content/themes/ryukyugobyo_2020/js/lib/conditionizr-4.3.0.min.js?ver=4.3.0'
+    id='conditionizr-js'></script>
+  <script type='text/javascript'
+    src='https://ryukyugobyou.okinawa/wp/wp-content/themes/ryukyugobyo_2020/js/lib/modernizr-2.7.1.min.js?ver=2.7.1'
+    id='modernizr-js'></script>
+  <script type='text/javascript' src='https://ryukyugobyou.okinawa/wp/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'
+    id='jquery-core-js'></script>
+  <script type='text/javascript'
+    src='https://ryukyugobyou.okinawa/wp/wp-content/themes/ryukyugobyo_2020/js/scripts.js?ver=1.0.0'
+    id='html5blankscripts-js'></script>
+  <link rel="https://api.w.org/" href="https://ryukyugobyou.okinawa/wp-json/" />
+  <link rel="alternate" type="application/json" href="https://ryukyugobyou.okinawa/wp-json/wp/v2/pages/218" />
+  <link rel="alternate" type="application/json+oembed"
+    href="https://ryukyugobyou.okinawa/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fryukyugobyou.okinawa%2F" />
+  <link rel="alternate" type="text/xml+oembed"
+    href="https://ryukyugobyou.okinawa/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fryukyugobyou.okinawa%2F&#038;format=xml" />
+  <script>
+    // conditionizr.com
+    // configure environment tests
+    conditionizr.config({
+      assets: 'https://ryukyugobyou.okinawa/wp/wp-content/themes/ryukyugobyo_2020',
+      tests: {}
+    });
+  </script>
+  <script type="text/javascript"
+    src="https://ryukyugobyou.okinawa/wp/wp-content/themes/ryukyugobyo_2020/js/tagmanager.js"></script>
+  <script>
+    dataLayer.push({
+      'trackPageview': '/funnel_G2/step1.html',
+      'event': 'loadready'
+    });
+  </script>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- jQuery UI -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+
+  <script type="text/javascript">
+    <!-- 入力必須 -->
+    $(function () {
+      $('.required').on('keydown keyup keypress change focus blur', function () {
+        if ($(this).val() == '') {
+          $(this).css({ backgroundColor: '#FFFFBF' });
+        } else {
+          $(this).css({ backgroundColor: '#fff' });
+        }
+      }).change();
+    });
+    $(function () {
+      $('.zipcloud_search').click(function () {
+        $('.required.pref_checked').css({ backgroundColor: '#fff' });
+      }).change();
+    }
+
+    );
+    $(function () {
+
+      /* 通常カレンダー指定（水曜日定休）
+    ----------------------------------------------------*/
+
+      // $('#kengaku_day').datepicker({
+
+      //   dateFormat: 'yy/mm/dd(D)',
+      //     beforeShowDay: function (date) {
+      //         if (date.getDay() == 3) {
+      //             // 水曜日
+      //             return [false, 'ui-state-disabled'];
+      //         } else {
+      //             // 平日
+      //             return [true, ''];
+      //         }
+      //     }
+      // });
+
+      //   $('#kengaku_day').datepicker({
+      //     dateFormat: 'yy/mm/dd(D)',
+      //     beforeShowDay: function (date) {
+      //         var year = date.getFullYear();
+      //         var month = date.getMonth();
+      //         var day = date.getDay();
+
+      //         // 2023年4月
+      //         if (year === 2023 && month === 3) {
+      //             // 水曜日は選択可能
+      //             if (day === 3) {
+      //                 return [true, ''];
+      //             }
+      //             // 土曜日と日曜日は選択不可
+      //             else if (day === 6 || day === 0) {
+      //                 return [false, 'ui-state-disabled'];
+      //             }
+      //             // その他の曜日は選択可能
+      //             else {
+      //                 return [true, ''];
+      //             }
+      //         }
+      //         // その他の月
+      //         else {
+      //             // 水曜日は選択不可
+      //             if (day === 3) {
+      //                 return [false, 'ui-state-disabled'];
+      //             }
+      //             // 土曜日と日曜日は選択可能
+      //             else if (day === 6 || day === 0) {
+      //                 return [true, ''];
+      //             }
+      //             // その他の曜日は選択可能
+      //             else {
+      //                 return [true, ''];
+      //             }
+      //         }
+      //     }
+      // });
+
+
+      // $(function () {
+      //   $('#kengaku_day').datepicker({
+      //     dateFormat: 'yy/mm/dd(D)',
+      //     beforeShowDay: function (date) {
+      //       var isApril2023 = date.getFullYear() === 2023 && date.getMonth() === 3;
+      //       var isMay3rd2023 = date.getFullYear() === 2023 && date.getMonth() === 4 && date.getDate() === 3;
+      //       var isWeekend = date.getDay() === 6 || date.getDay() === 0;
+      //       var isWednesday = date.getDay() === 3;
+
+      //       if (isApril2023) {
+      //         if (isWednesday) {
+      //           // 2023年4月の水曜日は選択可能
+      //           return [true, ''];
+      //         } else if (isWeekend) {
+      //           // 2023年4月の土曜日と日曜日は選択不可
+      //           return [false, 'ui-state-disabled'];
+      //         } else {
+      //           // 2023年4月以外の日は選択可能
+      //           return [true, ''];
+      //         }
+      //       } else {
+      //         if (isMay3rd2023) {
+      //           // 2023年5月3日の水曜日は選択可能
+      //           return [true, ''];
+      //         } else if (isWednesday) {
+      //           // 通年の水曜日は選択不可
+      //           return [false, 'ui-state-disabled'];
+      //         } else {
+      //           // 他の日は選択可能
+      //           return [true, ''];
+      //         }
+      //       }
+      //     }
+      //   });
+      // });
+
+      $(function () {
+        $('#kengaku_day').datepicker({
+          dateFormat: 'yy/mm/dd(D)',
+          beforeShowDay: function (date) {
+            var today = new Date();
+            today.setHours(0, 0, 0, 0); // 時間部分をリセットして日付のみを比較
+
+            var isToday = date.getTime() === today.getTime();
+            var isApril2023 = date.getFullYear() === 2023 && date.getMonth() === 3;
+            var isMay3rd2023 = date.getFullYear() === 2023 && date.getMonth() === 4 && date.getDate() === 3;
+            var isWeekend = date.getDay() === 6 || date.getDay() === 0;
+            var isWednesday = date.getDay() === 3;
+
+            if (isToday) {
+              // 当日は選択不可
+              return [false, 'ui-state-disabled'];
+            }
+
+            if (isApril2023) {
+              if (isWednesday) {
+                // 2023年4月の水曜日は選択可能
+                return [true, ''];
+              } else if (isWeekend) {
+                // 2023年4月の土曜日と日曜日は選択不可
+                return [false, 'ui-state-disabled'];
+              } else {
+                // 2023年4月の他の日は選択可能
+                return [true, ''];
+              }
+            } else {
+              if (isMay3rd2023) {
+                // 2023年5月3日の水曜日は選択可能
+                return [true, ''];
+              } else if (isWednesday) {
+                // 通年の水曜日は選択不可
+                return [false, 'ui-state-disabled'];
+              } else {
+                // 他の日は選択可能
+                return [true, ''];
+              }
+            }
+          }
+        });
+      });
+
+      /* ----------------------------------------------------*/
+
+
+      /* 特定日 参加可能など特殊な場合（選択できない日程を記載する）
+      ----------------------------------------------------*/
+      /* var target_days = [
+         '2021-10-06','2021-10-13','2021-10-20','2021-10-27','2021-11-10','2021-11-17','2021-11-24','2021-12-01','2021-12-08','2021-12-15','2021-12-22','2021-12-29',
+        '2022-01-05','2022-01-12','2022-01-19','2022-01-26',
+      ];
+
+      $("#donaibochi_book_txt").datepicker( {
+             beforeShowDay: function (day) {
+                 yymmdd = $.datepicker.formatDate('yy-mm-dd', day);
+                 if ($.inArray(yymmdd, target_days) == -1) {
+                     return [true, ""];
+                 }
+                 else {
+                     return [false, ""];
+                 }
+             }
+      }); */
+      /* ----------------------------------------------------*/
+    });
+  </script>
+  <!-- スムーズスクロール部分の記述 -->
+  <script>
+    $(document).ready(function () {
+      $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+        }, 1000, 'swing', function () {
+          window.location.hash = target;
+        });
+      });
+    });
+  </script>
+  {javatag}
+  　<style>
+    .yoyaku__note {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .yoyaku__note a {
+      text-decoration: underline;
+    }
+
+    @media screen and (min-width: 768px) {
+      .yoyaku__note {
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body class="kasou_common form page-template-default page page-id-242 document-request form">
+  <!-- Google Tag Manager (noscript) -->
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <a href="/" class="header__logo">
+        <img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/logo.svg" alt="琉球御廟ロゴ">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item dropdown">
+            <div class="header__nav-link dropdown-toggle">初めての方</div>
+            <div class="dropdown-menu">
+              <a href="/beauty/" class="dropdown-item">琉球御廟の美</a>
+              <a href="/facilities/" class="dropdown-item">琉球御廟の設備</a>
+              <a href="/guide/" class="dropdown-item">ご納骨と参拝方法について</a>
+              <!-- <a href="/numbers/" class="dropdown-item">数字で見る琉球創価</a> -->
+            </div>
+          </li>
+          <li class="header__nav-item">
+            <a href="/facilities/#access" class="header__nav-link">アクセス</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="/comparison/" class="header__nav-link">費用・個人墓地との比較</a>
+          </li>
+          <li class="header__nav-item dropdown">
+            <div class="header__nav-link dropdown-toggle">ご利用者様の想い</div>
+            <div class="dropdown-menu">
+              <a href="/feedback-list/" class="dropdown-item">お客様からの声</a>
+              <!-- <a href="/letter-to-heaven/" class="dropdown-item">天国への手紙</a>
+              <a href="/memorial-service/" class="dropdown-item">法要の様子</a> -->
+            </div>
+          </li>
+          <li class="header__nav-item">
+            <a href="/komyoji/" class="header__nav-link">光明寺 琉球識名院について</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="/faq/" class="header__nav-link">よくある質問</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mobile-menu__container">
+      <div class="mobile-menu">
+        <a href="/form.php?pid=3" class="mobile-menu__item">
+          <img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-wheelchair.svg" alt="" />
+          <span>見学予約</span>
+        </a>
+        <a href="/form.php" class="mobile-menu__item"><img
+            src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-document.svg" alt="" /><span>資料請求</span>
+        </a>
+        <a href="/contact/" class="mobile-menu__item"><img
+            src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-mail.svg" alt="" /><span>問合せ</span></a>
+        <a href="tel:0120-846-940" class="mobile-menu__item"><img
+            src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-phone.svg" alt="" /><span>お電話</span></a>
+        <button class="mobile-menu__item mobile-menu__item--hamburger" id="btn_spmenu">
+          <img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-menu.svg" alt="" />
+          <span>メニュー</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="popup__close">
+        <img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-close.svg" alt="閉じる" />
+        <span>閉じる</span>
+      </div>
+
+      <nav class="menu">
+        <div class="menu__section">
+          <div class="menu__heading">・初めての方</div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/beauty/" class="menu__link">琉球御廟の美</a>
+            </li>
+            <li>
+              <a href="/facilities/" class="menu__link">琉球御廟の設備</a>
+            </li>
+            <li>
+              <a href="/guide/" class="menu__link">ご納骨と参拝方法について</a>
+            </li>
+            <li>
+              <!-- <a href="/numbers/" class="menu__link">数字で見る琉球御廟</a> -->
+            </li>
+          </ul>
+        </div>
+
+        <a href="/facilities/#access" class="menu__link">・アクセス</a>
+
+        <a href="/comparison/" class="menu__link">・費用・個人墓地との比較</a>
+
+        <div class="menu__section menu__section--feedback">
+          <div class="menu__heading">・ご利用者様の想い</div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/feedback-list/" class="menu__link">お客様からの声</a>
+            </li>
+            <!-- <li>
+              <a href="/letter-to-heaven/" class="menu__link">天国への手紙</a>
+            </li>
+            <li>
+              <a href="/memorial-service/" class="menu__link">法要の様子</a>
+            </li> -->
+          </ul>
+        </div>
+
+        <a href="/komyoji/" class="menu__link">・光明寺 琉球識名院について</a>
+
+        <a href="/faq/" class="menu__link">・よくある質問</a>
+
+        <a href="/about/" class="menu__link">・株式会社 霊園・墓石のヤシロについて</a>
+      </nav>
+    </div>
+    <nav class="bottom-menu">
+      <ul class="bottom-menu-list">
+        <li class="bottom-menu-item">
+          <a href="/form.php?pid=3" class="bottom-menu-link">見学予約はこちら</a>
+        </li>
+        <li class="bottom-menu-item">
+          <a href="/form.php" class="bottom-menu-link">資料請求はこちら</a>
+        </li>
+        <li class="bottom-menu-item">
+          <a href="/contact/" class="bottom-menu-link">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /header -->
+
+    <!--main-->
+    <main>
+      <div id="contents" class="clearfix">
+        <!--<div class="form-link-area">
+<div class="link-form link-document-request"><a href="https://ryukyugobyou.okinawa/form.php">資料請求</a></div>
+<div class="link-form link-reservation"><a href="https://ryukyugobyou.okinawa/reservation">琉球御廟説明会</a></div>
+<div class="link-form link-reburial_reservation"><a href="https://ryukyugobyou.okinawa/reburial_reservation">改葬相談会</a></div>
+</div>-->
+
+
+        <!-- パンくずリスト -->
+
+        <!-- <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/"> -->
+        <!-- Breadcrumb NavXT 6.6.0 --
+          <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to 琉球御廟."
+              href="https://ryukyugobyou.okinawa" class="home"><span property="name">トップページ</span></a>
+            <meta property="position" content="1">
+          </span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name"
+              class="post post-page current-item">見学予約</span>
+            <meta property="url" content="https://ryukyugobyou.okinawa/form.php">
+            <meta property="position" content="2">
+          </span>
+        </div>
+        <-- /パンくずリスト -->
+        <div class="entry-content">
+          <div class="entry-header">
+            <h1 class="entry-title"><!--琉球御廟 見学予約--></h1>
+          </div>
+
+          <div class="campaign_block container">
+            <!--<p>ご見学の方に期間限定の特典をご用意しております。<br>この機会にぜひお越しください。</p>-->
+            <picture>
+              <source media="(max-width: 991px)" srcset="img/img-form/bread_campaign_sp.png">
+              <img src="img/img-form/bread_campaign.png" alt="総契約数500件達成キャンペーン" class="cp-bread">
+            </picture>
+          </div>
+
+
+          <div class="bg-light-blue">
+            <section class="lead">
+              <p>下記フォームに必要事項をご入力の上、「確認画面へ」ボタンを押してください。</p>
+              <!-- <p class="t1" style="color:#f00;">※4月清明祭期間中は土日の見学予約はできませんが、水曜日の見学予約が可能です。</p> -->
+              <p class="t1">※現在、大変多くのご見学予約を頂いております。<br>前日または当日の見学予約の場合は、お電話にてご予約ください：<a
+                  href="tel:0120-846-940">0120-846-940</a></p>
+              <p>電話受付時間&nbsp;9:15～17:00（年中無休）</p>
+            </section>
+          </div>
+          <article>
+
+            <!-- ブロック -->
+            <section class="container-field cmn_block">
+              <!-- インナー -->
+              <div class="container container2">
+                {errany}
+                <form action="form.php#mail_area" name="formx" method="post" id="formx" enctype="multipart/form-data">
+                  {hidden}
+
+                  <table class="cmn_table_type04">
+                    <tbody>
+                      <tr>
+                        <th>
+                          <div class="form_tbl_item">
+                            <span>来場希望日時<span class="hisu">必須</span></span>
+                          </div>
+                        </th>
+                        <td>
+
+                          <h4>↓<strong>カレンダーマーク</strong>をクリックしてご選択ください。</h4>
+
+
+                          <div class="flexbox">
+                            <div class="calendar">
+                              <input name="kengaku_day" id="kengaku_day" class="input_text" readonly
+                                placeholder="日程をご選択ください" value="{kengaku_day}">
+                            </div>
+
+                            <div class="select"><select name="kengaku_time" id="kengaku_time"
+                                class="select">{kengaku_time}</select>
+                            </div>
+
+                          </div>
+                          {errkengaku_day}
+                          {errkengaku_time}
+                          <ul>
+                            <li>・水曜は定休日となっております。（祝日除く）</li>
+                            <li>・日時は後日でも変更可能ですので、お気軽にご予約ください。</li>
+                            <li>・日時のご希望に沿えず、予定調整のお願いをさせていただく場合がございます。</li>
+                            <li>・見学説明時間は1時間～1時間半を想定しております。</li>
+                          </ul>
+
+                        </td>
+
+                      </tr>
+
+                      <tr>
+                        <th>ご参加人数<span class="hisu">必須</span></th>
+                        <td>
+                          <div class="select --number"><select name="kengaku_number"
+                              id="kengaku_number">{kengaku_number}</select></div>
+                          {errkengaku_number}
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>お名前（全角）<span class="hisu">必須</span></th>
+                        <td>
+                          <p>姓：<input name="name-sei" type="text" class="middle3" id="name-sei"
+                              value="{name-sei}" />名：<input name="name-mei" type="text" class="middle3" id="name-mei"
+                              value="{name-mei}" /><br /><em class="exam">例） 山田太郎</em></p>{errname-sei} {errname-mei}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>お名前（ふりがな）<span class="hisu">必須</span></th>
+                        <td>
+                          <p>
+                            姓：<input name="kana-sei" type="text" class="middle3" id="kana-sei"
+                              value="{kana-sei}" />名：<input name="kana-mei" type="text" class="middle3" id="kana-mei"
+                              value="{kana-mei}" /><br /><em class="exam">例） やまだたろう</em></p>{errkana-sei} {errkana-mei}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>お電話番号<span class="hisu">必須</span></th>
+                        <td>
+                          <p><input name="tel" type="text" class="tel" id="tel" value="{tel}" /><em class="exam">例）
+                              098-765-4321 （市外局番から）</em></p>{errtel}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Eメール<span class="hisu">必須</span></th>
+                        <td>
+                          <p><input name="mail" type="text" class="address" id="Mail" value="{mail}" /><em
+                              class="exam">info@abcd.com（半角英数で）</em></p>
+                          {errmail}
+                          <em class="exam">携帯メールアドレスをご入力の場合、携帯の設定により返信メールが届かないことがございます。
+                            <!--<br>お申し込み時のトラブルを未然に防ぐために、パソコンからのメールを受信できるメールアドレスをご入力ください。--></em>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>郵便番号</th>
+                        <td>
+                          <p class="zip_wrap"><input name="zip" type="text" class="small" id="zip" value="{zip}"
+                              maxlength="8" />
+                            <button type="button" class="zipcloud_search"
+                              onclick="AjaxZip3.zip2addr('zip','','pref','address1','address2');">郵便番号から<span
+                                class="zipbtn">住所を検索</span></button>
+                            <em class="exam yu">例） 123-4567 （半角数字で）</em>
+                          </p>{errzip}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>都道府県</th>
+                        <td>
+                          <p><label><select name="pref" id="pref" class="select">{pref}</select></label></p>{errpref}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>市区郡</th>
+                        <td>
+                          <p><label><input name="address1" type="text" class="address" id="address1" value="{address1}"
+                                maxlength="122" /></label>
+                            <em class="exam">例）那覇市</em>
+                          </p>{erraddress1}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>町名・番地</th>
+                        <td>
+                          <p><label><input name="address2" type="text" class="address" id="address2" value="{address2}"
+                                maxlength="122" /></label>
+                            <em class="exam">例）真地２</em>
+                          </p>{erraddress2}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>ビル・マンション名</th>
+                        <td>
+                          <p><label><input name="place" type="text" class="place" id="place" value="{place}"
+                                maxlength="122" /></label><em class="exam">例）○○マンション　101号室</em></p>{errplace}
+                        </td>
+                      </tr>
+
+                      <!--<tr>
+<th>ご希望の連絡方法</th>
+<td>                        
+<ul>
+<li class="li_01"><label class="in_check checkbox-red in_check-care"><input type="checkbox" name="checkbox_contact_method[]" id="checkbox_contact_method" value="電話" {checkbox_contact_method_電話} /><span>電話</span></label></li>
+<li class="li_01"><label class="in_check checkbox-red in_check-care"><input type="checkbox" name="checkbox_contact_method[]" id="checkbox_contact_method" value="メール" {checkbox_contact_method_メール} /><span>メール</span></label></li>
+</ul>			
+</td>
+</tr>		-->
+                      <tr>
+                        <th>検討理由</th>
+                        <td>
+                          <ul>
+                            <li class="li_01"><label class="in_check checkbox-red in_check-care"><input type="checkbox"
+                                  name="checkbox_examination[]" id="checkbox_examination" value="ご納骨(ご遺骨所持)"
+                                  {checkbox_examination_ご納骨(ご遺骨所持)} /><span>ご納骨(ご遺骨所持)</span></label></li>
+                            <li class="li_01"><label class="in_check checkbox-red in_check-care"><input type="checkbox"
+                                  name="checkbox_examination[]" id="checkbox_examination" value="ご生前(終活)"
+                                  {checkbox_examination_ご生前(終活)} /><span>ご生前(終活)</span></label></li>
+                            <li class="li_01"><label class="in_check checkbox-red in_check-care"><input type="checkbox"
+                                  name="checkbox_examination[]" id="checkbox_examination" value="墓じまい(改葬)"
+                                  {checkbox_examination_墓じまい(改葬)} /><span>墓じまい(改葬)</span></label></li>
+                            <li class="li_01"><label class="in_check checkbox-red in_check-care"><input type="checkbox"
+                                  name="checkbox_examination[]" id="checkbox_examination" value="その他"
+                                  {checkbox_examination_その他} /><span>その他</span></label></li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <!--<tr>
+<th>メール配信</th>
+<td>
+<em class="exam">当霊園よりお得な情報を配信させていただきます。</em>
+<p class="enq"><label><input name="mag" type="radio" id="mag" value="受信する" checked="" {mag_受信する}>受信する&nbsp;&nbsp;&nbsp;&nbsp;
+</label><label><input name="mag" type="radio" id="mag" value="受信しない" {mag_受信しない}>受信しない</label></p>
+</td>
+</tr>-->
+                      <tr>
+                        <th>ご質問・お問い合わせ内容</th>
+                        <td>
+                          <p><em class="exam">ご質問等ございましたら、ご自由にお書きください。</em></p>
+                          <p><textarea name="question" class="word" rows="3" id="question"
+                              style="height: 150px;">{question}</textarea></p>
+                        </td>
+                      </tr>
+                  </table>
+
+                  <table class="cmn_table_type04">
+                    <tr>
+                      <th>琉球御廟を知ったきっかけ（複数選択化）</th>
+                      <td>
+                        <ul class="clearfix">
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="検索サイト"
+                                  {questionnaire_検索サイト}>検索サイト</span></label></li>
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="インターネット広告"
+                                  {questionnaire_インターネット広告}>インターネット広告</span></label></li>
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="TV・CM"
+                                  {questionnaire_TV・CM}>TV・CM</span></label></li>
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="ラジオCM"
+                                  {questionnaire_ラジオCM}>ラジオCM</span></label></li>
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="新聞広告"
+                                  {questionnaire_新聞広告}>新聞広告</span></label></li>
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="タウン誌広告"
+                                  {questionnaire_タウン誌広告}>タウン誌広告</span></label></li>
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="看板・ポスター"
+                                  {questionnaire_看板・ポスター}>看板・ポスター</span></label></li>
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="折込チラシ"
+                                  {questionnaire_折込チラシ}>折込チラシ</span></label></li>
+                          <li class="li_01"><label><span>
+                                <input type="checkbox" name="questionnaire[]" id="questionnaire" value="その他"
+                                  {questionnaire_その他}>その他</span></label></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+
+
+                  <div class="btn_wrp">
+
+                    <div class="rc-anchor" style="display:none;">
+                      <table class="table table-borderd">
+                        <tr>
+                          <td class="rc-anchor-checkbox">
+                            <input type="checkbox" id="checkToken" class="rc-token-checkbox" value="1">
+                          </td>
+                          <td class="rc-anchor-label">
+                            <label class="rc-token-checkbox-label" aria-hidden="true" role="presentation">
+                              私はロボットではありません
+                            </label>
+                          </td>
+                          <!--	
+<td class="rc-anchor-normal-footer" id="re-logo-area">
+-->
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+
+                    <label><input type="submit" id="btnNext" name="next" onclick="return selector('next');"
+                        value="確認画面へ" onkeypress="n" class="btn" style="visibility:visible;"></label>
+
+
+                  </div>
+                </form>
+                <div class="yoyaku__note">前日または当日の見学予約の場合は、お電話にてご予約ください。<br>
+                  <a href="tel:0120-846-940">0120-846-940</a>
+                </div>
+              </div>
+              <!-- インナー -->
+            </section>
+            <!-- ブロック -->
+          </article>
+        </div>
+    </main>
+    <!--/main-->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__banner">
+        <a href="https://seimeinooka-jyumokusou.okinawa/" target="_blank" rel="canonical"><img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/yuika-bnr-sp.jpg"
+            alt="" class="switch" /></a>
+      </div>
+      <div class="footer__content">
+        <div class="footer__left">
+          <img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/logo.svg" alt="" class="footer__logo">
+
+          <div class="footer__contact">
+            〒902-0072<br>
+            沖縄県那覇市真地1−1(琉球識名院に併設)<br>
+            開館時間　9:15 ～ 17:00(水曜定休)
+          </div>
+
+          <img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/logo-2.svg" class="footer__logo-yashiro"
+            alt="">
+
+          <div class="footer__contact">
+            〒901-1117<br />
+            沖縄県島尻郡南風原町字津嘉山1593 SKビル202<br />
+            開館時間　9:30～17:30(水曜定休)
+          </div>
+
+          <ul class="footer__social">
+            <li>
+              <a href="https://www.youtube.com/channel/UCun6NWS4JQEBe-1H-tb9Guw" class="footer__social-link"
+                target="_blank"><img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-youtube.svg"
+                  alt="ユーチューブアイコン"></a>
+            </li>
+            <li>
+              <a href="https://page.line.me/523gnuoa?openQrModal=true" class="footer__social-link" target="_blank"><img
+                  src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-line.svg" alt="ラインアイコン"></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/people/%E5%AE%A4%E5%86%85%E5%A2%93%E6%89%80%E7%90%89%E7%90%83%E5%BE%A1%E5%BB%9F/pfbid0BHDAVHJeJkQwkxPKw1vjtDgRAyy7CaZdGfAJxtNTmmM6SP4YK5FShQqc2cMCa1nGl/"
+                class="footer__social-link" target="_blank"><img
+                  src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-facebook.svg" alt="フェイスブックアイコン"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/accounts/login/?next=%2Fryukyu_gobyou%2F" class="footer__social-link"
+                target="_blank"><img src="/wp/wp-content/themes/ryukyugobyo_2025/images/common/icon-instagram.svg"
+                  alt="インスタグラムアイコン"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__right">
+          <nav class="menu">
+            <div class="menu__section">
+              <div class="menu__heading">・初めての方</div>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="/beauty/" class="menu__link">琉球御廟の美</a>
+                </li>
+                <li>
+                  <a href="/facilities/" class="menu__link">琉球御廟の設備</a>
+                </li>
+                <li>
+                  <a href="/comparison/" class="menu__link">費用・個人墓地との比較</a>
+                </li>
+                <li>
+                  <a href="/guide/" class="menu__link">ご納骨と参拝方法について</a>
+                </li>
+                <li>
+                  <!-- <a href="/numbers/" class="menu__link">数字で見る琉球御廟</a> -->
+                </li>
+              </ul>
+            </div>
+            <div class="menu__section-wrapper">
+              <div class="menu__section menu__section--feedback">
+                <div class="menu__heading">・ご利用者様の想い</div>
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="/feedback-list/" class="menu__link">お客様からの声</a>
+                  </li>
+                  <!-- <li>
+                    <a href="/letter-to-heaven/" class="menu__link">天国への手紙</a>
+                  </li>
+                  <li>
+                    <a href="/memorial-service/" class="menu__link">法要の様子</a>
+                  </li> -->
+                </ul>
+              </div>
+              <a href="/komyoji/" class="menu__link">・光明寺 琉球識名院について</a>
+              <a href="/faq/" class="menu__link">・よくある質問</a>
+            </div>
+
+            <div class="menu__section-wrapper">
+              <a href="/news-list/" class="menu__link">・新着情報</a>
+
+              <a href="/events-list/" class="menu__link">・キャンペーン・イベント</a>
+
+              <a href="/about/" class="menu__link menu__link--about"><span>・</span><span>株式会社 霊園・墓石のヤシロについて</span></a>
+              <a href="/privacy-policy/" class="menu__link">・プライバシーポリシー</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>©2025 RYUKYUGOBYO</p>
+      </div>
+      <script src="/wp/wp-content/themes/ryukyugobyo_2025/js/common.js"></script>
+    </footer>
+    <!-- /footer -->
+  </div>
+  <!-- KASIKA TRACKING CODE -->
+  <script type="text/javascript" src="//panda.kasika.io/tag-manager/?pid=3EF805D2E82AD78A04C4482450AD7982"></script>
+  <!-- KASIKA TRACKING CODE -->
+</body>
+
+</html>

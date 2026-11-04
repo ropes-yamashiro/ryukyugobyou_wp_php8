@@ -1,0 +1,188 @@
+<!--<script language="javascript" src="jscript/jquery.js"></script>-->
+<!--<script language="javascript" src="jscript/editor/ckeditor.js"></script>-->
+<script src="//cdn.ckeditor.com/4.13.1/full-all/ckeditor.js"></script>
+<SCRIPT TYPE="text/javascript">
+//詳細のプレビュー
+function preview(){
+    document.formx.cmd.value = "preview";
+    document.formx.action = "../document.php?pid={pid}&param={id}";
+    document.formx.target = "_blank";
+    document.formx.submit();
+    return false;
+}
+
+//更新データを保存する
+function chtype(){
+   	document.formx.cmd.value = "chtype";
+   	document.formx.action = "admin.php";
+	document.formx.target = "";
+    document.formx.submit();
+    return false;
+}
+//更新データを保存する
+function save(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "save";
+        document.formx.target = "";
+        document.formx.action = "admin.php";
+        document.formx.submit();
+    }
+    return false;
+}
+
+function savelist(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "savelist";
+        document.formx.target = "";
+        document.formx.action = "admin.php";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//項目を削除する
+function back(){
+    if(window.confirm('一覧に戻りますか？')){
+        document.formx.cmd.value = "listview";
+        document.formx.action = "admin.php";
+        document.formx.target = "";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//対象ファイルを削除する
+function delpic(fid,fname){
+    if(window.confirm(fname + 'を削除しますか?')){
+        document.formx.cmd.value = "delfile";
+        document.formx.action = "admin.php";
+        document.formx.param.value = fid;
+        document.formx.target = "";
+        document.formx.submit();
+    }
+    return false;
+}
+
+$(function() {
+    //CKEDITOR.replace('nontitle',{toolbar : 'NonLink'});
+    //CKEDITOR.replace('editor1',{toolbar : 'Full'});
+    //CKEDITOR.replace('editor2',{toolbar : 'Full'});
+});
+
+</SCRIPT>
+<form method=POST action="?typex=document" name="formx" enctype="multipart/form-data" class="detail_common newsdetail">
+ 	{hidden}
+ 	{old_data}
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" />
+	<input type=hidden name="id" value="{id}" />
+  <div id="contents" class="clearfix">
+    <article>
+      <div class="ttl_area">
+      <h2 class="l_cmn_ttl">「{group}」記事登録・編集</h2>
+      </div>
+      
+	{err}
+      <section class="page_contents">
+      <div class="container">
+      
+      <div class="block">
+      	<p class="ttl pat01">タイトル<span class="redreq">必須</span></p>
+      	<div class="in_txtOuter">
+			 <label class="in_txt">
+			  <input class="in_txtItem" type="text" placeholder="タイトルを追加" name="title" value="{title}">
+			 </label>
+		</div>
+      </div>
+		  
+<!--category
+      <div class="block">
+			<p class="ttl pat01">カテゴリー<span class="redreq">必須</span></p>
+			<td class="tlefts">
+                {category}
+			</td>
+      </div>
+category-->
+      
+      <div class="block">
+      	<div class="wpselect">
+      	<p class="ttl pat02">掲載日</p>
+      	<div class="inselect">
+      	<div class="in_selectOuter in_selectOuter-sbs year">
+			<div class="in_select in_select-sbs in_select-sm js_select mr30-pc mr30-sp">
+             <select name="view_year" id="view_year">
+             {view_year}
+             </select>
+             <span class="ml10">年</span>
+            </div>
+        </div>
+      	<div class="in_selectOuter in_selectOuter-sbs month">
+			<div class="in_select in_select-sbs in_select-sm js_select mr30-pc mr30-sp">
+             <select name="view_month" id="view_month">
+             {view_month}
+             </select>
+             <span class="ml10">月</span>
+            </div>
+        </div>
+        <div class="in_selectOuter in_selectOuter-sbs day">
+			<div class="in_select in_select-sbs in_select-sm js_select mr30-pc mr30-sp">
+             <select name="view_day" id="view_day">
+             {view_day}
+             </select>
+             <span class="ml10">日</span>
+            </div>
+        </div>
+        </div>
+       </div>
+     <p class="kome sp_mt10">※未来の日時を設定すると、設定日の0時に記事が反映されます。</p>
+      </div>
+      
+      <div class="block ">
+      	<p class="ttl pat02">公 開</p>
+      	<p class="kokai"><label class="in_check checkbox-red in_check-care">
+                  <input type="checkbox" name="visible" value="1" {visible_1}><span></span></label></p>
+      </div>
+      
+      <!-- 表示形式 -->
+      <div class="block">
+      	<p class="ttl pat01">表示形式</p>
+      	
+		<div class="in_selectOuter in_selectOuter-sbs">
+			<div class="in_select in_select-sbs in_select-md js_select mr30-pc mr30-sp">
+			<select name=viewtype onFocus="this.className='on';" onBlur="this.className='off'" onchange="return chtype();">{viewtype}</select>
+            </div>
+        </div>      	
+      	
+
+      	
+      	
+      	
+      	<div class="displaytype">
+     	   <ul>
+		   <li>※「ドン・ボスコのことば100」は、ドンボスコのことばを入力する時だけご選択ください。</li>
+		   <li>※「今日の一枚」は、今日の一枚を入力する時だけご選択ください。</li>
+		   <li>※「小学校-行事予定」は、小学校-行事予定を入力する時だけご選択ください。</li>
+           </ul>
+      	</div>
+		
+		<div class="viewtype_input">
+			{viewtype_input}
+		</div>
+
+      </div>
+
+      	
+      </div>
+      </section>
+      
+      <ul class="btn_save">
+      <li><a href="javascript:void(0);" onclick="return save();">保存</a></li>
+      <li><a href="javascript:void(0);" onclick="return savelist();">保存して一覧へ</a></li>
+      <li><a href="javascript:void(0);" onclick="return back();">一覧へ</a></li>
+      </ul>
+      	
+
+      
+    </article>
+  </div>
+</form>

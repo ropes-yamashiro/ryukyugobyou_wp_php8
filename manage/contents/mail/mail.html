@@ -1,0 +1,87 @@
+<form method=POST action="?typex=mail&command=save&pid={pid}">
+
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;{AdminTitle}:&nbsp;&nbsp;メール設定&nbsp;&nbsp;
+		<input type=submit id=btm value="保存" onclick="return isCheck('保存してもいいですか？')" /></td></tr>
+	</table>
+	<br>
+	
+	{err}
+    <em>※は必須入力項目です。</em>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;申込者宛　メール設定</td></tr>
+	</table>
+	
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput">
+		<tr>
+			<th width="80">宛先<em>※</em></th><td><label><input type=text name=UserName onFocus="this.className='on';" onBlur="this.className='off'" value="{UserName}" size="37"  /></label></td>
+			<th width="80">件名<em>※</em></th><td><label><input type=text name=UserTitle onFocus="this.className='on';" onBlur="this.className='off'" value="{UserTitle}" size="37" /></label></td>
+		</tr>
+		<tr>
+			<th width="80">メール送信者<em>※</em></th><td><label><input type=text name=UserSender onFocus="this.className='on';" onBlur="this.className='off'" value="{UserSender}" size="37" /></label></td>
+			<th width="80">表示アドレス<em>※</em></th><td><label><input type=text name=UserSenderAddress onFocus="this.className='on';" onBlur="this.className='off'" value="{UserSenderAddress}" size="37" /></label></td>
+		</tr>
+	</table>
+	<br>
+
+
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;管理者宛　メール設定</td></tr>
+	</table>
+	
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput">
+		<tr>
+			<th width="80">宛先<em>※</em></th><td><input type=text name=ManageName onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageName}" size="37" /></td>
+			<th width="80">件名<em>※</em></th><td><input type=text name=ManageTitle onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageTitle}" size="37" /></td>
+		</tr>
+		<tr>
+			<th width="80">メール送信者<em>※</em></th><td nowrap><input type=text name=ManageSender onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSender}" size="37" /></td>
+			<th width="80">表示アドレス<em>※</em></th><td><input type=text name=ManageSenderAddress onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSenderAddress}" size="37" /></td>
+		</tr>
+	</table>
+	<br>	
+		
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;管理者&nbsp;メールアドレス一覧</td></tr>
+	</table>
+		
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput">
+		<tr>
+			<th width="80">連絡先1<em>※</em></th><td><input type=text name=ManageSendTo1 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo1}" size="37" /></td>
+			<th width="80">連絡先2</th><td><input type=text name=ManageSendTo2 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo2}" size="37" /></td>
+		</tr>
+		<tr>
+			<th width="80">連絡先3</th><td><input type=text name=ManageSendTo3 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo3}" size="37" /></td>
+			<th width="80">連絡先4</th><td><input type=text name=ManageSendTo4 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo4}" size="37" /></td>
+		</tr>
+		<tr>
+			<th width="80">連絡先5</th><td><input type=text name=ManageSendTo5 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo5}" size="37" /></td>
+			<th width="80">連絡先6</th><td><input type=text name=ManageSendTo6 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo6}" size="37" /></td>
+		</tr>
+		<tr>
+			<th width="80">連絡先7</th><td><input type=text name=ManageSendTo7 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo7}" size="37" /></td>
+			<th width="80">連絡先8</th><td><input type=text name=ManageSendTo8 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo8}" size="37" /></td>
+		</tr>
+		<tr>
+			<th width="80">連絡先9</th><td><input type=text name=ManageSendTo9 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo9}" size="37" /></td>
+			<th width="80">連絡先10</th><td><input type=text name=ManageSendTo10 onFocus="this.className='on';" onBlur="this.className='off'" value="{ManageSendTo10}" size="37" /></td>
+		</tr>
+	</table>
+	<br>
+
+
+
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="tabheader"><tr>
+		<td width="100%">&nbsp;&nbsp;メール本文<em>※</em></td>
+		<td class="pictab"><div id="tab1" onClick="seltab(1,2);" class="open">申込者宛</div></td>
+		<td class="empty" ><div class="space">&nbsp;</div></td>
+		<td class="pictab"><div id="tab2" onClick="seltab(2,2);">管理者宛</div></td>
+		<td class="right"><div>&nbsp;</div></td>
+	</tr></table>
+
+	<div class="boxtext">
+		<div id="box1" style="visibility:visible ;position:absolute;"><label><textarea rows="27" name="UserContents">{UserContents}</textarea></label></div>
+		<div id="box2" style="visibility:hidden;position:absolute;"><label><textarea rows="27"name="ManageContents">{ManageContents}</textarea></label></div>
+	</div>
+	<div>&nbsp;</div>
+</form>

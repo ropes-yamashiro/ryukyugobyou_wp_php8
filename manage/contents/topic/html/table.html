@@ -1,0 +1,172 @@
+@begin err_access
+<font color="red">不正アクセスエラー：権限がありません</font>
+@end
+
+@begin err_access2
+<font color=red>不正アクセスが発生しました</font>
+@end
+
+@begin format_db
+データを初期化しました
+@end
+
+@begin err_cmd
+<font color="red">不正アクセスエラー：{cmd}は定義されていません</font>
+@end
+
+@begin menu
+新着情報
+@end
+
+@begin authinfo
+新着情報の{title}の編集が可能になります。
+@end
+
+@begin page
+&nbsp;<a href="?" onClick="return pagech({no});">{view}</a>
+@end
+
+@begin notpic
+<font color=red >対応する写真はありません</font>
+@end
+
+@begin preview2
+<a href="?typex=topic&cmd=preview&pageid={pid}&param={id}" onclick="openWindow('?typex=topic&cmd=preview&pageid={pid}&param={id}','','scrollbars=yes,resizable=yes,width=670,height=430');return false;">ﾌﾟﾚﾋﾞｭｰ</a>
+@end
+
+@begin preview3
+<a href="../document.php?pid={contents_group}&param={contents_title}" target="_blank">ﾌﾟﾚﾋﾞｭｰ</a>
+@end
+
+@begin preview4
+<a href="../document.php?pid={contents_group}&param={contents_title}&cmd=anchor#id{contents_title}" target="_blank">ﾌﾟﾚﾋﾞｭｰ</a>
+@end
+
+@begin preview
+<a href="?typex=topic&cmd=preview&pageid={pid}&param={id}" target="_blank">ﾌﾟﾚﾋﾞｭｰ</a>
+@end
+
+@begin notdata
+<tr class="color1"><td colspan="6"><center>データがありません</center></td></tr>
+@end
+
+@begin table_line
+		<tr class="color{color}" id="bg_id{id}" onmouseover="chBG('bg_id{id}', 1);" onmouseout="chBG('bg_id{id}', 0);">
+		<td><label>&nbsp;&nbsp;<input type=checkbox name=id{id} {visible} onClick="return chvisible({id});" /></lable></td>
+		<td>{view_year}年 {view_month}月 {view_day}日</td>
+		<td><a href="?typex=topic" onClick="return detail({id});" >{title}</a></td>
+		<td>{type}</td>
+		<td><a href="?typex=topic" onClick="return delline({id},'{title}');">削除</a>
+			<a href="?typex=topic" onClick="return upline('{sort}');">上へ</a>
+			<a href="?typex=topic" onClick="return downline('{sort}');">下へ</a>
+			{preview}
+			</td>
+		</tr>
+@end
+
+
+@begin table
+<SCRIPT TYPE="text/javascript">
+<!--
+//ページを変更する
+function pagech(no){
+	document.formx.pageno.value=no;
+	document.formx.submit();
+	return false;
+}
+
+//表示の数を変える
+function countch(){
+    document.formx.pageno.value=1;
+    document.formx.submit();
+    return false;
+}
+
+
+//項目を削除する
+function delline(did,title){
+    if(window.confirm(title + 'を削除しますか？')){
+        document.formx.cmd.value = "delline";
+        document.formx.param.value = did;
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+//新着情報を作成する
+function newtopic(){
+    document.formx.cmd.value = "newtopic";
+    document.formx.submit();
+    return false;
+}
+
+//上に移動する
+function upline(pid){
+    document.formx.cmd.value = "upline";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+
+//下に移動する
+function downline(pid){
+    document.formx.cmd.value = "downline";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+
+//表示を切り替える(PC)
+function chvisible(pid){
+    document.formx.cmd.value = "chvisible";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+
+//表示を切り替える(SP)
+function chvisibleSp(pid){
+    document.formx.cmd.value = "chvisible_sp";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+
+//詳細を表示する
+function detail(pid){
+    document.formx.cmd.value = "detail";
+    document.formx.param.value = pid;
+    document.formx.submit();
+    return false;
+}
+// -->
+</SCRIPT>
+<form method="POST" name=formx action="?typex=topic">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%" class="nrline">&nbsp;&nbsp;{category}&nbsp;{pagename}：
+		<input type=submit id=btm value="新規" onclick="return newtopic();" />
+		&nbsp;&nbsp;&nbsp;&nbsp;表示件数:
+		<select name="count" id=Select1 onchange="return countch();">
+		    {count}
+		</select>
+		</td>
+		<td class="nnline">
+		{paging}
+		</td></tr>
+	</table>
+	<br>
+
+	<table width="590px" cellpadding="0" cellspacing="0" class="tlist">
+		<tr><th width="30px">表示</th>
+			   <th width="120px">掲載開始日</th>
+			   <th width="170px">タイトル</th><th width="70px">タイプ</th>
+			    <th>操作</th></tr>
+		{view}
+	</table>
+		<input type=hidden name="pageid" value="{pid}" />
+		<input type=hidden name="pageno" value="{pageno}" />
+		<input type=hidden name="cmd" value="list" />
+		<input type=hidden name="param" />
+</form>
+@end

@@ -1,0 +1,53 @@
+<SCRIPT TYPE="text/javascript">
+<!--
+
+//更新データを保存する
+function usersave(){
+    if(window.confirm('データを保存してもいいですか？')){
+        document.formx.cmd.value = "{cmd}";
+        document.formx.submit();
+    }
+    return false;
+}
+
+//項目を削除する
+function back(){
+    if(window.confirm('一覧に戻りますか？')){
+        document.formx.cmd.value = "list";
+        document.formx.submit();
+    }
+    return false;
+}
+
+
+// -->
+</SCRIPT>
+<form method=POST action="?typex=hintpasswd&id={pageno}" name="formx" enctype="multipart/form-data">
+	<input type=hidden name="pageno" value="{pageno}" />
+	<input type=hidden name="cmd" />
+	<input type=hidden name="param" value="{id}" />
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;名称&nbsp;&nbsp;{userid}:　{username}&nbsp;&nbsp;
+		<input type=submit id=btm value="保存" onclick="return usersave()" />
+		<input type=submit id=Submit1 value="一覧へ戻る" onclick="return back();" />&nbsp;</td></tr>
+	</table>
+	<br>
+
+	{err}
+    <em>※は必須入力項目です。</em>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" class="theader">
+		<tr><td width="100%">&nbsp;&nbsp;基本データ</td></tr>
+	</table>
+	<table width="100%" cellpadding="0" cellspacing="0" class="tinput">
+		<tr>
+			<th width="80">パスワード<em>※</em></th><td><label><input type=text name=hintpasswd onFocus="this.className='on';" onBlur="this.className='off'" value="{hintpasswd}" style="width:180px" /></label><br /><i style="display:block; margin-left: 3px;">(半角英数)※大文字、小文字の使い分けが可能です。</i></td>
+			<th width="80">名称</th><td><label><input type=text name= userid onFocus="this.className='on';" onBlur="this.className='off'" value="{userid}" style="width:180px" /></label></td>
+		</tr>
+		<tr>
+			<th width="80">メモ</th><td colspan="3"><label><input type=text name=username onFocus="this.className='on';" onBlur="this.className='off'" value="{username}" style="width:475px" /></label></td>
+		</tr>
+	</table>
+	<br>
+
+	<div>&nbsp;</div>
+</form>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>修学塾</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="width=device-width">
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.0.1.css">-->
+<link rel="stylesheet" href="css/default.css" />
+<link rel="stylesheet" href="css/layout.css">
+<script src="js/jquery.mobile-1.0.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.cookie_para.js"></script>
+<script type="text/javascript" src="js/smoothScroll.js"></script>
+<script type="text/javascript">
+function hideAdBar(){
+    setTimeout("scrollTo(0,1)", 100);
+}
+$(function(){
+
+$(".accordion h3").click(function(){
+	$(this).next("section").slideToggle();
+	$(this).children("span").toggleClass("open");
+    //setTimeout("alert($('.block02').height() + ' pixel')", 500);
+/*	$("ol").height(function(".block02", height) {
+		return height * 5;
+	});*/
+});
+
+})
+</script>
+<script type="text/javascript" src="js/analytics.js"></script>
+</head>
+<body onLoad="hideAdBar()" onOrientationChange="hideAdBar()" class="koushi">
+<div id="wrapper">
+<header id="header">
+<h1><img src="img/img-common/hed_logo.png" alt="修学塾"></h1>
+<p class="change"><a href="/index.php" onClick="changeView()"><img src="img/img-common/hed_btn01.png" alt="PCサイト"></a></p>
+</header>
+
+
+<div id="contents">
+    <h2 class="first"><img src="img/img-koushi/ttl_01.gif" alt="講師紹介" width="639" height="70"></h2>
+<div class="block01">
+<p class="image"><img src="img/img-koushi/image_01.gif"></p>
+</div>
+
+
+<section class="block02 clearfix">
+
+<ul class="accordion" style="width:75%; margin: 0 0 0 20%;">
+<li>
+<h3><span><img src="img/img-koushi/btn_01.gif" alt="自分が出来ることと、人に教えることは違う"></span></h3>
+<section class="first">
+<p class="image"><img src="img/img-koushi/image_01.gif"></p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_02.gif" alt="発言はいつも前向きに"></span></h3>
+<section class="first">
+<p class="image"><img src="img/img-koushi/image_01.gif"></p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_03.gif" alt="常に明るく元気でいること生徒を笑顔にしよう"></span></h3>
+<section class="first">
+<p class="image"><img src="img/img-koushi/image_01.gif"></p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_04.gif" alt="人の話は一旦聞く"></span></h3>
+<section class="first">
+<p class="image"><img src="img/img-koushi/image_01.gif"></p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_05.gif" alt="教える内容の重要性を先に伝える"></span></h3>
+<section class="first">
+<p class="image"><img src="img/img-koushi/image_01.gif"></p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_06.gif" alt="授業には付加価値をつけ、お金を頂く価値のあるものにする" width="478" height="52"></span></h3>
+<section class="first">
+<p class="image"><img src="img/img-koushi/image_01.gif"></p>
+</section>
+</li>
+<li>
+<h3><span><img src="img/img-koushi/btn_07.gif" alt="叱るとは手段の1つと心得よ叱るときは、理由をつけて、道徳的に"></span></h3>
+<section class="first">
+<p class="image"><img src="img/img-koushi/image_01.gif"></p>
+</section>
+</li>
+</ul>
+<ol>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_01.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_02.jpg" alt="講師写真"></li>
+    <li><img src="img/img-koushi/pic_03.jpg" alt="講師写真"></li>
+  </ol>
+</section>
+
+
+<div style="background:#FFFFFF; position:relative; z-index:4; padding:8% 0 0;">
+  <section class="taiken_block">
+    <h2><a href="#"><img src="img/img-index/btn_04.jpg" alt="無料体験授業から"></a></h2>
+    <p>まずは無料体験授業へ！考えるのはそれからです！</p>
+  </section>
+
+  <section class="contact_block">
+    <h3><a href="#"><img src="img/img-index/btn_05.jpg" alt="お問い合わせ・資料請求"></a></h3>
+      <p><a href="#wrapper"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭に戻る"></a></p>
+  </section>
+
+  <section class="kousha_block">
+    <h2><img src="img/img-index/ttl_02.gif" alt="修学塾 校舎のご紹介"></h2>
+    <p class="image"><img src="img/img-index/image_01.jpg" alt="修学塾 校舎のご紹介2"></p>
+  </section>
+</div>
+</div>
+
+<footer id="footer" style="position:relative; z-index:4; background:#FFFFFF; ">
+<div id="pagetop">
+  <p class="first"><a href="privacy.html">プライバシーポリシー</a></p>
+<p class="btn"><img src="img/img-news_list/btn_01.jpg" alt="修学塾トップヘ戻る"></p>
+  <p><a href="#wrapper"><img src="img/img-common/pagetop_btn01.gif" alt="ページの先頭に戻る"></a></p>
+</div>
+<p id="copy"><small>COPYRIGHT（C） 修学塾 ALL RIGHTS RESERVED.　</small></p>
+</footer>
+</div>
+</body>
+</html>
