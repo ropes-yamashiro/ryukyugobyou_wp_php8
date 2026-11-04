@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/*===================================
+  
+  新着CSS（PC） ※編集不可※
+
+===================================*/
+
+
+/*------------------------------------------------------------
+新着情報
+----------------------------------------------------------*/
+.topic #contents {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.topic #wrapper{
+	background:none;
+}
+
+.topic strong{
+	font-weight:bold;
+}
+
+.topic em{
+	font-style:italic;
+}
+
+.topic u{
+	text-decoration:underline;
+}
+
+.topic img{
+	vertical-align: middle;
+    display: inline-block;
+    padding: 0 0 0 1%;
+}
+
+.topic {
+	font-size: 75%;
+	text-align:left;
+	margin:0 auto;
+}
+
+.topic #contents .block{
+	overflow-y: auto;
+	margin:0 0 2px 0;
+	overflow-x:visible;
+}
+
+.topic .block .in:first-child{
+	margin: 0 0px 0 19px;
+}
+
+.topic .block .in {
+	margin: 10px 0px 0 19px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	table-layout: fixed;
+	border-bottom: 1px dotted #999999;
+}
+
+.topic .block .left .thumbnail{
+	margin: 5px 17px 15px 0;
+	width: 80px;
+	height: 80px;
+}
+
+.topic .block .right{
+	display: table-cell;
+}
+
+.topic #contents .block .in p.time {
+	padding: 0px 0px 3px 0;
+	margin:0;
+	font-size: 100%;
+	color: #999;
+	width: 100%;
+}
+
+.topic #contents p {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+.topic #contents .block .in dl {
+    border-bottom: 1px dottet #999;
+    display: inline-block;
+    padding: 0 0 10px 0;
+    width: 100%;
+    margin:0;
+}
+
+.topic #contents .block .in dl dt{
+	padding:0 53px 0 0;
+	margin:0;
+	float:none;
+	color: #333;
+	font-weight:bold;
+	font-size:117%;
+}
+
+.topic #contents .block .in dl dt a{
+	color: #333;
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+.topic #contents .block .in dl dt a:hover{
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.topic #contents .block .in dl dd{
+	padding: 3px 0 0 0;
+	margin:0;
+}
+
+.topic #contents .block .in dl dd a{
+	text-align: left;
+	width: auto;
+	height: auto;
+	display: inline;
+}
+
+.topic #contents .block
+.topic #contents .block .in dl dd a.dw{
+	text-align: left;
+	width: auto;
+	height: auto;
+	display: inline;
+	padding:0px 0 0 3px;
+}
+
+.index-BK #contents iframe {
+	height: 316px;
+	width: 620px;
+	border-bottom:1px solid #CCCCCC;
+	margin:35px 0 0 66px;
+}
+
+.topic-pop{
+	background:none;
+}
+
+.topic-pop #contents p{
+	padding:10px 0 10px 0;
+	margin:0;
+}
+
+.topic-pop #contents .left{
+	float:left;
+	padding:5px 20px 0 27px;
+}
+
+.topic-pop #contents .right{
+	width:420px;
+	padding-top:10px;
+	float: left;
+}
+
+.topic-pop #contents h1{
+	padding:8px 0 8px 17px;
+	background-color:#666666;
+	font-size: 14px;
+	font-weight: bold;
+	margin:20px 17px 0 10px;
+	color: #FFFFFF;
+}
+
+.topic-pop #contents h2{
+	font-size:100%;
+	margin:0;
+	padding:6px 30px 9px 0;
+	font-weight:normal;
+	font-style:normal;
+	text-align:right;
+}
+
+.topic-pop #footer li{
+	list-style:none;
+	padding:0;
+	border-style: none;
+}
+
+.topic-pop #footer li a{
+	background:url(../img/img-topic/popup-btn_01.gif) no-repeat left top;
+	width:90px;
+	height:23px;
+	display:block;
+	outline:none;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+.topic-pop #footer li a:hover{
+	background-position: left -23px;
+
+}
+
+.topic-pop strong{
+	font-weight:bold;
+}
+
+.topic-pop em{
+	font-style:italic;
+}
+
+.topic-pop u{
+	text-decoration:underline;
+}
+
+.topic-pop #footer{
+	background:none;
+	width:auto;
+}
+
+.topic-pop #wrapper{
+	background:none;
+	width:670px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.topic-pop #contents{
+	width:650px;
+	text-align:left;
+}
+
+.topic-pop #footer ul{
+	margin:0 0 0 280px;
+	padding:25px 0 30px 0;
+	text-align:left;
+}
+
+.topic-pop #contents .center{
+	clear:both;
+	padding:0 30px 0 30px;
+}
+
+
+/*新着情報ポップアップ内のポップアップ写真*/
+.picture #contents{
+	float:none;
+	margin:0 auto;
+	width:auto;
+}
+
+.picture #contents p{
+	margin:0 auto;
+	padding:20px 0 20px 0;
+}	
+
+.picture #contents #footer{
+	background:none;
+	width:auto;
+}	
+
+.picture #contents #footer p{
+	margin:0 auto;
+	text-align: center;
+	width:90px;
+}	
+
+.picture #footer p a{
+	background:url(../img/img-topic/popup-btn_01.gif) no-repeat left top;
+	width:90px;
+	height:23px;
+	display:block;
+	outline:none;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+.picture #footer p a:hover{
+	background-position: left -23px;
+}

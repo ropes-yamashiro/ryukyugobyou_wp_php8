@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+/*===================================
+  
+  新着CSS（SP） ※編集不可※
+
+===================================*/
+
+
+/* 各ページ適用CSS
+------------------------------------------------------------------------------------*/
+.disp_sp{
+	display:none;
+}
+
+.clearfix:after{
+content:"";
+display:table;
+clear:both;
+}
+.clearfix{
+/zoom:1;
+display: block;
+}
+
+/* End IE-mac */
+.clear{
+clear:both;
+} 
+
+
+/*------------------------------------------------------------
+新着情報
+----------------------------------------------------------*/
+.topic strong{
+	font-weight:bold;
+}
+
+.topic em{
+	font-style:italic;
+}
+
+.topic u{
+	text-decoration:underline;
+}
+
+.topic img{
+	vertical-align: middle;
+    display: inline-block;
+    padding: 0 0 0 1%;
+}
+
+.topic {
+	font-size:1.1rem;
+	text-align:left;
+	margin:0 auto;
+}
+
+.topic #contents{
+	width: 100%;
+	margin:0 auto;
+	padding:0;
+}
+
+.topic #contents .block{
+	overflow-y: auto;
+	margin:0 0 2px 0;
+}
+
+.topic .block .in {
+	margin: 3% 0px 0 0;
+	table-layout: fixed;
+	border-bottom: 1px dotted #ccc;
+}
+
+.topic .block .in:first-child {
+	margin:0;
+}
+
+.topic .block .left{
+	display: table-cell;
+	float:none !important;
+}
+
+.topic .block .left .thumbnail{
+	margin: 5px 17px 15px 0;
+	width: 80px;
+	height: 80px;
+}
+
+@media screen and (min-width: 200px) {
+	.topic .block .left .thumbnail{
+		margin: 5px 17px 15px 0;
+		width: 60px;
+		height: 60px;
+	}
+}
+
+@media screen and (min-width: 360px) {
+	.topic .block .left .thumbnail{
+		margin: 5px 17px 15px 0;
+		width: 80px;
+		height: 80px;
+	}
+}
+
+.topic .block .left .thumbnail img{
+	width: 100%;
+}
+
+.topic .block .right{
+	display: table-cell;
+	padding:  0;
+	margin: 0;
+	vertical-align: top;
+	float:none  !important;
+}
+
+.topic #contents .block .in p.time {
+	padding: 0px 0px 0.5% 0;
+	margin:0;
+	color: #999;
+	width: 100%;
+	font-size: 1.1rem;
+}
+
+.topic #contents p {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+.topic #contents .block .in dl {
+    display: inline-block;
+    padding: 0 0 4% 0;
+    width: 100%;
+	margin:0;
+}
+
+.topic #contents .block .in dl dt{
+	padding: 0 0 0 0;
+	margin:0;
+	float:none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #333;
+}
+
+.topic #contents .block .in dl dt a{
+	color: #333;
+	text-decoration: underline;
+}
+
+.topic #contents .block .in dl dt a:hover{
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.topic #contents .block .in dl dd{
+	padding: 0 0 0 0;
+	margin:0;
+	line-height:  1.6;
+	font-size: 1.1rem;
+}
+
+.topic #contents .block .in dl dd span{
+	line-height: 1.6 !important;
+}
+
+.topic #contents .block .in dl dd a{
+	text-align: left;
+	width: auto;
+	height: auto;
+	display: inline;
+}
+
+.topic #contents .block .in dl dd a.dw{
+	text-align: left;
+	width: auto;
+	height: auto;
+	display: inline;
+	padding:0px 0 0 3px;
+}
+
+.index-BK #contents iframe {
+	height: 316px;
+	width: 620px;
+	border-bottom:1px solid #CCCCCC;
+	margin:35px 0 0 66px;
+}
+
+.topic-pop{
+	background:none;
+}
+
+.topic-pop #contents p{
+	padding:10px 0 10px 0;
+	margin:0;
+}
+
+.topic-pop #contents p.ymd{
+	padding: 10px 20px 10px 0;
+	text-align:right;
+}
+
+.topic-pop #contents .left{
+	float: left;
+    padding: 1% 3% 0 3%;
+    width: 30%;
+}
+
+.topic-pop #contents .left img{
+	width: 100%;
+}
+
+.topic-pop #contents .right{
+	width: 60%;
+	padding-top:10px;
+	float: left;
+}
+
+.topic-pop #contents h1{
+	padding:8px 0 8px 17px;
+	background-color:#333399;
+	font-size: 14px;
+	font-weight: bold;
+	margin:20px 17px 0 10px;
+	color: #FFFFFF;
+}
+
+.topic-pop #contents h2{
+	font-size:100%;
+	margin:0;
+	padding:6px 30px 9px 0;
+	font-weight:normal;
+	font-style:normal;
+	text-align:right;
+}
+
+.topic-pop #footer li{
+	list-style:none;
+	padding:0;
+	border-style: none;
+}
+
+.topic-pop strong{
+	font-weight:bold;
+}
+
+.topic-pop em{
+	font-style:italic;
+}
+
+.topic-pop u{
+	text-decoration:underline;
+}
+
+.topic-pop #footer{
+	background:none;
+	width:auto;
+	clear:both;
+}
+.topic-pop #footer{
+	background:none;
+	width:auto;
+	clear:both;
+}
+.topic-pop #footer img{
+	width: 90%;
+	height: auto;
+}
+
+.topic-pop #wrapper{
+	background:none;
+	max-width:650px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.topic-pop #contents{
+	max-width:100%;
+	text-align:left;
+}
+
+.topic-pop #footer ul{
+	padding:5% 0 0px 0;
+	text-align: center;
+	max-width: 34%;
+	margin: 3% auto 5%;
+}
+
+.topic-pop #contents .center{
+	clear:both;
+	padding:0 30px 0 30px;
+}
+
+
+/*新着情報ポップアップ内のポップアップ写真*/
+.picture #contents{
+	float:none;
+	margin:0 auto;
+	width:auto;
+	}
+
+.picture #contents p{
+	margin:0 auto;
+	padding:20px 0 20px 0;
+}	
+
+.picture #contents #footer{
+	background:none;
+	width:auto;
+}	
+
+.picture #contents #footer p{
+	margin:0 auto;
+	text-align: center;
+	width:90px;
+}	
+
+.picture #footer p a{
+	background:url(../img/img-topic/popup-btn_01.gif) no-repeat left top;
+	width:90px;
+	height:23px;
+	display:block;
+	outline:none;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+.picture #footer p a:hover{
+	background-position: left -23px;
+}
+
+@media screen and (max-width: 414px) {
+	.topic #contents .block .in p.time{
+		font-size:1.2rem;
+	}
+
+	.topic #contents .block .in dl dt{
+		font-size:1.3rem;
+	}
+	
+	.topic #contents .block .in dl dd{
+		font-size:1.2rem;
+	}
+}

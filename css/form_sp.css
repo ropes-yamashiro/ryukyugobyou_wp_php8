@@ -1,0 +1,2230 @@
+@charset "utf-8";
+
+/*------------------------------------
+トップページ
+------------------------------------*/
+.index .main_image.container3 {
+  width: 100%;
+}
+
+.index #contents {
+  padding-top: 10px;
+}
+
+.index #contents h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #2A3C6B;
+  letter-spacing: 0;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.index #contents .build_block h3, .index #contents .about_block h3 {
+  padding: 0 0 30px;
+}
+
+.index #contents h3 span {
+  display: block;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.index #contents .oshirase {
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  border: 3px #EEEEEE solid;
+  width: 92%;
+  padding: 3% 4%;
+  margin: 3% auto 7%;
+  text-align: left;
+  color: #333;
+}
+
+.index #contents .cmn_ttl02 {
+  font-size: 1.6rem;
+  margin-bottom: 0px;
+}
+
+.index #contents .cmn_ttl02 span.txt {
+  letter-spacing: 0;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.index #contents .cmn_ttl02 span.sub_ttl {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.index #contents .cmn_ttl02 span.sub_ttl {
+  display: inline-block;
+  vertical-align: middle;
+  color: #2A3C6B;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 5px;
+}
+
+.index #contents .cmn_ttl02 span.sub_ttl img {
+  width: 50%;
+}
+
+.lead {
+  width: 88%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0 auto;
+  font-family"Noto Sans JP", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  line-height: 1.43;
+}
+
+@media (max-width: 320px) {
+  .index #contents .cmn_ttl02 span.sub_ttl img {
+    width: 60%;
+  }
+}
+
+.index #contents .txt span {
+  font-weight: bold;
+  color: #FF5A26;
+}
+
+.index #contents .txt2 {
+  text-align: left;
+}
+
+.index #contents .bg_gray {
+  background: #F7F7F7;
+}
+
+/*私たちの住まい*/
+.index #contents .block01 {
+  background: url(../img/img-index/bg_01.jpg) no-repeat top center;
+  margin-bottom: 5px;
+  background-size: cover;
+}
+
+.index #contents .block01 dl {
+  /* width:675px; */
+  text-align: left;
+  margin: 0 auto;
+}
+
+.index #contents .block01 dt {
+  font-size: 1.1rem;
+  padding: 0 0 15px;
+}
+
+/*WORKS*/
+.index #contents .ttl {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  color: #2A396B;
+  font-weight: bold;
+  margin: 0 0 20px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  text-align: center;
+}
+
+.index #contents .ttl span.method01 {
+  font-size: 2rem;
+  color: #fff;
+  background: #EDA42E;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  line-height: 1.9;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0 6px;
+}
+
+@media (max-width: 320px) {
+  .index #contents .ttl span.method01 {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.index #contents .ttl span.method02 {
+  color: #EB8619;
+  font-size: 1.8rem;
+}
+
+/*PLAN*/
+.index #contents .plan_block dl {
+  padding: 20px 0 0;
+}
+
+.index #contents .plan_block dl dt {
+  text-align: center;
+}
+
+.index #contents .plan_block dl dt img {
+  width: 30%;
+}
+
+.index #contents .plan_block ul {
+  /* width: 890px; */
+  margin: 0 auto;
+  /* padding: 0 0 0 50px; */
+}
+
+.index #contents .plan_block li {
+  /* float:left; */
+  /* width:48%; */
+  padding: 0 1%;
+  text-align: center;
+}
+
+/*ABOUT*/
+.index #contents .about_block {
+  background: url(../img/img-index/bg_02.jpg) no-repeat center center;
+  margin-bottom: 5px;
+  background-size: cover;
+}
+
+.index #contents .about_block .container {
+  /* width:900px; */
+  /* margin:0 auto; */
+}
+
+.index #contents .about_block ul li {
+  /*float:left;
+	margin:0;
+	width:50%;
+	padding:0 0 20px;*/
+  text-align: center;
+}
+
+.index #contents .about_block .txt2 {
+  padding: 20px 0 0;
+}
+
+.index #contents .about_block .btn {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.index #contents .about_block .btn ul li {
+  float: none;
+  /*width:50%;*/
+}
+
+/*建築プラン*/
+.index #contents .build_block h3 img {
+  width: 60%;
+}
+
+.index #contents .build_block .container {
+  /* width:900px; */
+  /* margin:0 auto; */
+}
+
+.index #contents .build_block ul {
+  padding: 0 0 40px;
+}
+
+.index #contents .build_block ul li {
+  float: left;
+  width: 50%;
+  /* font-size:1.8rem; */
+}
+
+.index #contents .build_block ul li dt, .index #contents .build_block ul li dd {
+  text-align: center;
+}
+
+.index #contents .build_block ul li dt img {
+  width: 27%;
+}
+
+.index #contents .build_block ul li span {
+  line-height: 1.5;
+  display: inline-block;
+  padding: 10px 0 0;
+}
+
+.index #contents .build_block ul li em {
+  color: #FF3F00;
+}
+
+.index #contents .build_block .txt2 span {
+  color: #2A3A6B;
+  display: inline-block;
+}
+
+.index #contents .syosai_btn:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0px;
+  border-top: solid 1px #FFF;
+  border-right: solid 1px #FFF;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  margin-top: -5px;
+  transition: 0.3s;
+}
+
+.index #contents .syosai_btn:hover:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0px;
+  border-top: solid 1px #FFF;
+  border-right: solid 1px #FFF;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  margin-top: -5px;
+  transition: 0.3s;
+  color: #FFF;
+}
+
+.index #contents .syosai_btn {
+  width: 231px;
+  padding: 5px 0px;
+  margin-top: 35px;
+  position: relative;
+  font-weight: normal;
+}
+
+.index #contents .about_block .syosai_btn:after {
+  border: 0;
+}
+
+.index #contents .about_block .syosai_btn {
+  padding: 5px 0px;
+  margin-top: 35px;
+  width: 90%;
+}
+
+.index #contents .about_block .syosai_btn {
+  background: #2A3C6B url(../img/img-index/icon_gaibu.png) no-repeat 10px center;
+}
+
+/*スライダー*/
+.index #contents .works_block .swiper-wrapper {
+  display: -webkit-box;
+  /*Android4.3*/
+  display: -moz-box;
+  /*Firefox21*/
+  display: -ms-flexbox;
+  /*IE10*/
+  display: -webkit-flex;
+  /*PC-Safari,iOS8.4*/
+  display: flex;
+}
+
+.index #contents .works_block .swiper-container a {
+  display: block;
+}
+
+.index #contents .works_block .swiper-container a:hover img {
+  opacity: 0.8;
+}
+
+/*.index #contents .works_block .swiper-container dl{
+	
+	min-height:310px;
+}*/
+.index #contents .works_block .swiper-container dd {
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 5% 6% 6%;
+  background: #fff;
+  height: 100%;
+  height: 80px;
+}
+
+.index #contents .works_block .swiper-container span {
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  font-size: 1.0rem;
+}
+
+.index #contents .works_block .swiper-container span:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0px;
+  border-top: solid 1px #333;
+  border-right: solid 1px #333;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: -2%;
+  margin-top: -5px;
+  transition: 0.3s;
+}
+
+.index #contents .works_block .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.index #contents .works_block .swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .index #contents .works_block .swiper-slide {
+    width: 40%;
+  }
+
+  .index #contents .plan_block dl dt img {
+    width: 20%;
+  }
+
+  .index #contents .about_block .syosai_btn {
+    width: 56%;
+  }
+}
+
+/*------------------------------------
+注文住宅とは
+------------------------------------*/
+.about main .mainimage {
+  background: #2A3C6B url(../img/img-about/img_mainsp.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.about .cmn_ttl01 img {
+  width: 34%;
+}
+
+.about .cmn_ttl01 span em {
+  padding-left: 10px;
+}
+
+.about .cmn_ttl01 span {
+  margin: -10px 0 0;
+}
+
+.about .catch_block {
+  background: #F6F6F6;
+  padding: 0 0 40px;
+}
+
+.about .cmn_ttl04 b {
+  font-size: 1.5rem;
+  color: #333;
+  letter-spacing: 0.1em;
+}
+
+.about .cmn_ttl04 b em {
+  font-size: 1.8rem;
+  padding: 0;
+}
+
+.about .cmn_ttl04 i {
+  font-style: italic;
+  font-size: 3.4rem;
+  color: #2A396B;
+}
+
+.about .cmn_ttl04 span {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.about .cmn_ttl02 b {
+  font-size: 1.6rem;
+  color: #2A396B;
+  padding: 0 0 10px;
+  display: block;
+}
+
+.about .cmn_ttl02 span {
+  font-size: 1.0rem;
+  color: #333;
+}
+
+.about #contents .main dt {
+  text-align: left;
+  /*padding: 0 0 20px;*/
+}
+
+.about #contents .style01 .main dt {
+  padding: 0 0 20px;
+}
+
+.about #contents dl.main {
+  /*width: 95%;*/
+}
+
+.about #contents .cmn_block {
+  position: relative;
+  /*margin:25px 0 0;*/
+}
+
+.about #contents .cmn_block::after {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 25px solid #FFF;
+  position: absolute;
+  bottom: -74px;
+  content: "";
+  display: block;
+  left: 36.5%;
+  z-index: 1;
+}
+
+.about #contents .bg_gray::after {
+  border-top: 30px solid #F6F6F6;
+}
+
+.about #contents .style07::after {
+  border: 0;
+}
+
+.about #contents .txt_block p {
+  padding-top: 20px;
+}
+
+.about #contents .style04 .blk01 {
+  margin: 0 auto 10%;
+}
+
+.about #contents .style04 .blk01:last-child {
+  margin: 0 auto 3%;
+}
+
+.about #contents .style04 .plan {
+  background: #FFF;
+  padding: 2% 3%;
+  margin-top: 3%;
+}
+
+.about #contents .style04 .plan dl {
+  margin: 0 0 5%;
+}
+
+.about #contents .style04 .plan dl dt {
+  text-align: center;
+  padding-left: 9%;
+}
+
+.about #contents .style04 .plan dl dt span {
+  color: #8C6B3D;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: block;
+  margin: 3% 0 3%;
+}
+
+.about #contents .style04 .plan dl dt img {
+  width: 40%;
+}
+
+.about #contents .style04 .plan dl dd {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.about #contents .style04 .plan p {
+  margin: 5% 0 0;
+  float: none;
+  text-align: center;
+}
+
+.about #contents .txt_block dl dd p, .about #contents .txt_block dl dd img {
+  margin: 0 0 6%;
+}
+
+.about #contents .style04 .cordinater {
+  width: 100%;
+}
+
+.about #contents .style04 .cordinater dt {
+  text-align: right;
+  width: 41%;
+}
+
+.about #contents .style04 .cordinater .font_mincho {
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
+.about #contents .style04 .cordinater dt img {
+  width: 100% !important;
+}
+
+.about #contents .style04 .cordinater .txt_right {
+  text-align: right;
+}
+
+.about #contents .style04 .plan .ttl {
+  text-align: left;
+  /* width:50%; */
+  padding: 0 0 10px;
+  /*margin:0 55px 0;*/
+}
+
+.about #contents .style04 .plan .ttl span {
+  background: url(../img/img-about/ttl_plan.png) no-repeat center center;
+  background-size: contain;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 3;
+  display: block;
+  color: #545454;
+}
+
+.about #contents .dousen {
+  text-align: center;
+  background: url(../img/img-about/bg_01.jpg) no-repeat left center;
+}
+
+.about #contents .dousen::after {
+  border: 0;
+}
+
+.about #contents .dousen p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about #contents .dousen dt {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0 0 10px;
+  color: #212D54;
+}
+
+.about #contents .dousen dd {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about #contents .shosai_btn2 {
+    width: 45%;
+  }
+
+  .about #contents .cmn_block::after {
+    left: 43.5%;
+  }
+}
+
+/*------------------------------------
+施工実績詳細　共通
+------------------------------------*/
+.works_common main .mainimage {
+  background: #2A3C6B url(../img/img-works/img_mainsp.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.works_common #contents .container dl {
+  padding: 0 0 10%;
+}
+
+.works_common #contents .container.main {
+  width: 100%;
+}
+
+.works_common #contents .container2 {
+  width: 100%;
+}
+
+.works_common #contents .container dl dt {
+  margin: 0 0 4%;
+}
+
+.works_common #contents .container dl dd {
+  text-align: left;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+.works_common #contents .container dl.main dt img {
+  width: 100%;
+}
+
+.works_common #contents .container dl.main dd {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.works_common #contents .container .no-text {
+  padding: 0 0 10%;
+}
+
+/*------------------------------------
+施工実績一覧
+------------------------------------*/
+.works main .mainimage {
+  background: #2A3C6B url(../img/img-works/img_mainsp.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.works #contents .container h3 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  color: #2A396B;
+  font-weight: bold;
+  margin: 0 0 8%;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  text-align: center;
+}
+
+.works #contents .container h3 span.method01 {
+  font-size: 2rem;
+  color: #fff;
+  background: #EDA42E;
+  width: 12.8%;
+  /* height: 9%; */
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
+  line-height: 1.8;
+  display: inline-block;
+  font-weight: normal;
+  margin: 0 1%;
+  padding: 0% 0 0 0.5%;
+}
+
+.works #contents .container h3 span.method02 {
+  color: #EB8619;
+  font-size: 2rem;
+}
+
+.works .bg_grayfelt {
+  background: url(../img/img-works/bg_01.gif) repeat left top;
+  background-size: 100%;
+}
+
+.works #contents .container ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.works #contents .container li {
+  /*float:left;
+	width:360px;*/
+  /*margin:0 45px 0 0;*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+.works #contents .container li:last-child {
+  margin-bottom: 0;
+}
+
+.works #contents .container li a {
+  display: block;
+  width: 100%;
+}
+
+.works #contents .container li a:hover img {
+  opacity: 0.8;
+}
+
+/*
+ホバーで別画像出すときこっちを有効にする
+.works #contents .container li dl dt{
+	background:url(../img/img-works/btn_07hover.jpg) no-repeat left top;
+}
+.works #contents .container li a:hover dl dt img{
+	opacity:0;
+}*/
+.works #contents .container li dl {
+  background: #fff;
+  /*min-height:310px;*/
+}
+
+.works #contents .container li img {
+  width: 100%;
+}
+
+.works #contents .container li dd {
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 3% 6%;
+}
+
+.works #contents .container li dd.cat {
+  text-align: right;
+  padding: 0% 6% 2%;
+  height: auto;
+}
+
+.works #contents .container li dd.cat span {
+  padding: 1% 3.5%;
+  color: #2A3A6B;
+  font-size: 1rem;
+  border: 1px solid #2A3C6B;
+  display: inline-block;
+  margin: 0 0 1em 1em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/*
+@media (max-width: 1200px) {
+.works #contents .container li{
+	width: 31%;
+    margin: 0 3.5% 0 0;
+  }
+.works #contents .container li img{
+	width:100%;
+}
+.works #contents .container li dl{
+	min-height:19em;
+}
+}*/
+/*------------------------------------
+安心の建築プラン　equipment
+------------------------------------*/
+.equipment main .mainimage {
+  background: #2A3C6B url(../img/img-equipment/img_mainsp.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.equipment #contents .cmn_block {
+  text-align: left;
+}
+
+.equipment #contents .cmn_block:first-child {
+  padding: 10px 0 30px;
+  text-align: center;
+}
+
+.equipment #contents .left, .equipment #contents .right {
+  float: none;
+}
+
+.equipment #contents .block01 {
+  margin: 0 auto 10%;
+}
+
+.equipment #contents .block01 dl {
+  margin: 0 0 5%;
+}
+
+.equipment #contents .block01 dl dt {
+  text-align: center;
+}
+
+.equipment #contents .block01 dl dt span {
+  color: #8C6B3D;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: block;
+  margin: 3% 0 3%;
+}
+
+.equipment #contents .block01 dl dt img {
+  width: 40%;
+}
+
+.equipment #contents .block01 dl dd {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.equipment #contents .block01 p {
+  margin: 5% 0 0;
+  text-align: center;
+}
+
+.equipment #contents .block02 {
+  margin: 0 auto 8%;
+}
+
+.equipment #contents .block02:last-child {
+  margin: 0 auto 0%;
+}
+
+.equipment #contents .block02 dl dd {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.equipment #contents .block02 dl dd p, .equipment #contents .block02 dl dd img, .equipment #contents .block03 dl dd p, .equipment #contents .block03 dl dd img {
+  margin: 0 0 6%;
+}
+
+.equipment #contents .block02 dl dd p:last-child, .equipment #contents .block03 dl dd p:last-child {
+  margin: 0 0 0%;
+}
+
+.equipment #contents .block_facility .cou {
+  text-align: right;
+  font-size: 1.1rem;
+  color: #2A3A6B;
+  margin: 0px auto 3%;
+}
+
+.equipment #contents .block_facility .cou img {
+  width: 4%;
+  vertical-align: middle;
+}
+
+.equipment #contents .block_facility li {
+  box-shadow: 5px 4px 4px 0.3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 5% 2% 5% 5%;
+  position: relative;
+  margin: 0 0 8%;
+}
+
+.equipment #contents .block_facility li span.icon01 {
+  position: absolute;
+  left: -7px;
+  top: 0px;
+  background: url(../img/img-equipment/facility_ico01.png) no-repeat left center;
+  padding: 6% 8% 6% 2%;
+  color: #fff;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  background-size: 80%;
+}
+
+.equipment #contents .block_facility li span.icon02 {
+  position: absolute;
+  left: -7px;
+  top: 0px;
+  background: url(../img/img-equipment/facility_ico02.png) no-repeat left center;
+  padding: 6% 8% 6% 2%;
+  color: #fff;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  background-size: 80%;
+}
+
+.equipment #contents .block_facility li p, .equipment #contents .block_facility li dl {
+  float: left;
+}
+
+.equipment #contents .block_facility li p {
+  margin: 0 5% 0 0;
+  width: 40%;
+}
+
+/*.equipment #contents .block_facility li.width160 p{
+	width:160px;
+}
+.equipment #contents .block_facility li.width180 p{
+	width:180px;
+}
+.equipment #contents .block_facility li.width200 p{
+	width:200px;
+}*/
+.equipment #contents .block_facility li p img {
+  width: 100%;
+}
+
+.equipment #contents .block_facility li dl {
+  width: 52%;
+}
+
+.equipment #contents .block_facility li dl dt {
+  color: #2A3B6B;
+  font-size: 1.1rem;
+  margin: 0 0 5%;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+.equipment #contents .block_facility li dl dd {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.equipment #contents .block_afterservice h4 {
+  margin: 0 0 2%;
+}
+
+.equipment #contents .block_afterservice .subtitle {
+  font-size: 1.2rem;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  opacity: 0;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 5%;
+  line-height: 1.3;
+}
+
+.equipment #contents .block_afterservice .block {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.equipment #contents .block_afterservice .block dl {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-shadow: 5px 4px 4px 0.3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 7%;
+  margin: 0 0 30px;
+}
+
+.equipment #contents .block_afterservice .block dl dt {
+  color: #2A3B6B;
+  font-size: 1.1rem;
+  margin: 0 0 3%;
+  letter-spacing: 0;
+  display: block;
+  float: none;
+  width: 100%;
+  font-weight: bold;
+}
+
+.equipment #contents .block_afterservice .block dl dd {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.equipment #contents .block_afterservice .block dl dd p, .equipment #contents .block_afterservice .block dl dd ul {
+  margin: 0 0 6%;
+}
+
+.equipment #contents .block_afterservice .block dl dd.txt li {
+  text-indent: -1em;
+  margin: 0 0 0.5em 1em;
+}
+
+.equipment #contents .block_afterservice .block dl dd.img {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*------------------------------------
+お問い合わせ
+------------------------------------*/
+.form main #contents {
+  /* padding: 5% 0 50px; */
+  padding: 0 0 50px;
+}
+
+.form main .mainimage {
+  background: #2A3C6B url(../img/img-form/img_mainsp.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.form #contents .cmn_block {
+  padding: 0 0 40px;
+}
+
+.form #contents .tel {
+  width: 88%;
+  margin: 0 auto 0%;
+  font-size: 1.6rem;
+}
+
+.form #contents .tel .time {
+  /*font-weight:bold;*/
+  font-size: 1.1rem;
+  margin: 0 0 0%;
+}
+
+.form #contents .tel .time span {
+  display: block;
+}
+
+.form #contents .tel .number {
+  padding: 0 0 0 10%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.6;
+  background: url(../img/img-form/ico_tel.png) no-repeat left center;
+  background-size: 13%;
+  margin: 0 0 1%;
+}
+
+.form #contents .tel .number a {
+  text-decoration: none;
+}
+
+.form #contents .shopname {
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin: 0 3% 0 0;
+}
+
+.form #contents .ttl {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.form #contents p.first {
+  text-align: left;
+  padding: 0;
+  font-size: 1.1rem;
+  margin: 0 4% 5%;
+}
+
+.form #contents p.first span.red {
+  color: #f00;
+}
+
+.form #contents .cmn_table_type04 th {
+  width: 24%;
+}
+
+.form #contents .cmn_table_type04 {
+  margin: 0 auto 7%;
+  width: 100%;
+  border: none;
+  font-size: 1.1rem;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.form #contents .cmn_table_type04 tr td span.honbun {
+  margin: 0 10px 0 0;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.form #contents .cmn_table_type04 input, .form #contents .cmn_table_type04 select {
+  font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding: 1.5% 2%;
+  margin: 0 2% 1% 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  font-size: 1.1rem;
+  ;
+  border: 1px solid #ccc;
+  width: 95%;
+}
+
+.form #contents .cmn_table_type04 select {
+  padding-left: 5%;
+  text-align: left;
+}
+
+.form #contents .cmn_table_type04 select {
+  height: 30px;
+}
+
+.form #contents .cmn_table_type04 input#name, .form #contents .cmn_table_type04 input#kana, .form #contents .cmn_table_type04 input#school2, .form #contents .cmn_table_type04 input#mail, .form #contents .cmn_table_type04 input#address, .form #contents .cmn_table_type04 input#tel {
+  width: 95%;
+  margin: 0 2% 1% 0;
+}
+
+.form #contents .cmn_table_type04 #birth_y, .form #contents .cmn_table_type04 #birth_m, .form #contents .cmn_table_type04 #birth_d {
+  width: 24%;
+  margin: 0;
+}
+
+.form #contents .cmn_table_type04 tr td em {
+  clear: both;
+  display: block;
+  font-style: normal;
+  font-size: 1.0rem;
+  margin: 0 0 1%;
+}
+
+.form #contents .cmn_table_type04 .sex {
+  width: 21%;
+  display: inline-block;
+}
+
+.form #contents .cmn_table_type04 input#zip {
+  width: 55%;
+}
+
+.form #contents .cmn_table_type04 select#pref {
+  padding: 0px 5px;
+  width: 60%;
+  height: 38px;
+  color: #333;
+}
+
+.form #contents .cmn_table_type04 td .pic span {
+  font-size: 1.2rem;
+}
+
+.form #contents .cmn_table_type04 td .pic input {
+  font-size: 1.2rem;
+}
+
+.form #contents .cmn_table_type04 .zipcloud_search {
+  vertical-align: top;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #888;
+  padding: 1% 1%;
+  text-align: left;
+  line-height: 1.4;
+  background: #ccc;
+  font-size: 1rem;
+  color: #333 !important;
+}
+
+.form #contents .cmn_table_type04 span.zipbtn {
+  display: block;
+  margin: 0;
+  font-size: 100%;
+}
+
+.form #contents .cmn_table_type04 .zip_wrap em {
+  width: 60%;
+  margin: -1% 0 0;
+}
+
+.form #contents .cmn_table_type04 tr {
+  background: #fff;
+  margin: 0 0 0;
+  display: block;
+}
+
+.form #contents .cmn_table_type04 tr.birth {
+  margin: 0 0 0;
+}
+
+.form #contents .cmn_table_type04 tr th, .form #contents .cmn_table_type04 tr td {
+  line-height: 1.2em;
+  border: none;
+}
+
+.form #contents .cmn_table_type04 tr th {
+  border: none;
+  color: #3F3124;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+  background: #fcf4e5;
+  font-size: 1.1rem;
+  padding: 13px;
+  border-top: 1px solid #dedede;
+  display: block;
+  position: relative;
+}
+
+.form #contents .cmn_table_type04 tr th .hisu {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fa6c47;
+  padding: 0 5px;
+  line-height: 1;
+  font-size: 1rem;
+  height: 1.8em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.form #contents .cmn_table_type04 th span.red {
+  color: #f00;
+}
+
+.form #contents .cmn_table_type04 tr td {
+  padding: 15px 10px;
+  display: block;
+}
+
+.form #contents .cmn_table_type04 tr td li {
+  margin: 0 0 3%;
+  font-size: 1.2rem;
+}
+
+.form #contents .cmn_table_type04 ul.daytime li {
+  width: 25%;
+  float: left;
+  display: block;
+  margin: 0 0% 1% 0;
+}
+
+.form #contents .cmn_table_type04 ul.daytime li:last-child {
+  width: 50%;
+}
+
+.form #contents .cmn_table_type04 ul.daytime li select {
+  width: 70%;
+  height: 30px;
+  /*line-height:1.5;*/
+}
+
+.form #contents .cmn_table_type04 ul.daytime li:last-child select {
+  width: 70%;
+  /*line-height:1.4;*/
+}
+
+.form #contents .cmn_table_type04 tr td span {
+  display: block;
+  margin: 0 0 3% 0 !important;
+  float: none;
+  width: auto;
+  line-height: 1.5;
+}
+
+.form #contents .cmn_table_type04 tr td span.sex {
+  margin: 0 0 0 0 !important;
+}
+
+.form #contents .cmn_table_type04 tr td span:last-child {
+  margin: 0 !important;
+}
+
+.form #contents .cmn_table_type04 tr td input[type=radio] {
+  margin: 0 2% 0 0;
+  width: 23px;
+  height: 23px;
+  vertical-align: middle;
+  -webkit-appearance: radio;
+}
+
+.form #contents .cmn_table_type04 tr td input[type=checkbox] {
+  width: 23px;
+  height: 23px;
+  vertical-align: middle;
+  -webkit-appearance: checkbox;
+  display: block;
+  float: left;
+  line-height: 1.6;
+}
+
+.form #contents .cmn_table_type04 tr td span.error {
+  margin: 0 0 0 0;
+  display: inline-block;
+  color: #cc0000;
+  font-weight: bold;
+  float: none;
+}
+
+.form #contents .error {
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.form #contents .error2 {
+  color: #fff;
+  background: #f00;
+  padding: 0.8% 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 auto 1.5%;
+  width: 96%;
+}
+
+.form #contents .cmn_table_type04 tr td p.explain {
+  clear: both;
+  line-height: 140%;
+}
+
+.form #contents .cmn_table_type04 td ul.attend li {
+  /*color:#CC0000;*/
+  float: none;
+  margin: 0 0 2%;
+  font-size: 1.2rem;
+}
+
+.form #contents .cmn_table_type04 td textarea {
+  width: 100%;
+  height: 15em;
+  font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+}
+
+.form #contents .btn_wrp {
+  margin: 15px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form #contents .btn_wrp label {
+  width: 40%;
+}
+
+.form #contents .btn_wrp p.last {
+  width: 50%;
+}
+
+.form #contents .btn_wrp input[type="submit"] {
+  -webkit-appearance: none;
+  color: #ffffff;
+  font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  display: inline-block;
+  border: none;
+  background: #FF8000;
+  height: 3em;
+  line-height: 3em;
+  padding: 0;
+  width: 100%;
+  font-size: 1.1rem;
+  /* background:#B1002D url(../img/img-common/icon_arrow.png) no-repeat right 44%; */
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  margin: 5% 0 0;
+  /* background-size: 19%; */
+  font-weight: bold;
+  /*border-radius: 6px;*/
+}
+
+.form #contents .btn_wrp input[type="submit"]:hover {
+  background: #FF8000 url(../img/img-common/icon_arrow.png) no-repeat right 44%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form #contents input.first[type="submit"] {
+  background: #888888 url(../img/img-common/icon_arrow.png) no-repeat right 44%;
+}
+
+.form #contents input.first[type="submit"]:hover {
+  background: #888888 url(../img/img-common/icon_arrow.png) no-repeat right 44%;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.form_chk #contents .cmn_table_type04 ul.daytime li {
+  width: auto;
+  margin: 0 2% 0 0;
+}
+
+.form_chk #contents .btn_wrp {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.form_chk #contents .btn_wrp input {
+  width: 40%;
+  padding: 0 0em !important;
+  height: auto;
+  margin: 0 10px;
+}
+
+.form_chk #contents .btn_wrp .first {
+  margin: 0 5% 0 0;
+  background: #aaa !important;
+  padding: 0 0em !important;
+}
+
+.form_chk #contents .btn_wrp .first:hover {
+  background: #aaa !important;
+}
+
+.form #contents .privacy_block {
+  margin: 3% 0 0;
+}
+
+.form #contents .privacy_block .inner {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  color: #333333;
+  height: 210px;
+  margin-bottom: 10px;
+  overflow: auto;
+  padding: 5% 4%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.form #contents .privacy_block .inner h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0 0 3%;
+}
+
+.form #contents .privacy_block .inner p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 5%;
+  letter-spacing: 0.05em;
+}
+
+.form #contents .privacy_block .inner dl {
+  margin: 0 0 5%;
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+.form #contents .privacy_block .inner dl dd {
+  margin: 0 0 0 1em;
+}
+
+.form #contents .privacy_block .inner a.tel {
+  cursor: default;
+  color: #333;
+  font-size: 1rem;
+}
+
+.form #contents .l_cmn_ttl03 {
+  margin: 0 0 15px 0;
+  background-size: 7%;
+}
+
+.form #contents .l_cmn_ttl04_01 {
+  margin: 0 0 30px 0;
+}
+
+.form #contents table #name-sei, .form #contents table #name-mei, .form #contents table #kana-sei, .form #contents table #kana-mei {
+  width: 38%;
+}
+
+.hakajimai_satei #contents table #address2 {
+  width: 100%;
+}
+
+.hakajimai_satei #contents table.cmn_table_type04 .picture .caution2 {
+  margin: 0 0 3%;
+  font-size: 1.1rem;
+}
+
+.hakajimai_satei #contents table.cmn_table_type04 .picture ul li {
+  display: block;
+  margin: 0 auto 3%;
+  float: none;
+}
+
+.hakajimai_satei #contents table td .caution {
+  clear: both;
+  padding: 0% 0 0%
+}
+
+.form #contents .cmn_table_type04 #address1, .form #contents .cmn_table_type04 #place {
+  width: 65%;
+}
+
+/*------------------------------------
+資料請求・お問い合わせフォームnew
+------------------------------------*/
+.formnew #contents .cmn_table_type04 {
+  width: 100%;
+  border-bottom: solid 1px #b3b3b3;
+  margin: 0 0 12%;
+}
+
+.formnew #contents .cmn_table_type04 tr {
+  border-top: solid 1px #b3b3b3;
+  margin: 0;
+}
+
+.formnew #contents .cmn_table_type04 tr th {
+  width: 230px;
+  background-color: #fbf9ee;
+  border: solid 1px #b3b3b3;
+  border-top: none;
+  text-align: left;
+  vertical-align: top;
+  font-weight: bold;
+  padding: 16px 20px;
+  vertical-align: middle;
+  display: block;
+  width: 100%;
+}
+
+.formnew #contents .cmn_table_type04 tr td {
+  vertical-align: top;
+  display: block;
+  width: 100%;
+  border-bottom: none;
+  border-top: none;
+  border-right: solid 1px #b3b3b3;
+  border-left: solid 1px #b3b3b3;
+  padding-bottom: 20px;
+  padding: 6% 6%;
+}
+
+.formnew #contents .cmn_table_type04 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none transparent;
+}
+
+.formnew #contents .cmn_table_type04 select::-ms-expand {
+  display: none;
+}
+
+.formnew #contents .cmn_table_type04 input {
+  outline: none;
+}
+
+.formnew #contents .cmn_table_type04 button, .formnew #contents .cmn_table_type04 input, .formnew #contents .cmn_table_type04 select, .formnew #contents .cmn_table_type04 textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.formnew #contents .cmn_table_type04 button:focus, .formnew #contents .cmn_table_type04 input:focus, .formnew #contents .cmn_table_type04 select:focus, .formnew #contents .cmn_table_type04 textarea:focus {
+  box-sizing: border-box;
+  outline: 0;
+  box-shadow: 0 0 0 3px #ffe3e3;
+}
+
+.formnew #contents .cmn_table_type04 .in_checkOuter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.formnew #contents .cmn_table_type04 .in_check {
+  position: relative;
+  display: inline-block;
+}
+
+.formnew #contents .cmn_table_type04 .in_check input {
+  position: absolute;
+  opacity: 0 !important;
+}
+
+.formnew #contents .cmn_table_type04 .in_check input:focus+span:before {
+  box-sizing: border-box;
+  outline: 0;
+  box-shadow: 0 0 0 3px #ffe3e3;
+}
+
+.formnew #contents .cmn_table_type04 .in_check span {
+  position: relative;
+}
+
+.formnew #contents .cmn_table_type04 .in_check span:before, .formnew #contents .cmn_table_type04 .in_check span:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.formnew #contents .cmn_table_type04 .in_check span:before {
+  border: 1px solid #ccc;
+  background: #fff;
+  left: 0;
+}
+
+.formnew #contents .cmn_table_type04 .in_check span:after {
+  display: none;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.formnew #contents .cmn_table_type04 .in_check input:checked+span:after {
+  display: block;
+}
+
+.formnew #contents .cmn_table_type04 .checkbox-pink span:after {
+  border-color: #ec7aa0;
+}
+
+.formnew #contents .cmn_table_type04 .checkbox-orange span:after {
+  border-color: #f39800;
+}
+
+.formnew #contents .cmn_table_type04 .checkbox-ygreen span:after {
+  border-color: #9cc813;
+}
+
+.formnew #contents .cmn_table_type04 .checkbox-red span:after {
+  border-color: #c02;
+}
+
+.formnew #contents .cmn_table_type04 .in_check {
+  width: 48%;
+}
+
+.formnew #contents .cmn_table_type04 .in_check span {
+  padding-left: 30px;
+}
+
+.formnew #contents .cmn_table_type04 .in_check span:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.formnew #contents .cmn_table_type04 .in_check span:after {
+  width: 7px;
+  height: 11px;
+  top: 12%;
+  left: 7px;
+}
+
+.formnew #contents .cmn_table_type04.interestblk .in_check span:after {
+  top: 10%;
+}
+
+.formnew #contents .cmn_table_type04 .in_check-min {
+  width: 23.728813559322035%;
+  /*margin-top: 15px;*/
+}
+
+.formnew #contents .cmn_table_type04 .in_check-care {
+  min-width: 49%;
+  margin: 0 0 5%;
+  display: block;
+  width: 100%;
+}
+
+.formnew #contents .cmn_table_type04 .in_check-care:last-child {
+  margin-bottom: 0;
+}
+
+.formnew #contents .cmn_table_type04 .checktaste02 .in_check {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background: #ccc;
+  /*margin-top: 15px;*/
+  border-radius: 4px;
+  padding: 5% 4%;
+  margin-right: 0%;
+  display: inline-block;
+  background: #fff;
+  border-color: #48A865;
+  min-width: 48%;
+  width: 48%;
+  margin: 0;
+}
+
+.formnew #contents .cmn_table_type04 .checktaste02 .in_check:nth-child(2n) {
+  margin-left: 4%;
+}
+
+.formnew #contents .cmn_table_type04 .checktaste02 .in_check span {
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: 0.05em;
+}
+
+.formnew #contents .cmn_table_type04 .checktaste02 .in_check span:before {
+  border: 1px solid #49A866;
+}
+
+.formnew #contents .cmn_table_type04 .checktaste02 .in_check span:after {
+  top: 2px;
+}
+
+.formnew #contents .form_ttl em {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.formnew #contents .container .container2 {
+  width: 100%;
+}
+
+.formnew #contents .container.bg {
+  width: 100%;
+}
+
+.formnew #contents .cmn_table_type04 tr.toshin th {
+  padding: 2% 5%;
+}
+
+.formnew #contents .cmn_table_type04 tr.toshin th span {
+  padding: 5.5% 0 0;
+  display: inline-block;
+}
+
+.formnew #contents .cmn_table_type04 th span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #444;
+  display: inline-block;
+}
+
+.formnew #contents .cmn_table_type04 th span em {
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.formnew #contents .cmn_table_type04 th img {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  margin-left: 44%;
+}
+
+.formnew #contents .cmn_table_type04 .kougai th img {
+  margin-left: 18%;
+}
+
+.formnew #contents .cmn_table_type04 tr.kougai th {
+  padding: 2% 5%;
+}
+
+.formnew #contents .cmn_table_type04 tr.kougai th span {
+  padding: 3% 0 0;
+}
+
+.formnew #contents .cmn_table_type04 tr.kougai .checktaste02 .in_check {
+  width: 80%;
+  margin-left: 0
+}
+
+.formnew #contents .interestblk .ttl {
+  font-size: 1.2rem;
+  background: #FFFCF4;
+  padding: 3% 3%;
+  ;
+  margin: 0 0 3%;
+  line-height: 1.4;
+}
+
+.formnew #contents .interestblk {
+  border: none;
+}
+
+.formnew #contents .interestblk .inner {
+  padding: 0 1%;
+}
+
+.formnew #contents .interestblk .firsttxt {
+  line-height: 1.4;
+}
+
+.formnew #contents .form_ttl {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 2%;
+}
+
+/*-----------------------------------------------------
+フォーム追加CSS
+--------------------------------------------------------*/
+.document-request .bg-light-blue {
+  padding: 0 !important;
+  margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------
+見学予約 追加CSS
+--------------------------------------------------------*/
+.form .entry-header {
+  margin: 0 auto 3.6vw
+}
+
+.form .campaign_block {
+  /*background: url("../img/img-form/bg_campaign_sp.png") repeat-y center top;*/
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.form .campaign_block ul {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form .campaign_block ul li a {
+  display: block;
+  width: 100%;
+  background: #cc0000;
+  border-radius: 100px;
+  font-family: "Noto Sans JP", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin-bottom: 10px;
+}
+
+.form .campaign_block ul li.tel_btn a {
+  background: #fff;
+  border: 2px solid #ff6d47;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  text-indent: 1em;
+}
+
+.form .campaign_block ul li.tel_btn a:before {
+  content: "";
+  width: 32px;
+  height: 22px;
+  background: url("../img/img-form/ico_freedial.png") no-repeat left top;
+  position: absolute;
+  top: 23%;
+  left: 25px;
+}
+
+.form .campaign_block ul li.tel_btn a span {
+  display: block;
+  font-size: 1.0rem;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  width: 63%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.form .campaign_block ul li.mail_btn a {
+  background: #ff6d47;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  text-indent: 1em;
+  transition: 0.3s;
+  border: 2px solid #ff6d47;
+}
+
+.form .campaign_block ul li.mail_btn a::before {
+  content: "";
+  width: 32px;
+  height: 22px;
+  background: url("../img/img-form/ico_mail.png") no-repeat left top;
+  position: absolute;
+  top: 33%;
+  left: 25px;
+}
+
+.form .campaign_block ul li.mail_btn a::after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border: 0px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 8%;
+}
+
+.form #mail_area h2 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-bottom: 5px solid #f29a84;
+  padding-bottom: 8px;
+  position: relative;
+  font-family: 'Noto Serif JP', serif;
+  margin-bottom: 40px;
+  padding-top: 100px;
+  margin-top: -100px;
+
+}
+
+.form #mail_area h2::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+  border-top: 12px solid #f29a84;
+  border-bottom: none;
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+}
+
+.form table td .flexbox {
+  display: block;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.form table td .flexbox+ul li {
+  font-size: 1.0rem !important;
+  margin: 0 !important;
+}
+
+.form table td .flexbox .calendar {
+  margin: 0 0 30px 0;
+}
+
+.form table td h4 {
+  font-size: 1.0rem;
+  text-indent: -1em;
+  margin-left: 1em;
+  line-height: 1.4;
+}
+
+.form table td h4 strong {
+  font-weight: bold;
+  color: #199943;
+}
+
+.form table td ul li {
+  padding: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.form .check_list01 label span p {
+  font-size: 1.5rem;
+}
+
+.form table td .flexbox>.select {
+  width: 100%;
+}
+
+.form table td .calendar input {
+  position: relative;
+  background: url("../img/img-form/calendar_ico.png") no-repeat 2% 35%;
+  background-size: 40px 40px;
+  padding: 20px 25px 15px 60px !important;
+  width: 100% !important;
+  font-weight: bold;
+}
+
+.form table td .calendar input::placeholder {
+  font-weight: bold;
+  color: #333;
+}
+
+.form table td .calendar input:hover {
+  cursor: pointer;
+}
+
+/* select設定 */
+.select {
+  position: relative;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+.select>select {
+  width: 100% !important;
+  height: 100% !important;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none !important;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 8px 38px 8px 8px;
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.select::after {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 11px solid #1A9B43;
+  pointer-events: none;
+}
+
+.select option {
+  color: #333;
+}
+
+.form table td .flexbox>.select {
+  border-radius: 4px;
+  height: 54px;
+}
+
+.select.--number {
+  width: 100%;
+  border-radius: 4px;
+  height: 54px;
+}
+
+.select.--number select {
+  text-align: left;
+  padding-left: 5% !important;
+}
+
+
+/*------------------------------------
+
+ローディングCSS
+
+------------------------------------*/
+#modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+#modal p {
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 320px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: bold;
+  text-align: center;
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  z-index: 20000;
+}
+
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 0.5em solid rgba(0, 0, 0, 0.1);
+  border-right: 0.5em solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.5em solid rgba(0, 0, 0, 0.1);
+  border-left: 0.5em solid #29bc8b;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

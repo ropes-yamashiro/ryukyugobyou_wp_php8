@@ -1,0 +1,410 @@
+@charset "shift_jis";
+
+/*===================================
+  
+  ブログCSS（SP） ※編集不可※
+
+===================================*/
+
+/*------------------------------------
+ブログ共通CSS
+------------------------------------*/
+.blog #contents .cmn_block{
+	padding: 0px 0 40px;
+}
+
+.blog #contents .menu{
+	text-align:right;
+	margin:7% 0px 4% 2%;
+	width:100%;
+}
+
+.blog #contents .menu{
+	font-size: 1.2rem !important;
+}
+
+.blog #contents .menu .all_count{
+	font-size: 1.2rem !important;
+}
+
+.blog #contents .menu a{
+	padding:0 1%;
+	font-size: 1.1rem !important;
+}
+
+.blog #contents .menu .disp_sp{
+	line-height:0;
+}
+
+.blog #contents .menu strong{
+	color:#0861A8 !important;
+	font-size:1.4rem !important;
+	padding:0 1%;
+}
+
+.blog #contents .menu strong font{
+	font-size:1.4rem !important;
+}
+
+.blog #contents .menu2{
+	margin:0% 0px 0% 0;
+}
+
+.blog #contents .menu a.next,
+.blog #contents .menu a.prev{
+	font-size:1.1rem;
+	vertical-align:baseline;
+}
+
+.blog #contents .block{
+	display:block !important;
+	margin:0 auto 15%;
+}
+
+.blog #contents .block00 h2 img{
+	width:50%;
+}
+
+.blog #contents .block00 h2 .sub{
+	width:9%;
+}
+
+.blog #contents .block h3 {
+  font-size: 1.2rem;
+  clear: none;
+  text-align:left;
+  background: #1E56AA;
+  color: #fff;
+  font-weight: bold;
+  padding: 2% 4%;
+  font-style:normal;
+}
+
+.blog #contents h3 em {
+ font-style:normal;
+}
+
+.blog #contents .block .top,
+.blog #contents .block .block1 {
+	font-size:1.1rem;
+	color:#333;
+	line-height:1.5;
+}
+
+.blog #contents .block .day{
+	text-align:left !important;
+	color: #0861A8;
+	background:url(../img/img-k_news/lin_02.gif) no-repeat left bottom;
+	background-size:100%;
+	margin: 2% auto 2%;
+	width:95%;
+}
+
+.blog #contents .block .top{
+	width:95%;
+	margin:0 auto 3%;
+}
+
+.blog #contents .block{
+	padding:0 0 22%;
+	width:97%;
+	margin:0 auto;
+}
+
+.blog #contents .block .block01{
+	width:95%;
+	margin:0 auto 10%;
+}
+
+.blog #contents .block .block01:last-child{
+	margin:0 auto;
+}
+
+.blog #contents .block ul{
+	width:95%;
+	margin:5% auto 0;
+}
+
+.blog #contents .block .gallery{
+	margin:0 0 5%;
+}
+
+.blog #contents .block .gallery img{
+	width:100%;
+}
+
+.blog #contents .block .right.gallery,
+.blog #contents .block .left.gallery{
+	float:none;
+}
+
+.blog #contents .pdf_block{
+	width:85%;
+	margin:0 auto 15%;
+}
+
+.blog #contents .pdf_block .pdf_link a img{
+	margin:0 0 0 3%;
+}
+
+.blog #contents .btn_txt{
+	font-weight: bold;
+   	padding: 4% 0 2%;
+	text-align:center;
+}
+
+.blog #contents .btn{
+	font-weight: bold;
+   	padding: 0 0 1%;
+	text-align:center;
+	width:80%;
+	margin:0 auto
+}
+
+.blog #contents p.btn a{
+	display:block;
+}
+
+.blog #contents p.btn img{
+	max-width:360px;
+	width: 100%;
+}
+
+.blog #contents .block .text1 {
+    width: 95%;
+    margin: 0 auto 3%;
+}
+
+.blog #contents .block .text2 {
+    width: 95%;
+    margin: 0 auto 3%;
+}
+
+.blog #lightbox-container-image-data-box{
+	width:90% !important;
+}
+
+
+
+/*------------------------------------
+ブログ一覧CSS
+------------------------------------*/
+
+.blog.blog_list li .blog1{
+	display:none;
+}
+
+.blog.blog_list li .blog2{
+	display:none;
+}
+
+.blog.blog_list ul{
+	padding:0 2%;
+}
+
+.blog.blog_list li{
+	border-bottom:1px dotted #ccc;
+	padding:2.5% 3%;
+}
+
+.blog.blog_list li:first-child{
+	padding-top:0;
+}
+
+.blog.blog_list a:hover{
+	text-decoration:none;
+}
+
+.blog.blog_list .thum{
+	float:left;
+	width:145px;
+	margin:0 30px 0 0;
+	display:none;
+}
+
+.blog.blog_list .thum:first-child{
+	display:block;
+}
+
+.blog.blog_list li .blog1{
+	display:block;
+}
+
+.blog.blog_list li .blog2{
+	display:none;
+}
+
+.blog.blog_list li .txt .title{
+	display:block;
+	font-size:100%;
+	font-weight:bold;
+	margin:0 0 1.5%;
+}
+
+.blog.blog_list li .txt .summary{
+	display:block;
+	font-size:92%;
+}
+
+.blog.blog_list li .txt .day{
+	display:block;
+	text-align:right;
+	margin:1% 0 0;
+	font-size:100%;
+}
+
+@media (max-width: 414px) {
+	.blog.blog_list ul{
+		padding:0 0%;
+	}
+
+	.blog.blog_list li{
+		padding:5% 3% 4%;
+	}
+	
+	.blog.blog_list li:first-child{
+		padding-top:0;
+	}
+	
+	.blog.blog_list .thum{
+		float:left;
+		width:30%;
+		margin:0 5% 0 0;
+		display:none;
+	}
+	
+	.blog.blog_list li .txt .title{
+		font-size:117%;
+	}
+	
+	.blog.blog_list li .txt .summary{
+		font-size:108%;
+	}
+}
+
+
+
+/*------------------------------------
+ブログ一覧2CSS
+------------------------------------*/
+
+.blog.blog_list2 li .blog1{
+	display:none;
+}
+
+.blog.blog_list2 li .blog2{
+	display:block;
+}
+
+/*スタッフブログ*/
+.blog.blog_list2{
+	text-align:left;
+	background:none;
+}
+
+.blog.blog_list2 li a:hover img{
+	opacity:0.9;
+}
+
+.blog.blog_list2 li a:hover .txt .title{
+	text-decoration:underline;
+}
+
+.blog.blog_list2 .left,
+.blog.blog_list2 .txt{
+	display:block;
+}
+
+.blog.blog_list2 .left{
+	display:none;
+}
+
+.blog.blog_list2 .left:first-child{
+	display:block;
+}
+
+.blog.blog_list2 .left.thum img{
+	width:100%;
+}
+
+.blog.blog_list2 .txt{
+	margin: 2% 0 1% 0px;
+}
+
+.blog.blog_list2 li{
+	width:auto;
+	background:url(../img/img-index/lin_01.png) repeat-x left bottom;
+	padding: 0px 0 3%;
+}
+
+.blog.blog_list2 .txt span{
+	display:block;
+}
+
+.blog.blog_list2 .txt span.day{
+	font-size: 1.1rem;
+	margin: 0 0 1%;
+}
+
+.blog.blog_list2 .txt span.title{
+	color:#0D92D4;
+	font-weight:bold;
+	font-size:107%;
+}
+
+.blog.blog_list2 ul li {
+	float: left;
+	display:block;
+	width:49%;
+	margin: 0 2% 0 0;
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-weight: bold;
+}
+
+.blog.blog_list2 ul li:nth-child(2n) {
+	margin:0;
+}
+
+.blog.blog_list2 ul li:nth-child(5n) {
+	display:none;
+}
+
+.blog.blog_list2 ul li .arrow{
+	display:none;
+}
+
+.blog.blog_list2 ul li span{
+	display: block;
+	font-size: 1.3rem;
+}
+
+.blog.blog_list2 ul li a {
+	text-decoration: none;
+}
+
+.blog.blog_list2 li span.category {
+	color:#fff;
+	display:inline-block;
+	padding:2px 0 1px;
+	width:95px;
+	text-align:center;
+	margin:0 1% 0 0;
+	font-size:1.1rem;
+}
+
+.blog.blog_list2 li span.day{
+	display:inline-block;
+	color:#6C6C6C;
+}
+
+.blog.blog_list2 li span.category.category11{
+	background:#FFA64D;
+}
+
+.blog.blog_list2 li span.category.category12{
+	background:#8FBB28;
+}
+
+.blog.blog_list2 li span.category.category13{
+	background:#FD7B7D;
+}

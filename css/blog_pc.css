@@ -1,0 +1,329 @@
+@charset "shift_jis";
+
+/*===================================
+  
+  ブログCSS（PC） ※編集不可※
+
+===================================*/
+
+/*------------------------------------
+ブログ共通CSS
+------------------------------------*/
+.blog #contents .cmn_block{
+	padding: 0px 0 80px;
+}
+
+.blog #contents .block{
+	display:block !important;
+	padding: 60px 0 36px;
+}
+
+.blog #contents .block:nth-child(1){
+	padding: 0px 0 36px;
+}
+
+.blog #contents .padd{
+	padding: 130px 0 36px;
+	margin-top: -80px;
+}
+
+.blog #contents .padd:first-child{
+	padding: 0px 0 36px;
+}
+
+.blog #contents .block .top{
+	color:#333;
+	line-height:2;
+	text-align:left;
+}
+
+.blog #contents .block .top div{
+	color:#333;
+}
+
+.blog #contents .block h3 {
+  font-size: 1.8rem;
+  clear: none;
+  text-align:left;
+  background: #1E56AA;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.7% 2.6%;
+}
+
+.blog #contents .block .day {
+    margin: 12px 0 30px;
+    color: #0861A8;
+    line-height: 1;
+	text-align:right;
+}
+
+.blog #contents .block .top{
+	width: 85%;
+	margin:0 auto ;
+	line-height: 1.8;
+	margin-bottom:20px;
+}
+
+.blog #contents .block .block1{
+	padding:0px 0 0;
+	line-height:2;
+}
+
+.blog #contents .block .gallery img{
+	max-width:100%;
+}
+
+.blog #contents .block .block1 div{
+	color:#333;
+}
+
+.blog #contents .block .block01{
+	width:85%;
+	margin:0 auto 50px;
+	clear:both;
+	text-align: left;
+}
+
+.blog #contents .block .block01 .gallery {
+	width: 43%;
+}
+
+.blog #contents .block .block01:last-child{
+	margin:0 auto 0;
+}
+
+.blog #contents .block .block01 .left{
+	float:left;
+	display:block;
+}
+
+.blog #contents .block .block01 .left.gallery,
+.blog #contents .block .block01 .right.gallery{
+	margin:0 0 20px;
+}
+
+.blog #contents .block .block01 .right{
+	float:right;
+	display:block;
+}
+
+.blog #contents .block .block01 .text1{
+	padding:0px 0px 0px 48%;
+	clear:none;
+	text-align: left;
+}
+
+.blog #contents .block .block01 .text2{
+	padding: 0px 48% 0px 0;
+	clear:none;
+	text-align: left;
+}
+
+.blog #contents .block ul{
+	width: 85%;
+	margin:30px auto 0;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:flex;
+    -webkit-box-lines:multiple;
+    -moz-box-lines:multiple;
+    -webkit-flex-wrap:wrap;
+    -moz-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+.blog #contents .block .gallery{
+	float:left;
+	display:block;
+	margin: 0 2% 20px 0;
+	width: 31.9%;
+}
+
+.blog #contents .block .gallery:nth-child(3n){
+	margin: 0 0 20px 0;
+}
+
+.blog #contents .menu{
+	text-align:right;
+	margin: 20px 0px -50px 0;
+}
+
+.blog #contents .menu2{
+	padding:0px 0px 70px 0;
+}
+
+.blog #contents .menu a{
+	color:#333;
+	font-size:1.4rem !important;
+	vertical-align:text-bottom;
+}
+
+.blog #contents .menu strong{
+	color:#0861A8 !important;
+	font-size:150%;
+}
+
+.blog #contents .menu a.next,
+.blog #contents .menu a.prev{
+	font-size:86%;
+	vertical-align:baseline;
+}
+
+.blog #contents .pdf_block{
+	width:862px;
+	margin:0 auto 40px;
+}
+
+.blog #contents .pdf_block .pdf_link a img{
+	margin:0 0 0 10px;
+}
+
+.blog #contents .btn_txt{
+	font-weight: bold;
+   	padding: 5% 0 1%;
+	text-align:center;
+}
+
+.blog #contents .btn{
+	font-weight: bold;
+   	padding: 0 0 1%;
+	text-align:center;
+}
+
+.blog #contents .tel_txt{
+	font-weight: bold;
+   	padding: 2% 0 0.5%;
+	text-align:center;
+}
+
+.blog #contents p.tel_btn{
+	background: url(../img/img-blog/tel_icon.png) no-repeat 0 center;
+    font-weight: bold;
+    padding: 0 0 0 50px;
+	line-height:45px;
+	font-size:2.5rem;
+	width:270px;
+	margin: 0 auto;
+}
+
+.blog #contents .block .day{
+	text-align:left !important;
+	margin-left:auto;
+	margin-right:auto;
+	width:85%;
+	float:none;
+}
+
+.blog #lightbox-container-image-data-box{
+	width:620px !important;
+}
+
+
+
+/*------------------------------------
+ブログ一覧2CSS
+------------------------------------*/
+.blog.blog_list2 li .blog1{
+	display:none;
+}
+
+.blog.blog_list2 li .blog2{
+	display:block;
+}
+
+/*ブログ*/
+.blog.blog_list2{
+	text-align:left;
+}
+
+.blog.blog_list2 .left,
+.blog.blog_list2 .txt{
+	display:block;
+}
+
+.blog.blog_list2 .txt{
+	margin:5px 0 ;
+}
+
+.blog.blog_list2 .left{
+	display:none;
+}
+
+.blog.blog_list2 .left:first-child{
+	display:block;
+}
+
+.blog.blog_list2 li{
+	float: left;
+	margin: 0 20px 0 0;
+	font-family:'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	font-weight: bold;
+	max-width: 200px;
+}
+
+.blog.blog_list2 li:nth-child(5n) {
+	margin: 0;
+}
+
+.blog.blog_list2 li span{
+	display: block;
+}
+
+.blog.blog_list2 li a {
+	text-decoration: none;
+}
+
+.blog.blog_list2 li a:hover .title{
+	text-decoration: underline;
+}
+
+.blog.blog_list2 li a:hover img{
+	opacity:0.8;
+}
+
+.blog.blog_list2 li a img{
+	width:200px !important;
+}
+
+.blog.blog_list2 li span.time {
+	color: #6C6C6C;
+	font-size: 12px;
+	margin:144px 0 4px;
+}
+
+.blog.blog_list2 li span.category {
+	color:#fff;
+	display:inline-block;
+	padding:2px 0 1px;
+	width:90px;
+	text-align:center;
+	margin:0 7px 0 0;
+	font-size:13px;
+}
+
+.blog.blog_list2 li span.day{
+	display:inline-block;
+	color:#6C6C6C;
+}
+
+.blog.blog_list2 li span.category.category11{
+	background:#FFA64D;
+}
+
+.blog.blog_list2 li span.category.category12{
+	background:#8FBB28;
+}
+
+.blog.blog_list2 li span.category.category13{
+	background:#FD7B7D;
+}
+
+.blog.blog_list2 li span.ttl {
+	font-size: 13px;
+	margin: 0 0 44px;
+}
