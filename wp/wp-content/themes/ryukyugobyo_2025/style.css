@@ -1,0 +1,18 @@
+/* 1. Variables & Base */
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/base/reset.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/base/base.css");
+
+/* 2. Layout */
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/layout/header.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/layout/mobile-menu.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/layout/footer.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/layout/contact-section.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/layout/access.css");
+
+/* 3.Components */
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/components/breadcrumb.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/components/cards.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/components/pager.css");
+
+/* 4. Utilities */
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/utilities/animate.css");

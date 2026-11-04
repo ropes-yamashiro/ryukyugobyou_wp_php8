@@ -1,0 +1,492 @@
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/components/selector.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/layout/access.css");
+
+.beauty-intro {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.beauty-intro__image {
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+.beuaty-intro__title {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 0px 12px #fff;
+  background-color: #fff;
+  opacity: 0.7;
+  padding: 1rem;
+}
+
+.exterior {
+  position: relative;
+  padding: 4rem 1.35rem;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/common/subtle_grunge.png);
+}
+
+.exterior__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.exterior-decor-1 {
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  top: 12.2rem;
+  left: -15rem;
+  background-color: #fcf5d3;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  filter: blur(30px);
+}
+
+.exterior-decor-2 {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background-color: #e3f3ff;
+  mix-blend-mode: multiply;
+  filter: blur(30px);
+  position: absolute;
+  right: -15rem;
+  top: 40.5%;
+  z-index: -1;
+}
+
+.exterior-decor-3 {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background-color: #fbeeff;
+  mix-blend-mode: multiply;
+  filter: blur(30px);
+  position: absolute;
+  left: -15rem;
+  bottom: 24.9rem;
+  z-index: -1;
+}
+
+.exterior-item:first-child {
+  position: relative;
+}
+
+.exterior-item:first-child::after {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 347 / 231;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/beauty/exterior-2.webp);
+  background-size: cover;
+  max-width: 36rem;
+  margin: 2rem auto 0;
+}
+
+.exterior-item__title {
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.exterior-item__desc {
+  margin: 2rem auto 0;
+}
+
+.exterior-item__image {
+  width: 100%;
+  height: auto;
+  max-width: 45.6rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.exterior-item__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  object-fit: cover;
+}
+
+.harmony__image {
+  width: 100%;
+  aspect-ratio: 375 / 200;
+  max-height: 229px;
+  object-fit: cover;
+}
+
+.harmony__title {
+  margin: 2rem 0;
+  letter-spacing: 0.2em;
+}
+
+.harmony__text {
+  padding: 0 1.35rem;
+}
+
+.roof {
+  padding: 4rem 1.35rem;
+}
+
+.roof__title {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.roof__images {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+  margin: 0 auto;
+  max-width: 410px;
+}
+
+.roof__image {
+  width: 100%;
+  height: auto;
+  border-radius: 3rem;
+}
+
+.roof__images>.roof__image {
+  max-width: 410px;
+  margin: 0 auto;
+}
+
+.roof__image--small {
+  display: block;
+  max-width: 25.6rem;
+}
+
+.roof__last-image {
+  display: block;
+  max-width: 36rem;
+  margin: 2rem auto 0;
+  width: 100%;
+}
+
+.roof__image--pc {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .roof__images {
+    max-width: none;
+  }
+
+  .roof__last-image {
+    display: none;
+  }
+
+  .roof__image--pc {
+    display: block;
+    width: calc(30% - 20px);
+  }
+
+  .roof__images-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .roof__images-wrapper .roof__image {
+    height: fit-content;
+  }
+
+  .roof__image--small {
+    width: 70%;
+  }
+
+  .roof__images {
+    align-items: center;
+  }
+}
+
+.gallery {
+  padding: 4rem 0;
+}
+
+.gallery__wrapper {
+  position: relative;
+  padding: 0 1.35rem;
+  margin: 4rem auto 0;
+}
+
+.gallery-item {
+  width: min(85.33vw, 320px) !important;
+}
+
+.gallery-item__image {
+  width: 100%;
+  aspect-ratio: 320 / 213;
+  object-fit: cover;
+  border-radius: 3rem;
+}
+
+.gallery-item__title {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  text-align: center;
+  margin: 9px 0 7px;
+}
+
+.gallery__buttons {
+  width: calc(100% + 80px);
+  position: absolute;
+  top: 70px;
+  left: -40px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.gallery__button {
+  width: 8rem;
+  height: 8rem;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/beauty/slider-arrow.svg);
+  background-size: contain;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.16));
+  cursor: pointer;
+}
+
+.gallery__button--next {
+  transform: scaleX(-1);
+}
+
+@media (min-width: 768px) {
+  .beauty-intro {
+    width: 100%;
+    height: 700px;
+    position: relative;
+  }
+
+  .beuaty-intro__title {
+    top: auto;
+    bottom: 8.9rem;
+    padding: 2rem;
+  }
+
+  .gallery-item {
+    width: max(320px, min(648px, 47.4vw)) !important;
+  }
+
+  .gallery__buttons {
+    width: calc(100% + clamp(8rem, 13.3vw, 16rem));
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: clamp(-8rem, -6.65vw, -4rem);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .gallery__button {
+    width: clamp(8rem, 13.3vw, 16rem);
+    height: clamp(8rem, 13.3vw, 16rem);
+    background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/beauty/slider-arrow-pc.svg);
+  }
+
+  .exterior {
+    padding: 16rem 2rem;
+  }
+
+  .exterior__wrapper {
+    max-width: 1128px;
+    margin: 0 auto;
+    gap: 0;
+  }
+
+  .exterior-item {
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+  }
+
+  .exterior-item:nth-child(2) {
+    margin-top: 22.8rem;
+  }
+
+  .exterior-item:nth-child(3) {
+    flex-direction: row-reverse;
+    margin-top: 1.2rem;
+  }
+
+  .exterior-item:last-child {
+    margin-top: 7.2rem;
+    justify-content: center;
+  }
+
+  .exterior-item:first-child::after {
+    position: absolute;
+    width: 36rem;
+    aspect-ratio: 360 / 240;
+    bottom: -30rem;
+    right: 0;
+    margin: 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 908px) {
+    .exterior-item:first-child::after {
+      bottom: calc(min(300px, max(250px, calc(300px + 50vw - 454px)) * (-1)));
+      width: clamp(32rem, 39.7vw, 36rem);
+    }
+  }
+
+  .exterior-item__image {
+    flex: 1;
+    margin: 0;
+  }
+
+  .exterior-item:first-child .exterior-item__image {
+    max-width: none;
+  }
+
+  .exterior-item__content {
+    width: clamp(38rem, 48.7vw, 43.2rem);
+  }
+
+  .exterior-item__title {
+    text-align: left;
+  }
+
+  .exterior-item__desc {
+    margin: 3rem auto 0;
+    font-size: clamp(16px, 2.1vw, 18px);
+  }
+
+  .exterior-decor-1 {
+    width: 74.1rem;
+    height: 74.1rem;
+    top: 9.9rem;
+    left: calc(-33.4rem + 50vw - 683px);
+  }
+
+  .exterior-decor-2 {
+    width: 60.7rem;
+    height: 60.7rem;
+    right: calc(-30.35rem + 50vw - 683px);
+    top: auto;
+    bottom: 85.1rem;
+  }
+
+  .exterior-decor-3 {
+    width: 50.1rem;
+    height: 50.1rem;
+    left: calc(-11.8rem + 50vw - 683px);
+    bottom: -4.4rem;
+  }
+
+  .harmony {
+    position: relative;
+  }
+
+  .harmony__image {
+    aspect-ratio: unset;
+    height: 457px;
+    max-height: none;
+  }
+
+  .harmony__wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: max(20px, calc(119px + 50vw - 683px));
+  }
+
+  .harmony__title {
+    margin: 0 0 3rem;
+  }
+
+  .harmony__title,
+  .harmony__text {
+    padding: 0;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0px 0px 6px #000;
+  }
+
+  .roof {
+    padding: 16rem 2rem 8rem;
+  }
+
+  .roof__wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .roof__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 456px;
+    top: min(8.2rem, 6vw);
+  }
+
+  .roof__title {
+    text-align: left;
+    margin: 0 0 3rem;
+  }
+
+  .roof__images {
+    align-items: flex-end;
+    gap: 2.4rem;
+    margin-left: auto;
+  }
+
+  @media (max-width: 1085px) {
+    .roof__images {
+      position: relative;
+      top: clamp(0px, 280px - (100vw * 280 / 1085), 280px);
+    }
+  }
+
+  .roof__images>.roof__image {
+    max-width: min(552px, 48.5vw);
+    margin: 0;
+  }
+
+  @media (max-width: 982px) {
+    .roof__images>.roof__image {
+      max-width: calc(477px + 100vw - 982px);
+    }
+  }
+
+  .roof__images-wrapper {
+    gap: 2.4rem;
+    justify-content: right;
+  }
+
+  .roof__image--pc {
+    width: min(360px, 26.4vw);
+  }
+
+  .roof__image--small {
+    width: min(648px, 47.5vw);
+    max-width: none;
+  }
+
+  .gallery {
+    padding: 8rem 0 4rem;
+  }
+
+  .gallery__wrapper {
+    padding: 0;
+    margin: 8rem auto;
+  }
+}

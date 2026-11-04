@@ -1,0 +1,525 @@
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/components/selector.css");
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/layout/access.css");
+
+.facilities-intro {
+  padding: 3.9rem 1.45rem 6.2rem;
+}
+
+.facilities-intro__video {
+  display: block;
+  width: 100%;
+  max-width: 504px;
+  aspect-ratio: 348 / 232;
+  border-radius: 3.2rem;
+  background: #e6e6e6;
+  margin: 0 auto;
+}
+
+.facilities-intro__text {
+  margin: 3rem auto 0;
+  max-width: 600px;
+}
+
+.problems {
+  position: relative;
+  padding: 8rem 0;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/common/subtle_grunge.png);
+}
+
+.problems::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: calc(100% + 20px);
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background-color: #fbeeff;
+  mix-blend-mode: multiply;
+  filter: blur(30px);
+}
+
+.problems__title {
+  letter-spacing: 0.2em;
+}
+
+.problems__swiper {
+  margin: 4rem auto;
+  padding: 0 1.3rem;
+}
+
+.problems__slide {
+  width: 26.4rem;
+  height: 26.4rem;
+  border-radius: 50%;
+  background-color: #a696b4;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.indoor {
+  padding: 8rem 1.35rem;
+}
+
+.indoor__title {
+  margin: 2rem 0;
+}
+
+.indoor__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.indoor__content {
+  margin: 0 auto 4rem;
+}
+
+.benefits {
+  position: relative;
+  padding: 8rem 0;
+}
+
+.benefits::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: calc(100% + 20px);
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background-color: #fcf5d3;
+  mix-blend-mode: multiply;
+  filter: blur(30px);
+}
+
+.benefits__swiper {
+  margin: 4rem auto 0;
+  padding: 0 1.35rem;
+}
+
+@media (min-width: 540px) {
+
+  .problems__swiper,
+  .benefits__swiper {
+    padding: 0 3rem;
+  }
+}
+
+.benefits__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 26.4rem;
+  height: 33.7rem;
+}
+
+.benefits__slide-image {
+  display: block;
+  width: 26.4rem;
+  height: 26.4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits__slide-image img {
+  height: 12rem;
+  width: auto;
+}
+
+.benefits__slide:first-child img {
+  height: 9rem;
+}
+
+.benefits__slide:nth-child(5) img {
+  height: 16.7rem;
+}
+
+.benefits__slide:last-child img {
+  height: 11.7rem;
+}
+
+.benefits__slide-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-align: center;
+  min-height: 5.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.ossuary {
+  padding: 5.6rem 1.35rem 8rem;
+}
+
+.ossuary__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ossusary__item-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.ossuary__item-title {
+  padding: 2rem 0;
+  letter-spacing: 0.2em;
+}
+
+.prayer {
+  position: relative;
+  padding: 8rem 1.35rem;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/common/subtle_grunge.png);
+}
+
+.prayer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: calc(100% + 20px);
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background-color: #e8f1c9;
+  mix-blend-mode: multiply;
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.room {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.room__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 348 / 196;
+  border-radius: 3.2rem;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.room__title {
+  margin: 2rem 0;
+}
+
+.features {
+  padding: 0 1.38rem;
+}
+
+.features__title {
+  margin: 4rem 0 2rem;
+}
+
+.features__wrapper {
+  background-color: #fff;
+  border-radius: 1.6rem;
+  background: #fff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features__item:not(:last-child) {
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 2rem;
+}
+
+.features__item-text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+.floors {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 6.8rem;
+  width: calc(100% + 27px);
+  position: relative;
+  left: -13.5px;
+}
+
+.floor {
+  background-color: #fff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  padding: 2rem 0;
+}
+
+.floor__swiper {
+  margin-top: 2rem;
+}
+
+.floor__slide {
+  width: 28rem;
+}
+
+.floor__buttons {
+  width: 27.8rem;
+  margin: 1rem auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.floor__button {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/facilities/slider-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.floor__button--next {
+  transform: scaleX(-1);
+}
+
+.floor__slide-title {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-top: 1rem;
+}
+
+.contact-section {
+  margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+  .facilities-intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 93.6rem;
+    margin: 0 auto;
+    gap: 2.4rem;
+    padding: 0 2rem 8rem;
+  }
+
+  .facilities-intro__text {
+    margin: 0;
+    max-width: none;
+    width: 38.5%;
+  }
+
+  .facilities-intro__video {
+    width: calc(61.5% - 24px);
+    max-width: 552px;
+    aspect-ratio: 552 / 368;
+    margin: 0;
+  }
+
+  .problems__swiper {
+    margin: 8rem auto;
+    padding: 0 2rem;
+  }
+
+  .problems__swiper .swiper-wrapper {
+    max-width: 88.8rem;
+    row-gap: 1.5rem;
+    column-gap: 4.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .indoor {
+    padding: 18rem 2rem 16rem;
+    max-width: 93.6rem;
+    box-sizing: content-box;
+    margin: 0 auto;
+  }
+
+  .indoor__wrapper {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+  }
+
+  .indoor__content {
+    width: 45.6rem;
+    margin: 0;
+  }
+
+  .indoor__image {
+    width: calc(100% - 48rem);
+    aspect-ratio: 456 / 304;
+    height: fit-content;
+  }
+
+  .indoor__title {
+    text-align: left;
+  }
+
+  .indoor__title {
+    margin: 0 0 2rem;
+  }
+
+  .indoor__wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .benefits .swiper-wrapper {
+    max-width: 112.8rem;
+    row-gap: 5.2rem;
+    column-gap: 2.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .ossuary {
+    padding: 16rem 2rem 8rem;
+  }
+
+  .ossuary__wrapper {
+    max-width: 93.6rem;
+    gap: 9rem;
+  }
+
+  .ossuary__item {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  .ossuary__item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .ossuary__item-content {
+    width: 49%;
+    max-width: 456px;
+  }
+
+  .ossusary__item-image {
+    width: calc(51% - 2.4rem);
+    height: fit-content;
+  }
+
+  .ossuary__item-title {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .prayer {
+    padding: 8rem 2rem;
+  }
+
+  .room {
+    max-width: 932px;
+    display: flex;
+    gap: 2.4rem;
+    align-items: flex-end;
+  }
+
+  .room__content {
+    width: 49%;
+    max-width: 456px;
+  }
+
+  .room__video {
+    width: calc(51% - 2.4rem);
+    height: fit-content;
+  }
+
+  .room__title {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .features__title {
+    margin: 8.7rem 0 4rem;
+  }
+
+  .features__wrapper {
+    padding: 2rem 3rem 2rem 3rem;
+    flex-direction: row;
+    gap: 3.2rem;
+    max-width: 936px;
+    margin: 0 auto;
+  }
+
+  .features__item:not(:last-child) {
+    border-bottom: none;
+    border-right: 1px solid #dcdcdc;
+    padding-right: 3.2rem;
+    padding-bottom: 0;
+  }
+
+  .features__item:last-child .features__item-text {
+    width: 95%;
+  }
+
+  .features__item-text {
+    margin-top: 1.5rem;
+  }
+
+  .floors {
+    max-width: 936px;
+    flex-direction: row;
+    gap: 2.4rem;
+    margin: 2.4rem auto 0;
+    width: 100%;
+    left: auto;
+    overflow: visible;
+  }
+
+  .floor {
+    width: calc(50% - 1.2rem);
+    border-radius: 1.6rem;
+  }
+
+  .floor__slide {
+    width: 32rem;
+  }
+
+  .floor__buttons {
+    position: absolute;
+    width: 32rem;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 23.4rem;
+    z-index: 2;
+  }
+
+  .floor__slide-image {
+    aspect-ratio: 320 / 213;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .tour {
+    margin-top: 8rem;
+  }
+}

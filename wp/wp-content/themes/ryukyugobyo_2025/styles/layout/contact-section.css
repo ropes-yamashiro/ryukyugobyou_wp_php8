@@ -1,0 +1,66 @@
+.contact-section {
+  margin: 0 2.75rem 8rem;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 4rem 0 8rem;
+}
+
+.contact-section__text {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.contact-section__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-section__button {
+  margin-top: 0;
+  position: relative;
+}
+
+.contact-section__button-wrapper {
+  position: relative;
+}
+
+.contact-section__button-desc {
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 500;
+  position: absolute;
+  color: #000;
+  bottom: -36px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    margin: 0 auto 8rem;
+    padding: 8rem 0 11.6rem;
+    width: calc(100% - 27px);
+    max-width: 936px;
+  }
+
+  .contact-section__text {
+    margin: 2rem auto 4rem;
+  }
+
+  .contact-section__buttons {
+    flex-direction: row;
+    gap: 2.4rem;
+    justify-content: center;
+  }
+
+  .contact-section__button-desc {
+    bottom: -40px;
+  }
+
+  .contact-section__button {
+    margin: 0;
+  }
+}

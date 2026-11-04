@@ -1,0 +1,44 @@
+.policy {
+  padding: 4rem 1.35rem 8rem;
+}
+
+.page-title {
+  margin-bottom: 4rem;
+}
+
+.policy__item {
+  max-width: 937px;
+  margin: 0 auto;
+}
+
+.policy__text {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+.policy__text strong {
+  font-weight: 900;
+}
+
+.policy__item:last-child {
+  margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+  .policy {
+    padding: 8rem 2rem 16rem;
+  }
+
+  .page-title {
+    margin-bottom: 6rem;
+  }
+  .policy__text {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+
+  .policy__item:last-child {
+    margin-top: 16rem;
+  }
+}

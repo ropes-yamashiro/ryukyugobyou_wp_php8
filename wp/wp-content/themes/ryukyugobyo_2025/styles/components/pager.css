@@ -1,0 +1,66 @@
+/* コンテンツに対して中央揃えされたページネーション */
+.pager {
+  position: relative;
+  /* left: calc(var(--mobile-padding) * -0.5); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6rem auto 0;
+  width: 26rem;
+}
+
+.pager .pager__item,
+.pager .pager__item--active {
+  display: inline-block;
+}
+
+.pager .pager__item a {
+  font-family: var(--ff-sans);
+  color: #707070;
+  font-size: 1.6rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.pager .pager__item--active a {
+  color: #fff;
+}
+
+.pager .pager__item--active {
+  position: relative;
+}
+
+.pager .pager__item--active::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #db6a50;
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 1px);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.pager a.next-btn,
+.pager a.prev-btn {
+  display: block;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/common/pager-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
+}
+
+.pager a.next-btn {
+  transform: scaleX(-1);
+}
+
+@media (min-width: 768px) {
+  .pager {
+    margin-top: 4rem;
+  }
+}

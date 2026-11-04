@@ -1,0 +1,407 @@
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/components/selector.css");
+
+.komyoji {
+  padding: 0 1.35rem 8rem;
+}
+
+.komyoji__item--video {
+  margin-bottom: 4rem;
+}
+
+.komyoji__item-video {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  aspect-ratio: 348 / 196;
+  border-radius: 3.2rem;
+  object-fit: cover;
+}
+
+.komyoji__item-image {
+  width: 100%;
+  aspect-ratio: 348 / 232;
+  object-fit: cover;
+  border-radius: 3.2rem;
+}
+
+.komyoji__item-title {
+  margin: 1rem 0;
+}
+
+.komyoji__item--video .komyoji__item-title {
+  margin: 2rem 0;
+}
+
+.komyoji__item-sign {
+  display: block;
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.komyoji-gallery {
+  position: relative;
+  padding: 8rem 0;
+}
+
+.komyoji-gallery::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ded8ba;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gallery__swiper {
+  padding: 0 1.35rem;
+}
+
+.gallery__item {
+  width: min(85.33vw, 32rem);
+  height: 100%;
+}
+
+.gallery__buttons {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 20rem;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__button {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/common/gallery-arrow.svg);
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.16));
+}
+
+.gallery__button--prev {
+  left: -4rem;
+}
+
+.gallery__button--next {
+  transform: scaleX(-1);
+  right: -4rem;
+}
+
+.gallery__item-title {
+  margin: 2rem 0 1rem;
+}
+
+.gallery__item-text {
+  font-size: 1.4rem;
+  line-height: 1.71;
+  font-weight: 500;
+}
+
+.gallery__item-content {
+  margin-top: 3rem;
+}
+
+/* .gallery__item[slide-index="1"] .gallery__item-content,
+.gallery__item[slide-index="2"] .gallery__item-content {
+  margin-top: 3rem;
+}
+
+.gallery__item[slide-index="3"] .gallery__item-content,
+.gallery__item[slide-index="4"] .gallery__item-content {
+  margin-top: 3rem;
+} */
+
+.events {
+  padding: 8rem 0;
+}
+
+.events__swiper {
+  margin-top: 4rem;
+  padding: 0 1.35rem;
+}
+
+.events__swiper-item {
+  width: 26.4rem;
+}
+
+.events__swiper-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 0.8rem;
+}
+
+.events__swiper-tags {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.events__swiper-tag {
+  font-family: var(--ff-sans);
+}
+
+.events__swiper-tag--date {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.events__swiper-tag--category {
+  font-size: 1.4rem;
+  line-height: 1.43;
+  background-color: #fff;
+  padding: 0.2rem 0.7rem 0.3rem;
+  border-radius: 0.4rem;
+  border: 1px solid #707070;
+}
+
+.events__swiper-title {
+  margin-top: 1rem;
+}
+
+.about__banner {
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/komyoji/main-mv.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 2rem;
+  image-rendering: pixelated;
+}
+
+.about__banner-title {
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+
+.about__wrapper {
+  margin: 2rem 0 8rem;
+  padding: 0 2.75rem;
+}
+
+.about__text {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.about__image {
+  width: 100%;
+  aspect-ratio: 320 / 213;
+  max-width: 552px;
+  display: block;
+  margin: 0 auto;
+}
+
+.galleru__decor {
+  display: none;
+}
+
+.event__image__wrap {
+  position: relative;
+  aspect-ratio: 100 / 100;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.event__image {
+  /* aspect-ratio: 1; */
+  border-radius: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  transform: translateY(0%) translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .komyoji {
+    padding: 0 2rem 16rem;
+  }
+
+  @media (min-width: 900px) {
+    .komyoji__item--video {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 2.4rem;
+      max-width: 93.6rem;
+      margin: 0 auto 8rem;
+    }
+
+    .komyoji__item-video {
+      width: 100%;
+      height: fit-content;
+      max-width: 456px;
+      aspect-ratio: 456 / 257;
+    }
+  }
+
+  .komyoji__item--video .komyoji__item-title {
+    margin: 0 0 2rem 0;
+    text-align: left;
+  }
+
+  .komyoji__item:last-child {
+    max-width: 744px;
+    margin: 0 auto;
+  }
+
+  .komyoji__item-title {
+    margin: 4rem 0 2rem;
+  }
+
+  .komyoji__item-image {
+    aspect-ratio: 744 / 496;
+  }
+
+  .gallery__item-title {
+    margin: 0 0 2rem;
+  }
+
+  .gallery__item-text {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  .gallery__decor {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .gallery__decor::before {
+    content: "";
+    display: block;
+    width: max(calc(191px + 50vw - 683px), 191px);
+    height: 100%;
+    background: linear-gradient(to right,
+        #fff 0%,
+        rgba(255, 255, 255, 80%) 30%,
+        rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .gallery__decor::after {
+    content: "";
+    display: block;
+    width: max(calc(191px + 50vw - 683px), 191px);
+    height: 100%;
+    background: linear-gradient(to left,
+        #fff 0%,
+        rgba(255, 255, 255, 80%) 30%,
+        rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .gallery__buttons {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .gallery__button {
+    width: 16rem;
+    height: 16rem;
+    background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/common/gallery-arrow-pc.svg);
+    cursor: pointer;
+  }
+
+  .gallery__button--prev {
+    left: -8rem;
+  }
+
+  .gallery__button--next {
+    right: -8rem;
+  }
+
+  @media (min-width: 1200px) {
+    .gallery__item {
+      width: min(68.53vw, 93.6rem);
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 2.4rem;
+    }
+
+    .gallery__item-image {
+      height: fit-content;
+      width: 48.7%;
+    }
+
+    .gallery__item-content {
+      margin-top: 0;
+    }
+
+    /* .gallery__item[slide-index="1"] .gallery__item-content,
+    .gallery__item[slide-index="2"] .gallery__item-content {
+      margin-top: 0;
+    }
+
+    .gallery__item[slide-index="3"] .gallery__item-content,
+    .gallery__item[slide-index="4"] .gallery__item-content {
+      margin-top: 0;
+    } */
+  }
+
+  .events {
+    padding: 12rem 0 16rem;
+  }
+
+  .events__swiper {
+    padding: 0 2rem;
+  }
+
+  .events__swiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 26.4rem);
+    justify-content: center;
+    gap: 2.4rem;
+    justify-content: center;
+  }
+
+  .link-button {
+    margin-top: 4rem;
+  }
+
+  @media (min-width: 1200px) {
+    .about__wrapper {
+      margin: -2rem auto 7.4rem;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: row-reverse;
+      max-width: 112.8rem;
+      gap: 4.8rem;
+      box-sizing: content-box;
+    }
+
+    .about__text {
+      font-size: 1.8rem;
+      margin-top: auto;
+    }
+
+    .about__image {
+      margin: 0;
+    }
+  }
+
+  .about__banner {
+    padding: 16rem 2rem 14rem;
+  }
+}

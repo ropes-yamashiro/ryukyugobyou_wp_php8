@@ -1,0 +1,74 @@
+.cards {
+  display: grid;
+  /* justify-content: center; */
+  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, min(89.34vw, 33.5rem));
+  margin: 3.7rem auto 0;
+  column-gap: 6rem;
+  row-gap: 6rem;
+  max-width: 112.8rem;
+}
+
+.card {
+  display: block;
+  width: min(89.34vw, 33.5rem);
+  max-width: 33.5rem;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  padding: 2rem;
+}
+
+.card__date {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: var(--ff-sans);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 295 / 197;
+  border-radius: 0.4rem;
+  object-fit: cover;
+}
+
+.card__text {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 500;
+  margin-top: 1.7rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__button {
+  width: fit-content;
+  font-family: var(--ff-sans);
+  font-size: 1.4rem;
+  line-height: 1.43;
+  color: #747474;
+  margin: 1rem 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.card__button::after {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/common/card-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    margin-top: 6.7rem;
+  }
+}

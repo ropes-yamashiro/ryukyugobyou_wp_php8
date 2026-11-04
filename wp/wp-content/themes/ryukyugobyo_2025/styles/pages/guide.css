@@ -1,0 +1,193 @@
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/components/selector.css");
+
+.about {
+  padding: 0 1.35rem 4rem;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.about__item-video {
+  display: block;
+  border-radius: 3.2rem;
+  width: 100%;
+  max-width: 55.2rem;
+  aspect-ratio: 348 / 196;
+  margin: 0 auto;
+}
+
+.about__item-title {
+  margin: 2rem 0;
+}
+
+.tejun {
+  position: relative;
+  padding: 4rem 0;
+  margin-bottom: 8rem;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/common/subtle_grunge.png);
+}
+
+.tejun::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 23px;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/guide/tip.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -23px;
+}
+
+.tejun::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fcf5d3;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.16));
+}
+
+.tejun__swiper {
+  margin-top: 4rem;
+  padding: 0 1.3rem;
+}
+
+.tejun__slide {
+  width: min(32rem, 85.33vw);
+}
+
+.tejun__slide-image {
+  width: 100%;
+  aspect-ratio: 320 / 240;
+  object-fit: cover;
+}
+
+.tejun__slide-image--small {
+  width: 94%;
+  aspect-ratio: 301 / 226;
+}
+
+.tejun__slide-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+.tejun__slide-desc {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.tejun__slide-title--narrow {
+  letter-spacing: 0;
+}
+
+.tejun__title {
+  position: relative;
+  z-index: 2;
+}
+
+.tejun__buttons {
+  width: calc(100% - 27px);
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5rem auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.tejun__button {
+  width: 4rem;
+  aspect-ratio: 1;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/guide/icon-arrow-left.svg);
+  background-size: contain;
+  cursor: pointer;
+}
+
+.tejun__button--next {
+  transform: scaleX(-1);
+}
+
+.tejun__slide-image--small {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 0 2cm 13.7rem;
+  }
+
+  .about__wrapper {
+    width: 100%;
+    max-width: 93.6rem;
+    margin: 0 auto;
+    gap: 13.7rem;
+  }
+
+  .about__item {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  .about__item:first-child {
+    flex-direction: row-reverse;
+  }
+
+  .about__item-content {
+    width: 38.5%;
+    min-width: 36rem;
+  }
+
+  .about__item-title {
+    margin: 0 0 2rem;
+    text-align: left;
+  }
+
+  .tejun {
+    position: relative;
+    padding: 8rem 0;
+  }
+
+  .tejun__title {
+    font-size: 2.4rem;
+    margin-left: max(calc(21.5rem + 50vw - 68.3rem), 3rem);
+    width: fit-content;
+  }
+
+  .tejun__buttons {
+    position: absolute;
+    top: 8rem;
+    left: 38.5rem;
+    width: 10.4rem;
+    margin-top: 0;
+  }
+
+  .tejun__buttons {
+    left: max(calc(38.5rem + 50vw - 68.3rem), 21.5rem);
+  }
+
+  .tejun__swiper {
+    padding-left: max(calc(21.5rem + 50vw - 68.3rem), 3rem);
+  }
+
+  .tejun__slide {
+    width: 36rem;
+  }
+
+  .tejun__slide-image {
+    aspect-ratio: 360 / 270;
+  }
+}

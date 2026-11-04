@@ -1,0 +1,78 @@
+#c-modal_bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.6);
+}
+#c-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 9999;
+	transform: translate(-50%, -50%);
+	border: none;
+	padding: 0;
+
+}
+	@media screen and (max-width: 768px) {
+		#c-modal {
+			left: 30%;
+			transform: translate(-20%, -50%);
+		}
+	}
+#c-modal .notice {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 600px;
+  background: #fff;
+  border: 10px solid #DB6A50;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+  padding: 3.5rem;
+}
+	@media screen and (max-width: 768px) {
+		#c-modal .notice {
+			width: 100%;
+			padding: 4rem 2rem;
+		}
+	}
+#c-modal h2 {
+  width: 100%;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+#c-modal .notice_date {	
+  color: #555;
+  font-size: 16px;
+  font-weight: normal;
+}
+	@media screen and (max-width: 768px) {
+		#c-modal .notice_date {
+			font-size: 14px;
+		}
+	}
+#c-modal .notice_txt {
+  width: 100%;
+  font-size: 22px;
+  line-height: 1.4;
+}
+#c-modal #c-modal_close {
+	width: 200px;
+	background: transparent;
+	color: #fff;
+	font-size: 180%;
+	text-align: center;
+	border: 2px solid #fff;
+	cursor: pointer;
+	transition-duration: .5s;
+	margin: 30px auto 0;
+	padding: 1.5rem;
+}
+#c-modal #c-modal_close:hover {
+  background-color: #404040;
+}

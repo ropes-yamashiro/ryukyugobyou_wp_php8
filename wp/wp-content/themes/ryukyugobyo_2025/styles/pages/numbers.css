@@ -1,0 +1,374 @@
+@import url("/wp/wp-content/themes/ryukyugobyo_2025/styles/components/selector.css");
+
+.numbers {
+  border-radius: 2rem;
+  background: #fcf5d3;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  margin: 0 1.35rem;
+  padding: 3rem 0;
+}
+
+.counter-wrapper {
+  width: fit-content;
+  margin: 2rem auto 0;
+}
+
+.counter {
+  font-size: 6.4em;
+  color: #b20000;
+  font-weight: 900;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.counter-unit {
+  position: relative;
+  top: -5px;
+  font-size: 3.2rem;
+  margin-left: 5px;
+  font-weight: 900;
+}
+
+.current {
+  display: block;
+  width: fit-content;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  margin-left: auto;
+}
+
+.numbers__text {
+  padding: 0 1.4rem;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  font-weight: 500;
+  max-width: 744px;
+  margin: 0 auto;
+}
+
+.chart-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.chart-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.chart {
+  width: fit-content;
+  position: relative;
+  padding: 0rem 1.4rem 3.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  gap: 1.6rem;
+  min-height: 420px;
+}
+
+.bar {
+  width: 4rem;
+  background: #ffe16a;
+  position: relative;
+  transition: all 0.6s ease;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.bar.animate {
+  transform: scaleY(1);
+}
+
+.bar-label {
+  position: absolute;
+  bottom: -2.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #444;
+  text-orientation: mixed;
+  font-family: var(--ff-sans);
+  white-space: nowrap;
+}
+
+.bar-value {
+  position: absolute;
+  bottom: 3.4rem;
+  text-align: right;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  font-weight: bold;
+  color: #444;
+  font-size: 1.8rem;
+  font-family: var(--ff-sans);
+  white-space: nowrap;
+}
+
+.bar:nth-child(2) .bar-value {
+  bottom: 3.2rem;
+}
+
+.year-label {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: #444444;
+  font-size: 1.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  font-family: var(--ff-sans);
+  white-space: nowrap;
+}
+
+.year-label.show {
+  opacity: 1;
+}
+
+.year-group {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.6rem;
+}
+
+.scroll-hint-icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.scroll-hint-icon {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: 60px;
+  height: 97px;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+  opacity: 0;
+  background: #fff;
+  text-align: center;
+  padding: 10px 6px;
+}
+
+.scroll-hint-icon-white {
+  box-shadow: none;
+  border: 1px solid #000;
+}
+
+.scroll-hint-text {
+  font-size: 8px;
+  font-family: var(--ff-sans);
+  color: #000;
+  margin-top: 4px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.scroll-hint-icon-white:before {
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/numbers/scroll-pointer.svg) !important;
+  width: 25.5px;
+  height: 31.5px;
+}
+
+.scroll-hint-icon:after {
+  content: "";
+  width: 20px;
+  height: 23px;
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url(/wp/wp-content/themes/ryukyugobyo_2025/images/numbers/scroll-arrow.svg);
+  background-size: contain;
+  opacity: 0;
+  transition-delay: 2.4s;
+  margin: 0 auto;
+  left: auto;
+  top: auto;
+  margin-top: 8px;
+}
+
+.pie-container {
+  width: min(288px, 76.8vw);
+  aspect-ratio: 1;
+  margin: 0 auto 2rem;
+  position: relative;
+  background: transparent;
+  opacity: 0;
+
+  transition: opacity 0.6s ease;
+  transition-delay: 0.3s;
+}
+
+.pie-container.animate-in {
+  opacity: 1;
+}
+
+.pieTip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.pieTip.show {
+  opacity: 1;
+}
+
+.pieTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#factorsChart .pieTitle {
+  width: 96px;
+}
+
+.pieTitleText {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 900;
+  opacity: 0;
+  transition: opacity 0.3s;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  /* min-height: 298px; */
+}
+
+@media (min-width: 600px) {
+  .legend {
+    flex-direction: row;
+    min-height: 86px;
+  }
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 86px;
+}
+
+.chart-section {
+  padding: 3rem;
+  margin: 4rem 1.35rem 0;
+  border-radius: 2rem;
+  background: #fff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+}
+
+.legend-title {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.legend-value {
+  font-size: min(4rem, 4.8vw);
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.legend-unit {
+  font-size: min(3.2rem, 3.56vw);
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.contact-section {
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+
+  .numbers,
+  .chart-section {
+    max-width: 936px;
+    width: calc(100% - 27px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .numbers {
+    padding: 80px 0px;
+  }
+
+  .chart-section {
+    margin-top: 80px;
+    padding: 80px min(80px, max(20px, calc(80px + 50vw - 480px)));
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+  }
+
+  .chart {
+    margin: 0 auto;
+  }
+
+  .legend {
+    margin: 0 0 20px;
+    gap: min(20px, 2.23vw);
+  }
+
+  .chart-content {
+    width: calc(100% - 308px);
+  }
+
+  .pie-container {
+    min-width: min(288px, calc(288px + 50vw - 450px));
+    width: min(288px, calc(288px + 50vw - 450px));
+    margin: 0;
+    height: fit-content;
+  }
+
+  .contact-section {
+    margin-top: 120px;
+  }
+}
